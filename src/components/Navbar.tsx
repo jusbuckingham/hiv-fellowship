@@ -24,9 +24,11 @@ const Navbar: React.FC = () => {
                   <a className="text-gray-900 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium">Home</a>
                 </Link>
                 <div className="relative group">
-                  <button className="text-gray-900 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium">
-                    About
-                  </button>
+                  <Link href="/about" legacyBehavior>
+                    <a className="text-gray-900 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium">
+                      About
+                    </a>
+                  </Link>
                   <div className="absolute hidden group-hover:block bg-white shadow-lg">
                     <Link href="/about/faculty" legacyBehavior>
                       <a className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Faculty</a>
@@ -43,13 +45,12 @@ const Navbar: React.FC = () => {
                   </div>
                 </div>
                 <div className="relative group">
-                  <button className="text-gray-900 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium">
-                    Program
-                  </button>
+                  <Link href="/program" legacyBehavior>
+                    <a className="text-gray-900 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium">
+                      Program
+                    </a>
+                  </Link>
                   <div className="absolute hidden group-hover:block bg-white shadow-lg">
-                    <Link href="/program" legacyBehavior>
-                      <a className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Program</a>
-                    </Link>
                     <Link href="/program/salary-benefits" legacyBehavior>
                       <a className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Salary & Benefits</a>
                     </Link>
@@ -99,9 +100,11 @@ const Navbar: React.FC = () => {
               <a className="text-gray-900 hover:text-red-600 block px-3 py-2 rounded-md text-base font-medium">Home</a>
             </Link>
             <div className="relative group">
-              <button className="text-gray-900 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium">
-                About
-              </button>
+              <Link href="/about" legacyBehavior>
+                <a className="text-gray-900 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium">
+                  About
+                </a>
+              </Link>
               <div className="absolute hidden group-hover:block bg-white shadow-lg">
                 <Link href="/about/faculty" legacyBehavior>
                   <a className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Faculty</a>
@@ -118,13 +121,12 @@ const Navbar: React.FC = () => {
               </div>
             </div>
             <div className="relative group">
-              <button className="text-gray-900 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium">
-                Program
-              </button>
+              <Link href="/program" legacyBehavior>
+                <a className="text-gray-900 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium">
+                  Program
+                </a>
+              </Link>
               <div className="absolute hidden group-hover:block bg-white shadow-lg">
-                <Link href="/program" legacyBehavior>
-                  <a className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Program</a>
-                </Link>
                 <Link href="/program/salary-benefits" legacyBehavior>
                   <a className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Salary & Benefits</a>
                 </Link>

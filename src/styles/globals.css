@@ -178,3 +178,8 @@ h2 {
 .footer a:hover {
   text-decoration: underline;
 }
+
+/* Dropdown Styles */
+.group:hover .group-hover\:block, .group:focus-within .focus-within\:block {
+  display: block;
+}
