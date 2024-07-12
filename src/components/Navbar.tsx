@@ -42,9 +42,22 @@ const Navbar: React.FC = () => {
                     </Link>
                   </div>
                 </div>
-                <Link href="/program" legacyBehavior>
-                  <a className="text-gray-900 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium">Program</a>
-                </Link>
+                <div className="relative group">
+                  <button className="text-gray-900 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium">
+                    Program
+                  </button>
+                  <div className="absolute hidden group-hover:block bg-white shadow-lg">
+                    <Link href="/program" legacyBehavior>
+                      <a className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Program</a>
+                    </Link>
+                    <Link href="/program/salary-benefits" legacyBehavior>
+                      <a className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Salary & Benefits</a>
+                    </Link>
+                    <Link href="/program/resources" legacyBehavior>
+                      <a className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Resources</a>
+                    </Link>
+                  </div>
+                </div>
                 <Link href="/contact" legacyBehavior>
                   <a className="text-gray-900 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
                 </Link>
@@ -85,21 +98,41 @@ const Navbar: React.FC = () => {
             <Link href="/" legacyBehavior>
               <a className="text-gray-900 hover:text-red-600 block px-3 py-2 rounded-md text-base font-medium">Home</a>
             </Link>
-            <Link href="/about/faculty" legacyBehavior>
-              <a className="text-gray-900 hover:text-red-600 block px-3 py-2 rounded-md text-base font-medium">Faculty</a>
-            </Link>
-            <Link href="/about/fellows" legacyBehavior>
-              <a className="text-gray-900 hover:text-red-600 block px-3 py-2 rounded-md text-base font-medium">Fellows</a>
-            </Link>
-            <Link href="/about/alumni" legacyBehavior>
-              <a className="text-gray-900 hover:text-red-600 block px-3 py-2 rounded-md text-base font-medium">Alumni</a>
-            </Link>
-            <Link href="/about/partners" legacyBehavior>
-              <a className="text-gray-900 hover:text-red-600 block px-3 py-2 rounded-md text-base font-medium">Partners</a>
-            </Link>
-            <Link href="/program" legacyBehavior>
-              <a className="text-gray-900 hover:text-red-600 block px-3 py-2 rounded-md text-base font-medium">Program</a>
-            </Link>
+            <div className="relative group">
+              <button className="text-gray-900 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium">
+                About
+              </button>
+              <div className="absolute hidden group-hover:block bg-white shadow-lg">
+                <Link href="/about/faculty" legacyBehavior>
+                  <a className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Faculty</a>
+                </Link>
+                <Link href="/about/fellows" legacyBehavior>
+                  <a className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Fellows</a>
+                </Link>
+                <Link href="/about/alumni" legacyBehavior>
+                  <a className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Alumni</a>
+                </Link>
+                <Link href="/about/partners" legacyBehavior>
+                  <a className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Partners</a>
+                </Link>
+              </div>
+            </div>
+            <div className="relative group">
+              <button className="text-gray-900 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium">
+                Program
+              </button>
+              <div className="absolute hidden group-hover:block bg-white shadow-lg">
+                <Link href="/program" legacyBehavior>
+                  <a className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Program</a>
+                </Link>
+                <Link href="/program/salary-benefits" legacyBehavior>
+                  <a className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Salary & Benefits</a>
+                </Link>
+                <Link href="/program/resources" legacyBehavior>
+                  <a className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Resources</a>
+                </Link>
+              </div>
+            </div>
             <Link href="/contact" legacyBehavior>
               <a className="text-gray-900 hover:text-red-600 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
             </Link>
