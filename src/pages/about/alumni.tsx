@@ -9,13 +9,13 @@ const Alumni: React.FC = () => {
       name: 'Johan Clarke, MD',
       location: 'Los Angeles, CA',
       pronouns: '(They/Them)',
-      image: '/path/to/image.jpg',
+      image: '/images/about/johan-clarke.png',
     },
     {
       name: 'Jessica Farmer, MD',
       location: 'Los Angeles, CA',
       pronouns: '(She/Her)',
-      image: '/path/to/image.jpg',
+      image: '/images/about/jessica-farmer.jpg',
     },
   ];
 
@@ -25,21 +25,21 @@ const Alumni: React.FC = () => {
       title: 'Family Medicine',
       location: 'Wayne State University, Detroit, MI',
       pronouns: '(He/Him)',
-      image: '/path/to/image.jpg',
+      image: '/images/about/earl-gerald.jpeg',
     },
     {
       name: 'Rebecca Lee, DO, AAHIVS',
       title: 'Internal Medicine / HIV Specialist',
       location: 'Los Angeles, CA',
       pronouns: '(She/Her)',
-      image: '/path/to/image.jpg',
+      image: '/images/about/rebecca-lee.jpeg',
     },
     {
       name: 'Oliver Refugio, MD, MPH, AAHIVS',
       title: 'Bartz-Altadonna Community Health Center',
       location: 'Lancaster, CA',
       pronouns: '(He/Him)',
-      image: '/path/to/image.jpg',
+      image: '/images/about/oliver-refugio.jpeg',
     },
   ];
 
@@ -49,14 +49,14 @@ const Alumni: React.FC = () => {
       title: 'Family Medicine / HIV Primary Care',
       location: 'Men’s Health Foundation, Los Angeles, CA',
       pronouns: '(He/Him)',
-      image: '/path/to/image.jpg',
+      image: '/images/about/tri-trang.jpeg',
     },
     {
       name: 'Jonathan Kao, MD, AAHIVS',
       title: 'Clinical Instructor in Medicine-Pediatrics / LGBTQ Champion',
       location: 'University of California, Los Angeles, Los Angeles, CA',
       pronouns: '(He/Him)',
-      image: '/path/to/image.jpg',
+      image: '/images/about/jonathan-koa.jpeg',
     },
   ];
 
@@ -66,7 +66,7 @@ const Alumni: React.FC = () => {
       title: 'Medical Director',
       location: 'Midway Specialty Care Center, Orlando, FL',
       pronouns: '(She/Her)',
-      image: '/path/to/image.jpg',
+      image: '/images/about/emma-allseits.jpeg',
     },
   ];
 
@@ -76,28 +76,28 @@ const Alumni: React.FC = () => {
       title: 'Site Medical Director',
       location: 'Gleicher/Chen Health Center, APLA Health',
       pronouns: '(He/Him)',
-      image: '/path/to/image.jpg',
+      image: '/images/about/kevin-tangonan.jpg',
     },
     {
       name: 'Jessica Schneider, MD, AAHIVS',
       title: 'Physician Specialist',
       location: 'MLK Outpatient Center, Oasis Clinic, LA County Dept of Health Services',
       pronouns: '(She/Her)',
-      image: '/path/to/image.jpg',
+      image: '/images/about/jessica-schneider.jpeg',
     },
     {
       name: 'Norris Tran Duc, MD, AAHIVS',
       title: 'Medical Director',
       location: 'AIDS Healthcare Foundation (AHF) Houston, TX',
       pronouns: '(He/Him)',
-      image: '/path/to/image.jpg',
+      image: '/images/about/norris-tran-duc.jpeg',
     },
     {
       name: 'Michael Stefanowicz, MD, AAHIVS',
       title: 'Clinical Lead for Sexual Health Programming',
       location: 'CommUnityCare Health, Austin, TX',
       pronouns: '(He/Him)',
-      image: '/path/to/image.jpg',
+      image: '/images/about/michael-stefanowicz.jpeg',
     },
   ];
 
@@ -107,21 +107,21 @@ const Alumni: React.FC = () => {
       title: 'Assistant Clinical Professor of Family Medicine',
       location: 'LSU School of Medicine, New Orleans, LA',
       pronouns: '(She/Her)',
-      image: '/path/to/image.jpg',
+      image: '/images/about/jolie-leblanc.jpeg',
     },
     {
       name: 'Rafael Chiquillo-Sosa, MD, AAHIVS',
       title: 'Addiction Medicine Physician',
       location: 'Kaiser Permanente, Oakland, CA',
       pronouns: '(He/Him)',
-      image: '/path/to/image.jpg',
+      image: '/images/about/rafael-chiquillo-sosa.jpeg',
     },
     {
       name: 'Summer Drake, DO, AAHIVS',
       title: 'HIV Primary Care & Prevention Specialist',
       location: 'Nurx, Inc., Los Angeles, CA',
       pronouns: '(She/Her)',
-      image: '/path/to/image.jpg',
+      image: '/images/about/summer-drake.jpeg',
     },
   ];
 
@@ -131,21 +131,21 @@ const Alumni: React.FC = () => {
       title: 'Associate Medical Director',
       location: 'Los Angeles Department of Public Health, Division of HIV and STD Programs, Los Angeles, CA',
       pronouns: '(She/Her)',
-      image: '/path/to/image.jpg',
+      image: '/images/about/becca-cohen.jpg',
     },
     {
       name: 'Lauren Wolchok, MD, AAHIVS',
       title: 'HIV Clinic Director',
       location: 'Wesley Health Centers - JWCH Institute, Pasadena, CA',
       pronouns: '(She/Her)',
-      image: '/path/to/image.jpg',
+      image: '/images/about/lauren-wolchok.jpeg',
     },
     {
       name: 'Revery Barnes, MD, AAHIVS',
       title: 'HIV Clinic Director',
       location: 'South Los Angeles Health Center Group, LA County Department of Health Services, Associate Program Director, HIV Clinical Leadership Program, LA County DHS, Pasadena, CA',
       pronouns: '(She/Her)',
-      image: '/path/to/image.jpg',
+      image: '/images/about/revery-barnes.jpg',
     },
   ];
 
@@ -298,7 +298,7 @@ const Alumni: React.FC = () => {
           <div className="aspect-w-16 aspect-h-9">
             <iframe
               className="w-full h-full"
-              src="https://www.youtube.com/embed/your_video_id"
+              src="https://www.youtube.com/embed/T6238-kxM3o?si=Ii2ZN6AATs7CFBh9"
               title="Dr. Revery Barnes"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -308,7 +308,7 @@ const Alumni: React.FC = () => {
           <div className="aspect-w-16 aspect-h-9">
             <iframe
               className="w-full h-full"
-              src="https://www.youtube.com/embed/your_video_id"
+              src="https://www.youtube.com/embed/ssJDOFueZDA?si=zn017rjR0D320Prb"
               title="Dr. Becca Cohen"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -317,7 +317,7 @@ const Alumni: React.FC = () => {
           </div>
           <div className="aspect-w-16 aspect-h-9">
             <Image
-              src="/path/to/street-medicine-la-times.jpg"
+              src=""
               alt="Street Medicine, LA Times"
               layout="fill"
               className="object-cover"
