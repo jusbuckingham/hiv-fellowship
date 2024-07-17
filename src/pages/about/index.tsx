@@ -12,7 +12,7 @@ const AboutPage = () => {
         </section>
         <section className="container mx-auto px-6 py-12">
           <h2 className="text-3xl font-bold mb-6">Celebrating 20+ years of excellence in HIV specialty training.</h2>
-          <img src="/path/to/image.jpg" alt="Celebrating 20+ years" className="mb-8 w-full h-auto" />
+          <img src="/images/about/fellowshipgrouppic.png" alt="Celebrating 20+ years" className="mb-8 w-full h-auto" />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
               <h3 className="text-2xl font-bold mb-4">Established in <span className="text-red-600">2001</span></h3>

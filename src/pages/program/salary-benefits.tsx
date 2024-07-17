@@ -1,4 +1,3 @@
-// src/pages/program/salary-benefits.tsx
 import React from 'react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
@@ -8,15 +7,15 @@ const SalaryBenefits: React.FC = () => {
   return (
     <>
       <Navbar />
+      <div className="header-section">
+        <h1>Salary & Benefits.</h1>
+        <p>
+          Our program offers a competitive salary & benefits package that includes medical & dental benefits and an annual housing stipend. Educational loan repayment is also available to qualifying fellows.
+        </p>
+      </div>
       <div className="container mx-auto px-4 py-8">
-        <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold">Salary & Benefits.</h1>
-          <p className="text-gray-600 mt-4">
-            Our program offers a competitive salary & benefits package that includes medical & dental benefits and an annual housing stipend. Educational loan repayment is also available to qualifying fellows.
-          </p>
-        </div>
         <div className="mb-8">
-          <Image src="/path/to/your/image.jpg" alt="Los Angeles" width={800} height={400} className="rounded-lg mx-auto" />
+          <Image src="/images/program/palm-trees.jpg" alt="Los Angeles" width={800} height={400} className="rounded-lg mx-auto" />
         </div>
         <div className="prose prose-lg max-w-none">
           <h2>Up to <span className="text-red-600">$150,000</span> in student loan repayment for qualifying graduates!</h2>
@@ -58,7 +57,7 @@ const SalaryBenefits: React.FC = () => {
           </p>
           <p>Explore more of LA here: <a href="https://www.discoverlosangeles.com" className="text-red-600">www.discoverlosangeles.com</a></p>
           <div className="mb-8">
-            <Image src="/path/to/your/second-image.jpg" alt="Los Angeles Skyline" width={800} height={400} className="rounded-lg mx-auto" />
+            <Image src="/images/program/los-angeles-with-mount-baldy-credit-alek-leckszas_orig.jpeg" alt="Los Angeles Skyline" width={800} height={400} className="rounded-lg mx-auto" />
           </div>
           <div className="mb-8">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423286.2743785498!2d-118.69193073913222!3d34.02016129919778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bb27f9e6a2d1%3A0x3a1bdf7e8c2f02b1!2sLos%20Angeles%2C%20CA!5e0!3m2!1sen!2sus!4v1629836198412!5m2!1sen!2sus" width="600" height="450" style={{ border: 0 }} allowFullScreen loading="lazy"></iframe>

@@ -17,7 +17,7 @@ const Program: React.FC = () => {
           <div className="bg-white shadow-md rounded-lg overflow-hidden">
             <div className="relative">
               <Image
-                src="/path-to-your-image.jpg"
+                src="/images/program/program-1.png"
                 alt="Program Image"
                 width={800}
                 height={600}
@@ -47,7 +47,7 @@ const Program: React.FC = () => {
           <div className="bg-white shadow-md rounded-lg overflow-hidden">
             <div className="relative">
               <Image
-                src="/path-to-your-image.jpg"
+                src="/images/program/program-2.jpg"
                 alt="Program Image"
                 width={800}
                 height={600}
@@ -84,7 +84,7 @@ const Program: React.FC = () => {
           <div className="bg-white shadow-md rounded-lg overflow-hidden">
             <div className="relative">
               <Image
-                src="/path-to-your-image.jpg"
+                src="/images/program/program-3.jpg"
                 alt="Program Image"
                 width={800}
                 height={600}
@@ -112,7 +112,7 @@ const Program: React.FC = () => {
           <div className="bg-white shadow-md rounded-lg overflow-hidden">
             <div className="relative">
               <Image
-                src="/path-to-your-image.jpg"
+                src="/images/program/program-4.png"
                 alt="Program Image"
                 width={800}
                 height={600}

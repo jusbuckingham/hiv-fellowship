@@ -1,4 +1,3 @@
-// src/pages/program/resources.tsx
 import React from 'react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
@@ -7,6 +6,10 @@ const Resources: React.FC = () => {
   return (
     <>
       <Navbar />
+      <div className="header-section">
+        <h1>Resources</h1>
+        <p>Access a variety of resources to help you succeed in the HIV Clinical Leadership Program.</p>
+      </div>
       <div className="container mx-auto px-4 py-8">
         <h1 className="text-4xl font-bold text-center text-gray-900 mb-8">Resources.</h1>
 
