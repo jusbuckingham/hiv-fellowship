@@ -9,19 +9,39 @@ const Faculty: React.FC = () => {
       name: 'Jenica Ryu, MD, AAHIVS',
       title: 'Program Director',
       pronouns: '(She/Her)',
-      image: '/path/to/image.jpg', // Update the path to your images
+      image: '/images/about/jenica-ryan.png', 
     },
     {
       name: 'LaShonda Spencer, MD, AAHIVS',
       title: 'Program Co-Director',
       pronouns: '(She/Her)',
-      image: '/path/to/image.jpg',
+      image: '/images/about/LaShonda-Spencer.jpeg',
     },
     {
       name: 'Revery Barnes, MD, AAHIVS',
       title: 'Associate Program Director',
       pronouns: '(She/Her)',
-      image: '/path/to/image.jpg',
+      image: '/images/about/rb-headshot-1.jpg',
+    },
+    {
+      name: 'Christian Takayama, MD, AAHIVS',
+      title: '​Associate Program Co-Director',
+      subtitle: 'Principal Investigator, AIDS Education and Training Center (AETC) of USC Keck School of Medicine Department of Family Medicine',
+      pronouns: '(He/Him)',
+      image: '/images/about/christian.png', 
+    },
+    {
+      name: 'Shanna Livermore, MPH',
+      title: 'Director of Operations',
+      subtitle: 'Director, AIDS Education and Training Center (AETC) of USC Keck School of Medicine, Department of Family Medicine',
+      pronouns: '(She/Her)',
+      image: '/images/about/shanna_1.png',
+    },
+    {
+      name: 'Jerry Gates, PhD',
+      title: 'Emeritus Professor of Family Medicine',
+      pronouns: '(He/Him)',
+      image: '/images/about/rb-headshot-1.jpg',
     },
   ];
 
@@ -30,19 +50,55 @@ const Faculty: React.FC = () => {
       name: 'Eddie Sattah, MD',
       title: 'Internal Medicine/ Infectious Disease Hepatitis C Co-Infection Lead',
       pronouns: '(He/Him)',
-      image: '/path/to/image.jpg',
+      image: '/images/about/eddiesattahmd.jpeg',
     },
     {
       name: 'Jessica Schneider, MD, AAHIVS',
       title: 'Medicine-Pediatrics/ HIV Primary Care / Correctional Health',
       pronouns: '(She/Her)',
-      image: '/path/to/image.jpg',
+      image: '/images/about/js.jpeg',
     },
     {
       name: 'Gigi Simmons, MD',
       title: 'Family Medicine/ Addiction Medicine',
       pronouns: '(She/Her)',
-      image: '/path/to/image.jpg',
+      image: '/images/about/gigi-headshot.jpeg',
+    },
+    {
+      name: 'Kevin Tangonan, DO, AAHIVS',
+      title: 'Family Medicine/ HIV Primary Care',
+      pronouns: '(He/Him)',
+      image: '/images/about/tangonan-headshot.jpg',
+    },
+    {
+      name: 'Hrishikesh Belani, MD, AAHIVS',
+      title: '​​Internal Medicine/ HIV/ Addiction Medicine Director of Primary Care, LA County ACN',
+      pronouns: '(He/Him)',
+      image: '/images/about/headshot-hrishi2.jpeg',
+    },
+    {
+      name: 'Becca Cohen, MD, MPH, AAHIVS',
+      title: 'FFamily Medicine / HIV Primary Care',
+      pronouns: '(She/Her)',
+      image: '/images/about/becca_2.jpg',
+    },
+    {
+      name: 'Katya Corado, MD',
+      title: 'Infectious Disease/HIV Primary Care Director of Positive Care, LA County Ambulatory Care Network (ACN)',
+      pronouns: '(She/Her)',
+      image: '/images/about/dr-katyacorado.jpeg',
+    },
+    {
+      name: 'Katherine Loomis, MD',
+      title: '​​Internal Medicine / Infectious Disease Clinical Instructor of Internal Medicine/ ID',
+      pronouns: '(She/Her)',
+      image: '/images/about/katherine-loomis.jpeg',
+    },
+    {
+      name: 'Johan Clarke, MD, AAHIVS',
+      title: 'HIV Primary Care / Gender Affirming Care / Addiction Medicine Clinical Instructor of Family Medicine/ HIV Primary Care',
+      pronouns: '(They/Them)',
+      image: '/images/about/johan-clarke.png',
     },
   ];
 

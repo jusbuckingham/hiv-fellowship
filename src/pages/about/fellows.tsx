@@ -8,7 +8,7 @@ const Fellows: React.FC = () => {
     {
       name: 'Kenya Bingham-Psalms, MD',
       pronouns: '(She/Her)',
-      image: '/path/to/image.jpg', // Update the path to your images
+      image: '/images/about/kenya-bingham-psalms.jpg', 
       description: `
         Growing up in a military family, Dr. Bingham-Psalms' upbringing was enriched with cultural diversity. She is bilingual in English and Spanish, a passion she pursued from a young age. As a first-generation college graduate, she earned a B.A. in Spanish Language & Literature from the University of California, Berkeley, and was among the first U.S. graduates from the Latin American School of Medicine in Havana, Cuba.
         
@@ -20,7 +20,7 @@ const Fellows: React.FC = () => {
     {
       name: 'Zac Badii, MD',
       pronouns: '(He/Him)',
-      image: '/path/to/image.jpg',
+      image: '/images/about/zac-badii.png',
       description: `
         Dr. Badii, a native of San Diego, California, was raised by immigrant parents and is passionately committed to addressing sex disparities in HIV prevention and treatment. As a fluent Spanish speaker with experience living, working, and studying on both sides of the southern border, Dr. Badii brings a unique perspective to the field. Having graduated from the Family Medicine program at the University of Southern California, Dr. Badii is dedicated to providing holistic and comprehensive care. This commitment extends to addressing social determinants of health through evidence-based public health interventions, reflecting a deep understanding of the multifaceted nature of healthcare and a desire to make a positive impact.
         
@@ -33,7 +33,7 @@ const Fellows: React.FC = () => {
     {
       name: 'Licho Aguilera, MD',
       pronouns: '(He/They)',
-      image: '/path/to/image.jpg',
+      image: '/images/about/licho-cynthia-aguilera.jpg',
       description: `
         Dr. Aguilera is a Nawat and non-binary physician from Pico-Union, Los Angeles. They are a proud graduate of the Escuela Latinoamericana de Medicina (ELAM) in Havana, Cuba and completed their internal medicine residency at Cedars-Sinai Medical Center. Their career focus is on decolonial medicine for Black and Indigenous communities of Los Angeles. They also enjoy vintage sewing, playing a variety of instruments, and motorcycles.
       `,
@@ -41,7 +41,7 @@ const Fellows: React.FC = () => {
     {
       name: 'Bianca Hill, MD, MPH',
       pronouns: '(She/Her)',
-      image: '/path/to/image.jpg',
+      image: '/images/about/bianca-hill.jpeg',
       description: `
         Dr. Bianca Hill grew up in New York City, where she majored in Biology at the City College of New York. She has an MPH degree in Epidemiology from SUNY Downstate Medical Center, where she discovered her passion for HIV care while completing an internship on Rikers Island. Dr. Hill completed her medical education at Meharry Medical College and Family Medicine training at the Institute for Family Health - Harlem Residency. During her residency she managed the care of patients living with HIV throughout the Bronx and Harlem New York. Dr. Hill has been published for her PrEP research and served as a RAMP and Alumni Scholar for the HIV Vaccine Trial Network (HVTN). She has a strong interest in HIV primary care and research, primary care for all incarcerated women of color, health equity, and advocacy.
       `,
@@ -49,7 +49,7 @@ const Fellows: React.FC = () => {
     {
       name: 'Mark Leiber, MD',
       pronouns: '(He/Him)',
-      image: '/path/to/image.jpg',
+      image: '/images/about/mark-leiber.jpeg',
       description: `
         Dr. Mark Leiber is originally from Tampa, Florida and completed his undergraduate studies at Stanford, where he majored in Film Studies and Human Biology. After college, he worked as an Associate Producer for National Geographic Television on a documentary series about prisons called, "Lockdown", which initially piqued his interest in HIV medicine. He subsequently worked in Malawi for a year for Partners In Health as a health systems coordinator in a region heavily impacted by the HIV/AIDS epidemic. After returning to the US, he completed medical school at the University of California, Irvine and internal medicine residency at Johns Hopkins Bayview Medical Center in Baltimore, Maryland. He plans to focus his medical career on HIV and LGBTQ+ primary care.
       `,
