@@ -74,7 +74,7 @@ const Fellows: React.FC = () => {
                 alt={fellow.name}
                 width={200}
                 height={200}
-                className="mx-auto rounded-full"
+                className="mx-auto w-32 h-32"
               />
               <h3 className="text-xl font-bold mt-4">{fellow.name}</h3>
               <p className="italic text-gray-600">{fellow.pronouns}</p>
@@ -92,7 +92,7 @@ const Fellows: React.FC = () => {
                 alt={fellow.name}
                 width={200}
                 height={200}
-                className="mx-auto rounded-full"
+                className="mx-auto w-32 h-32"
               />
               <h3 className="text-xl font-bold mt-4">{fellow.name}</h3>
               <p className="italic text-gray-600">{fellow.pronouns}</p>

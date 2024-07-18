@@ -167,7 +167,7 @@ const Alumni: React.FC = () => {
                 alt={alumnus.name}
                 width={200}
                 height={200}
-                className="mx-auto rounded-full"
+                className="mx-auto w-32 h-32"
               />
               <h3 className="text-xl font-bold mt-4">{alumnus.name}</h3>
               <p className="italic text-gray-600">{alumnus.location}</p>
@@ -185,7 +185,7 @@ const Alumni: React.FC = () => {
                 alt={alumnus.name}
                 width={200}
                 height={200}
-                className="mx-auto rounded-full"
+                className="mx-auto w-32 h-32"
               />
               <h3 className="text-xl font-bold mt-4">{alumnus.name}</h3>
               <p className="italic text-gray-600">{alumnus.title}</p>
@@ -204,7 +204,7 @@ const Alumni: React.FC = () => {
                 alt={alumnus.name}
                 width={200}
                 height={200}
-                className="mx-auto rounded-full"
+                className="mx-auto w-32 h-32"
               />
               <h3 className="text-xl font-bold mt-4">{alumnus.name}</h3>
               <p className="italic text-gray-600">{alumnus.title}</p>
@@ -223,7 +223,7 @@ const Alumni: React.FC = () => {
                 alt={alumnus.name}
                 width={200}
                 height={200}
-                className="mx-auto rounded-full"
+                className="mx-auto w-32 h-32"
               />
               <h3 className="text-xl font-bold mt-4">{alumnus.name}</h3>
               <p className="italic text-gray-600">{alumnus.title}</p>
@@ -242,7 +242,7 @@ const Alumni: React.FC = () => {
                 alt={alumnus.name}
                 width={200}
                 height={200}
-                className="mx-auto rounded-full"
+                className="mx-auto w-32 h-32"
               />
               <h3 className="text-xl font-bold mt-4">{alumnus.name}</h3>
               <p className="italic text-gray-600">{alumnus.title}</p>
@@ -261,7 +261,7 @@ const Alumni: React.FC = () => {
                 alt={alumnus.name}
                 width={200}
                 height={200}
-                className="mx-auto rounded-full"
+                className="mx-auto w-32 h-32"
               />
               <h3 className="text-xl font-bold mt-4">{alumnus.name}</h3>
               <p className="italic text-gray-600">{alumnus.title}</p>
@@ -280,7 +280,7 @@ const Alumni: React.FC = () => {
                 alt={alumnus.name}
                 width={200}
                 height={200}
-                className="mx-auto rounded-full"
+                className="mx-auto w-32 h-32"
               />
               <h3 className="text-xl font-bold mt-4">{alumnus.name}</h3>
               <p className="italic text-gray-600">{alumnus.title}</p>
