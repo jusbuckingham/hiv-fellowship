@@ -202,3 +202,45 @@ h2 {
   font-size: 1.25rem;
   margin-bottom: 2rem;
 }
+
+/* Gallery Image Styles */
+.gallery-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Quote Section */
+.quote-section {
+  background-color: #f9f9f9;
+  color: #333;
+  text-align: center;
+  padding: 4rem 1rem;
+  font-style: italic;
+}
+
+.quote-section .quote {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+.quote-section .author {
+  font-size: 1rem;
+  color: #e60023;
+}
+
+/* Partner Logos */
+.partner-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+}
+
+.partner-logos img {
+  max-width: 100px;
+  height: auto;
+  margin: 1rem;
+}
