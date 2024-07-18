@@ -68,13 +68,13 @@ const Fellows: React.FC = () => {
         <h2 className="text-4xl font-bold mb-8">Class of <span className="text-red-600">2026</span></h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
           {fellows2026.map((fellow, index) => (
-            <div key={index} className="text-left">
+            <div key={index} className="text-center">
               <Image
                 src={fellow.image}
                 alt={fellow.name}
                 width={200}
                 height={200}
-                className="mx-auto w-32 h-32"
+                className="mx-auto"
               />
               <h3 className="text-xl font-bold mt-4">{fellow.name}</h3>
               <p className="italic text-gray-600">{fellow.pronouns}</p>
@@ -86,13 +86,13 @@ const Fellows: React.FC = () => {
         <h2 className="text-4xl font-bold mb-8">Class of <span className="text-red-600">2025</span></h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {fellows2025.map((fellow, index) => (
-            <div key={index} className="text-left">
+            <div key={index} className="text-center">
               <Image
                 src={fellow.image}
                 alt={fellow.name}
                 width={200}
                 height={200}
-                className="mx-auto w-32 h-32"
+                className="mx-auto"
               />
               <h3 className="text-xl font-bold mt-4">{fellow.name}</h3>
               <p className="italic text-gray-600">{fellow.pronouns}</p>

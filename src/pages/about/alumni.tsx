@@ -161,13 +161,13 @@ const Alumni: React.FC = () => {
         <h2 className="text-4xl font-bold mb-8">Class of <span className="text-red-600">2024</span></h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
           {alumni2024.map((alumnus, index) => (
-            <div key={index} className="text-left">
+            <div key={index} className="text-center">
               <Image
                 src={alumnus.image}
                 alt={alumnus.name}
                 width={200}
                 height={200}
-                className="mx-auto w-32 h-32"
+                className="mx-auto"
               />
               <h3 className="text-xl font-bold mt-4">{alumnus.name}</h3>
               <p className="italic text-gray-600">{alumnus.location}</p>
@@ -179,13 +179,13 @@ const Alumni: React.FC = () => {
         <h2 className="text-4xl font-bold mb-8">Class of <span className="text-red-600">2023</span></h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {alumni2023.map((alumnus, index) => (
-            <div key={index} className="text-left">
+            <div key={index} className="text-center">
               <Image
                 src={alumnus.image}
                 alt={alumnus.name}
                 width={200}
                 height={200}
-                className="mx-auto w-32 h-32"
+                className="mx-auto"
               />
               <h3 className="text-xl font-bold mt-4">{alumnus.name}</h3>
               <p className="italic text-gray-600">{alumnus.title}</p>
@@ -198,13 +198,13 @@ const Alumni: React.FC = () => {
         <h2 className="text-4xl font-bold mb-8">Class of <span className="text-red-600">2022</span></h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
           {alumni2022.map((alumnus, index) => (
-            <div key={index} className="text-left">
+            <div key={index} className="text-center">
               <Image
                 src={alumnus.image}
                 alt={alumnus.name}
                 width={200}
                 height={200}
-                className="mx-auto w-32 h-32"
+                className="mx-auto"
               />
               <h3 className="text-xl font-bold mt-4">{alumnus.name}</h3>
               <p className="italic text-gray-600">{alumnus.title}</p>
@@ -217,13 +217,13 @@ const Alumni: React.FC = () => {
         <h2 className="text-4xl font-bold mb-8">Class of <span className="text-red-600">2021</span></h2>
         <div className="grid grid-cols-1 gap-8 mb-16">
           {alumni2021.map((alumnus, index) => (
-            <div key={index} className="text-left">
+            <div key={index} className="text-center">
               <Image
                 src={alumnus.image}
                 alt={alumnus.name}
                 width={200}
                 height={200}
-                className="mx-auto w-32 h-32"
+                className="mx-auto"
               />
               <h3 className="text-xl font-bold mt-4">{alumnus.name}</h3>
               <p className="italic text-gray-600">{alumnus.title}</p>
@@ -236,13 +236,13 @@ const Alumni: React.FC = () => {
         <h2 className="text-4xl font-bold mb-8">Class of <span className="text-red-600">2020</span></h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {alumni2020.map((alumnus, index) => (
-            <div key={index} className="text-left">
+            <div key={index} className="text-center">
               <Image
                 src={alumnus.image}
                 alt={alumnus.name}
                 width={200}
                 height={200}
-                className="mx-auto w-32 h-32"
+                className="mx-auto"
               />
               <h3 className="text-xl font-bold mt-4">{alumnus.name}</h3>
               <p className="italic text-gray-600">{alumnus.title}</p>
@@ -255,13 +255,13 @@ const Alumni: React.FC = () => {
         <h2 className="text-4xl font-bold mb-8">Class of <span className="text-red-600">2019</span></h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {alumni2019.map((alumnus, index) => (
-            <div key={index} className="text-left">
+            <div key={index} className="text-center">
               <Image
                 src={alumnus.image}
                 alt={alumnus.name}
                 width={200}
                 height={200}
-                className="mx-auto w-32 h-32"
+                className="mx-auto"
               />
               <h3 className="text-xl font-bold mt-4">{alumnus.name}</h3>
               <p className="italic text-gray-600">{alumnus.title}</p>
@@ -274,13 +274,13 @@ const Alumni: React.FC = () => {
         <h2 className="text-4xl font-bold mb-8">Class of <span className="text-red-600">2018</span></h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {alumni2018.map((alumnus, index) => (
-            <div key={index} className="text-left">
+            <div key={index} className="text-center">
               <Image
                 src={alumnus.image}
                 alt={alumnus.name}
                 width={200}
                 height={200}
-                className="mx-auto w-32 h-32"
+                className="mx-auto"
               />
               <h3 className="text-xl font-bold mt-4">{alumnus.name}</h3>
               <p className="italic text-gray-600">{alumnus.title}</p>
