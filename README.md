@@ -5,8 +5,6 @@ This project is the website for the HIV Clinical Leadership Program. It provides
 ## Tech Stack
 
 - **Frontend:** Next.js, Tailwind CSS
-- **Backend:** FastAPI
-- **Database:** PostgreSQL
 - **Deployment:** Vercel
 
 ## Features
