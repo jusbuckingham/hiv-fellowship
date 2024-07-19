@@ -3,9 +3,19 @@ import Link from 'next/link';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+    setOpenDropdown(null); // Close any open dropdown when the menu is toggled
+  };
+
+  const toggleDropdown = (menu: string) => {
+    if (openDropdown === menu) {
+      setOpenDropdown(null);
+    } else {
+      setOpenDropdown(menu);
+    }
   };
 
   return (
@@ -100,40 +110,68 @@ const Navbar: React.FC = () => {
               <a className="text-gray-900 hover:text-red-600 block px-3 py-2 rounded-md text-base font-medium">Home</a>
             </Link>
             <div className="relative group">
-              <Link href="/about" legacyBehavior>
-                <a className="text-gray-900 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium">
-                  About
-                </a>
-              </Link>
-              <div className="absolute hidden group-hover:block bg-white shadow-lg">
-                <Link href="/about/faculty" legacyBehavior>
-                  <a className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Faculty</a>
-                </Link>
-                <Link href="/about/fellows" legacyBehavior>
-                  <a className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Fellows</a>
-                </Link>
-                <Link href="/about/alumni" legacyBehavior>
-                  <a className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Alumni</a>
-                </Link>
-                <Link href="/about/partners" legacyBehavior>
-                  <a className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Partners</a>
-                </Link>
-              </div>
+              <button
+                onClick={() => toggleDropdown('about')}
+                className="text-gray-900 hover:text-red-600 px-3 py-2 rounded-md text-base font-medium w-full text-left flex justify-between items-center"
+              >
+                About
+                <svg
+                  className={`h-5 w-5 transition-transform duration-200 ${openDropdown === 'about' ? 'transform rotate-180' : ''}`}
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06-.02L10 10.67l3.71-3.48a.75.75 0 111.04 1.08l-4.25 4a.75.75 0 01-1.04 0l-4.25-4a.75.75 0 01-.02-1.06z" clipRule="evenodd" />
+                </svg>
+              </button>
+              {openDropdown === 'about' && (
+                <div className="pl-4">
+                  <Link href="/about" legacyBehavior>
+                    <a className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">About</a>
+                  </Link>
+                  <Link href="/about/faculty" legacyBehavior>
+                    <a className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Faculty</a>
+                  </Link>
+                  <Link href="/about/fellows" legacyBehavior>
+                    <a className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Fellows</a>
+                  </Link>
+                  <Link href="/about/alumni" legacyBehavior>
+                    <a className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Alumni</a>
+                  </Link>
+                  <Link href="/about/partners" legacyBehavior>
+                    <a className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Partners</a>
+                  </Link>
+                </div>
+              )}
             </div>
             <div className="relative group">
-              <Link href="/program" legacyBehavior>
-                <a className="text-gray-900 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium">
-                  Program
-                </a>
-              </Link>
-              <div className="absolute hidden group-hover:block bg-white shadow-lg">
-                <Link href="/program/salary-benefits" legacyBehavior>
-                  <a className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Salary & Benefits</a>
-                </Link>
-                <Link href="/program/resources" legacyBehavior>
-                  <a className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Resources</a>
-                </Link>
-              </div>
+              <button
+                onClick={() => toggleDropdown('program')}
+                className="text-gray-900 hover:text-red-600 px-3 py-2 rounded-md text-base font-medium w-full text-left flex justify-between items-center"
+              >
+                Program
+                <svg
+                  className={`h-5 w-5 transition-transform duration-200 ${openDropdown === 'program' ? 'transform rotate-180' : ''}`}
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06-.02L10 10.67l3.71-3.48a.75.75 0 111.04 1.08l-4.25 4a.75.75 0 01-1.04 0l-4.25-4a.75.75 0 01-.02-1.06z" clipRule="evenodd" />
+                </svg>
+              </button>
+              {openDropdown === 'program' && (
+                <div className="pl-4">
+                  <Link href="/program" legacyBehavior>
+                    <a className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Program</a>
+                  </Link>
+                  <Link href="/program/salary-benefits" legacyBehavior>
+                    <a className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Salary & Benefits</a>
+                  </Link>
+                  <Link href="/program/resources" legacyBehavior>
+                    <a className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Resources</a>
+                  </Link>
+                </div>
+              )}
             </div>
             <Link href="/contact" legacyBehavior>
               <a className="text-gray-900 hover:text-red-600 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
