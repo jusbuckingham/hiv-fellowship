@@ -74,22 +74,22 @@ export default function Home() {
           <h2 className="text-4xl font-bold mb-8 text-center"></h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             <div>
-              <Image src="/images/home/dr-tasha-dixon-17.jpg" alt="Gallery Image 1" width={300} height={200} className="rounded-lg" />
+              <Image src="/images/home/dr-tasha-dixon-17.jpg" alt="Gallery Image 1" width={300} height={200} className="fixed-size" />
             </div>
             <div>
-              <Image src="/images/home/hhhchc.jpeg" alt="Gallery Image 2" width={300} height={200} className="rounded-lg" />
+              <Image src="/images/home/hhhchc.jpeg" alt="Gallery Image 2" width={300} height={200} className="fixed-size" />
             </div>
             <div>
-              <Image src="/images/home/alihug.jpeg" alt="Gallery Image 3" width={300} height={200} className="rounded-lg" />
+              <Image src="/images/home/alihug.jpeg" alt="Gallery Image 3" width={300} height={200} className="fixed-size" />
             </div>
             <div>
-              <Image src="/images/home/img-3462.jpg" alt="Gallery Image 4" width={300} height={200} className="rounded-lg" />
+              <Image src="/images/home/img-3462.jpg" alt="Gallery Image 4" width={300} height={200} className="fixed-size" />
             </div>
             <div>
-              <Image src="/images/home/img-6206.jpg" alt="Gallery Image 5" width={300} height={200} className="rounded-lg" />
+              <Image src="/images/home/img-6206.jpg" alt="Gallery Image 5" width={300} height={200} className="fixed-size" />
             </div>
             <div>
-              <Image src="/images/home/p81.png" alt="Gallery Image 6" width={300} height={200} className="rounded-lg" />
+              <Image src="/images/home/p81.png" alt="Gallery Image 6" width={300} height={200} className="fixed-size" />
             </div>
           </div>
         </section>
@@ -121,23 +121,22 @@ export default function Home() {
         </section>
 
         <section className="container mx-auto px-4 py-16 text-center">
-          <h2 className="text-4xl font-bold mb-8">Quote</h2>
           <blockquote className="italic mb-8">
             "Knowledge emerges only through invention and reinvention, the restless, impatient, continuing, hopeful inquiry beings pursue with the world and with others."
             <span className="block mt-4 text-red-600">- Paulo Freire, Pedagogy of the Oppressed</span>
           </blockquote>
-          <Image src="/path/to/map-image.jpg" alt="HIV Map" width={500} height={300} className="mx-auto mb-8" />
+          <Image src="/images/home/index/aidsvu.png" alt="HIV Map" width={500} height={300} className="mx-auto mb-8" />
           <p className="text-xl mb-8">
             Black, Latinx, BIPOC and LGBTQIA2S+ physicians strongly encouraged to apply! <br />
             Due to the current trends of the HIV epidemic in the US, physicians with interest in working in the <span className="text-red-600">SOUTH</span> and <span className="text-red-600">MID-ATLANTIC STATES</span> are also strongly encouraged to apply!
           </p>
           <div className="flex justify-center items-center space-x-8">
-            <Image src="/path/to/logo1.jpg" alt="Partner Logo 1" width={100} height={100} />
-            <Image src="/path/to/logo2.jpg" alt="Partner Logo 2" width={100} height={100} />
-            <Image src="/path/to/logo3.jpg" alt="Partner Logo 3" width={100} height={100} />
-            <Image src="/path/to/logo4.jpg" alt="Partner Logo 4" width={100} height={100} />
-            <Image src="/path/to/logo5.jpg" alt="Partner Logo 5" width={100} height={100} />
-            <Image src="/path/to/logo6.jpg" alt="Partner Logo 6" width={100} height={100} />
+            <Image src="/images/about/health-services-lac.png" alt="Partner Logo 1" width={100} height={100} />
+            <Image src="/images/about/kecklogo.jpeg" alt="Partner Logo 2" width={100} height={100} />
+            <Image src="/images/about/aetc-pacific.jpg" alt="Partner Logo 3" width={100} height={100} />
+            <Image src="/images/about/ucla-ncsp.png" alt="Partner Logo 4" width={100} height={100} />
+            <Image src="/images/about/lundquist.png" alt="Partner Logo 5" width={100} height={100} />
+            <Image src="/images/about/viivlogo.png" alt="Partner Logo 6" width={100} height={100} />
           </div>
         </section>
       </main>

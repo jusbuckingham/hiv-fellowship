@@ -244,3 +244,9 @@ h2 {
   height: auto;
   margin: 1rem;
 }
+
+.fixed-size {
+  object-fit: cover; /* Ensure the image covers the entire area without stretching */
+}
+
+
