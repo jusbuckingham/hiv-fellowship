@@ -4,8 +4,10 @@ This project is the website for the HIV Clinical Leadership Program. It provides
 
 ## Tech Stack
 
-- **Frontend:** Next.js, Tailwind CSS
-- **Deployment:** Vercel
+- Next.js
+- Tailwind CSS
+- TypeScript
+- Vercel
 
 ## Features
 
