@@ -13,11 +13,11 @@ const Apply: React.FC = () => {
         <p className="text-lg mb-8">Apply for the HIV Clinical Leadership Program today!</p>
         <div className="flex justify-center mb-8">
           <Image
-            src="/images/apply-photo.jpg" // update this path if you have a different image location
+            src="/images/apply/tasha-dixon.jpg" // update this path if you have a different image location
             alt="Doctor"
-            width={800}
-            height={600}
-            className="rounded-md"
+            width={300}
+            height={300}
+            className="mx-auto"
           />
         </div>
         <p className="text-lg font-bold text-red-600 mb-2">
@@ -55,7 +55,7 @@ const Apply: React.FC = () => {
         </p>
         <h2 className="text-2xl font-bold mb-4">Applications now open for the 2025-2027 Fellowship cohort. Apply today!</h2>
         <p className="text-lg mb-8">
-          <span className="font-bold text-red-600">Please <a href="https://example.com/application-form" className="underline">click here</a> to access the application form.</span>
+          <span className="font-bold text-red-600">Please <a href="https://docs.google.com/forms/d/1GMSQXZOlZGOeIpS9x5HphmJvW1ysE100_v8grsacItw/viewform?edit_requested=true" className="underline">click here</a> to access the application form.</span>
         </p>
         <p className="text-lg mb-8">
           Application deadline: <span className="font-bold">November 1st</span>
