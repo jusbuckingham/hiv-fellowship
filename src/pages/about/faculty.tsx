@@ -15,7 +15,7 @@ const Faculty: React.FC = () => {
       name: 'LaShonda Spencer, MD, AAHIVS',
       title: 'Program Co-Director',
       pronouns: '(She/Her)',
-      image: '/images/about/lashonda-spencer.jpeg',
+      image: '',
     },
     {
       name: 'Revery Barnes, MD, AAHIVS',
