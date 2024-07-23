@@ -40,21 +40,21 @@ const Partners: React.FC = () => {
   return (
     <>
       <Navbar />
-      <section className="bg-gray-900 text-white text-center py-20">
+      <section className="bg-gray-900 text-white text-center py-20 px-4">
         <h1 className="text-5xl font-bold mb-4">
           Partners<span className="text-red-600">.</span>
         </h1>
-        <p className="text-xl">Find out more about our collaborative partnerships.</p>
+        <p className="text-xl max-w-3xl mx-auto">Find out more about our collaborative partnerships.</p>
       </section>
-      <section className="max-w-7xl mx-auto py-10 px-4 sm:px-6 lg:px-8">
+      <section className="max-w-7xl mx-auto py-16 px-6 lg:px-8">
         {partners.map((partner, index) => (
-          <div key={index} className="mb-10">
+          <div key={index} className="mb-16 text-center">
             <Image src={partner.logo} alt={`${partner.name} Logo`} width={150} height={150} className="mx-auto mb-4"/>
-            <p className="text-center text-2xl font-bold">{partner.name}</p>
-            <p className="text-center text-gray-700 mt-2">{partner.description}</p>
+            <p className="text-2xl font-bold">{partner.name}</p>
+            <p className="text-gray-700 mt-4">{partner.description}</p>
           </div>
         ))}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 mt-16">
           <div className="aspect-w-16 aspect-h-9">
             <iframe
               className="w-full h-full"

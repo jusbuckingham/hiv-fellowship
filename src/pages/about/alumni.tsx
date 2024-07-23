@@ -152,14 +152,14 @@ const Alumni: React.FC = () => {
   return (
     <>
       <Navbar />
-      <section className="bg-gray-900 text-white text-center py-20">
+      <section className="bg-gray-900 text-white text-center py-20 px-4">
         <h1 className="text-5xl font-bold mb-4">Alumni<span className="text-red-600">.</span></h1>
-        <p className="text-xl">Our alumni have graduated into a variety of prestigious HIV leadership positions around the country.</p>
+        <p className="text-xl max-w-3xl mx-auto">Our alumni have graduated into a variety of prestigious HIV leadership positions around the country.</p>
       </section>
 
-      <section className="container mx-auto px-4 py-16 text-center">
-        <h2 className="text-4xl font-bold mb-8">Class of <span className="text-red-600">2024</span></h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+      <section className="container mx-auto px-6 py-16 text-center">
+        <h2 className="text-4xl font-bold mb-12">Class of <span className="text-red-600">2024</span></h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
           {alumni2024.map((alumnus, index) => (
             <div key={index} className="text-center">
               <Image
@@ -167,7 +167,7 @@ const Alumni: React.FC = () => {
                 alt={alumnus.name}
                 width={200}
                 height={200}
-                className="mx-auto"
+                className="mx-auto rounded"
               />
               <h3 className="text-xl font-bold mt-4">{alumnus.name}</h3>
               <p className="italic text-gray-600">{alumnus.location}</p>
@@ -176,8 +176,8 @@ const Alumni: React.FC = () => {
           ))}
         </div>
 
-        <h2 className="text-4xl font-bold mb-8">Class of <span className="text-red-600">2023</span></h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <h2 className="text-4xl font-bold mb-12">Class of <span className="text-red-600">2023</span></h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-16">
           {alumni2023.map((alumnus, index) => (
             <div key={index} className="text-center">
               <Image
@@ -185,7 +185,7 @@ const Alumni: React.FC = () => {
                 alt={alumnus.name}
                 width={200}
                 height={200}
-                className="mx-auto"
+                className="mx-auto rounded"
               />
               <h3 className="text-xl font-bold mt-4">{alumnus.name}</h3>
               <p className="italic text-gray-600">{alumnus.title}</p>
@@ -195,8 +195,8 @@ const Alumni: React.FC = () => {
           ))}
         </div>
 
-        <h2 className="text-4xl font-bold mb-8">Class of <span className="text-red-600">2022</span></h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+        <h2 className="text-4xl font-bold mb-12">Class of <span className="text-red-600">2022</span></h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
           {alumni2022.map((alumnus, index) => (
             <div key={index} className="text-center">
               <Image
@@ -204,7 +204,7 @@ const Alumni: React.FC = () => {
                 alt={alumnus.name}
                 width={200}
                 height={200}
-                className="mx-auto"
+                className="mx-auto rounded"
               />
               <h3 className="text-xl font-bold mt-4">{alumnus.name}</h3>
               <p className="italic text-gray-600">{alumnus.title}</p>
@@ -214,8 +214,8 @@ const Alumni: React.FC = () => {
           ))}
         </div>
 
-        <h2 className="text-4xl font-bold mb-8">Class of <span className="text-red-600">2021</span></h2>
-        <div className="grid grid-cols-1 gap-8 mb-16">
+        <h2 className="text-4xl font-bold mb-12">Class of <span className="text-red-600">2021</span></h2>
+        <div className="grid grid-cols-1 gap-12 mb-16">
           {alumni2021.map((alumnus, index) => (
             <div key={index} className="text-center">
               <Image
@@ -223,7 +223,7 @@ const Alumni: React.FC = () => {
                 alt={alumnus.name}
                 width={200}
                 height={200}
-                className="mx-auto"
+                className="mx-auto rounded"
               />
               <h3 className="text-xl font-bold mt-4">{alumnus.name}</h3>
               <p className="italic text-gray-600">{alumnus.title}</p>
@@ -233,8 +233,8 @@ const Alumni: React.FC = () => {
           ))}
         </div>
 
-        <h2 className="text-4xl font-bold mb-8">Class of <span className="text-red-600">2020</span></h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+        <h2 className="text-4xl font-bold mb-12">Class of <span className="text-red-600">2020</span></h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {alumni2020.map((alumnus, index) => (
             <div key={index} className="text-center">
               <Image
@@ -242,7 +242,7 @@ const Alumni: React.FC = () => {
                 alt={alumnus.name}
                 width={200}
                 height={200}
-                className="mx-auto"
+                className="mx-auto rounded"
               />
               <h3 className="text-xl font-bold mt-4">{alumnus.name}</h3>
               <p className="italic text-gray-600">{alumnus.title}</p>
@@ -252,8 +252,8 @@ const Alumni: React.FC = () => {
           ))}
         </div>
 
-        <h2 className="text-4xl font-bold mb-8">Class of <span className="text-red-600">2019</span></h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <h2 className="text-4xl font-bold mb-12">Class of <span className="text-red-600">2019</span></h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-16">
           {alumni2019.map((alumnus, index) => (
             <div key={index} className="text-center">
               <Image
@@ -261,7 +261,7 @@ const Alumni: React.FC = () => {
                 alt={alumnus.name}
                 width={200}
                 height={200}
-                className="mx-auto"
+                className="mx-auto rounded"
               />
               <h3 className="text-xl font-bold mt-4">{alumnus.name}</h3>
               <p className="italic text-gray-600">{alumnus.title}</p>
@@ -271,8 +271,8 @@ const Alumni: React.FC = () => {
           ))}
         </div>
 
-        <h2 className="text-4xl font-bold mb-8">Class of <span className="text-red-600">2018</span></h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <h2 className="text-4xl font-bold mb-12">Class of <span className="text-red-600">2018</span></h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-16">
           {alumni2018.map((alumnus, index) => (
             <div key={index} className="text-center">
               <Image
@@ -280,7 +280,7 @@ const Alumni: React.FC = () => {
                 alt={alumnus.name}
                 width={200}
                 height={200}
-                className="mx-auto"
+                className="mx-auto rounded"
               />
               <h3 className="text-xl font-bold mt-4">{alumnus.name}</h3>
               <p className="italic text-gray-600">{alumnus.title}</p>
@@ -291,10 +291,10 @@ const Alumni: React.FC = () => {
         </div>
 
         <div className="text-center mb-16">
-          <blockquote className="italic text-xl">"The HIV Clinical Leadership Program has graduated dozens of other HIV Specialists since its inception in 2001 who are not pictured here. The alumni pictured on this page only represent the alumni since the program was reinvigorated in collaboration with DHS in 2016."</blockquote>
+          <blockquote className="italic text-xl max-w-3xl mx-auto">"The HIV Clinical Leadership Program has graduated dozens of other HIV Specialists since its inception in 2001 who are not pictured here. The alumni pictured on this page only represent the alumni since the program was reinvigorated in collaboration with DHS in 2016."</blockquote>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-16">
           <div className="aspect-w-16 aspect-h-9">
             <iframe
               className="w-full h-full"
@@ -320,7 +320,7 @@ const Alumni: React.FC = () => {
               src=""
               alt="Street Medicine, LA Times"
               layout="fill"
-              className="object-cover"
+              className="object-cover rounded"
             />
           </div>
         </div>

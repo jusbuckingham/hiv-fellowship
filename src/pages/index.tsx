@@ -36,15 +36,15 @@ export default function Home() {
           <h2 className="text-4xl font-bold mb-8">All the Tools You Need to Succeed</h2>
           <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="p-4 bg-white rounded-lg shadow-md">
-              <h3 className="text-2xl font-bold mb-4">Training & Education</h3>
-              <p>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Training & Education</h3>
+              <p className="text-gray-700">
                 Over 20-year track record of clinical excellence in HIV specialty fellowship training. Fellows train at the high-volume outpatient HIV clinics of LA General Medical Center with experienced Family Medicine and Infectious Disease trained faculty. They rotate in community-based HIV clinics, correctional settings and the inpatient Infectious Disease service, learning HIV primary and specialty care as well as the management of complications, co-morbidities and co-infections associated with HIV. Additional training in Addiction Medicine and Gender Affirming Care is incorporated into the curriculum to meet the needs of our diverse patient population and prepare fellows to provide excellence in standard of care practices.
               </p>
             </div>
             <div className="p-4 bg-white rounded-lg shadow-md">
-              <h3 className="text-2xl font-bold mb-4">Mentorship</h3>
-              <p>Faculty and research staff support will be available to provide direct clinical and research mentorship and support. Fellows are paired with strong clinician mentors to match areas of interests longitudinally throughout the two-year program. Mentorship highlights include:</p>
-              <ul className="list-disc list-inside text-left">
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Mentorship</h3>
+              <p className="text-gray-700">Faculty and research staff support will be available to provide direct clinical and research mentorship and support. Fellows are paired with strong clinician mentors to match areas of interests longitudinally throughout the two-year program. Mentorship highlights include:</p>
+              <ul className="list-disc list-inside text-left text-gray-700">
                 <li>Monthly meetings with leadership team mentor</li>
                 <li>Quarterly meetings with AETC Director</li>
                 <li>Topics include but not limited to: career vision & goals, job search, CV & cover letter building, job applications, interviews, and contract negotiation.</li>
@@ -52,8 +52,8 @@ export default function Home() {
               </ul>
             </div>
             <div className="p-4 bg-white rounded-lg shadow-md">
-              <h3 className="text-2xl font-bold mb-4">Leadership Experience</h3>
-              <p>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Leadership Experience</h3>
+              <p className="text-gray-700">
                 In partnership with the UCLA National Clinician Scholars program, fellows will gain knowledge in health policy, research methods, community-based participatory research, pressing issues in healthcare, and executive leadership skills. Under the guidance of expert clinical research mentors, fellows will complete a scholarly project in an area of interest prior to graduation. Fellows are encouraged to demonstrate acquired knowledge, skills, and scholarly results through presentation at professional meetings or publication in scientific/academic journals.
               </p>
             </div>
@@ -71,27 +71,15 @@ export default function Home() {
         </section>
 
         <section className="container mx-auto px-4 py-16">
-          <h2 className="text-4xl font-bold mb-8 text-center"></h2>
+          <h2 className="text-4xl font-bold mb-8 text-center">Gallery</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div>
-              <Image src="/images/home/dr-tasha-dixon-17.jpg" alt="Gallery Image 1" width={300} height={200} className="fixed-size" />
-            </div>
-            <div>
-              <Image src="/images/home/hhhchc.jpeg" alt="Gallery Image 2" width={300} height={200} className="fixed-size" />
-            </div>
-            <div>
-              <Image src="/images/home/alihug.jpeg" alt="Gallery Image 3" width={300} height={200} className="fixed-size" />
-            </div>
-            <div>
-              <Image src="/images/home/img-3462.jpg" alt="Gallery Image 4" width={300} height={200} className="fixed-size" />
-            </div>
-            <div>
-              <Image src="/images/home/img-6206.jpg" alt="Gallery Image 5" width={300} height={200} className="fixed-size" />
-            </div>
-            <div>
-              <Image src="/images/home/p81.png" alt="Gallery Image 6" width={300} height={200} className="fixed-size" />
-            </div>
+            {['/images/home/dr-tasha-dixon-17.jpg', '/images/home/hhhchc.jpeg', '/images/home/alihug.jpeg', '/images/home/img-3462.jpg', '/images/home/img-6206.jpg', '/images/home/p81.png'].map((src, index) => (
+              <div key={index} className="w-full h-64 relative">
+                <Image src={src} alt={`Gallery Image ${index + 1}`} fill style={{ objectFit: 'cover' }} className="rounded-lg" />
+              </div>
+            ))}
           </div>
+          <div className="pt-8"></div> {/* Added padding */}
         </section>
 
         <section className="bg-gray-900 text-white text-center py-16">
@@ -100,20 +88,20 @@ export default function Home() {
           </h2>
           <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="p-4">
-              <h3 className="text-2xl font-bold mb-4">Training & Education</h3>
-              <p>
+              <h3 className="text-2xl font-bold mb-4 text-white">Training & Education</h3>
+              <p className="text-gray-400">
                 Over 20-year track record of clinical excellence in HIV specialty fellowship training. Fellows train at the high-volume outpatient HIV clinics of LA General Medical Center with experienced Family Medicine and Infectious Disease trained faculty. They rotate in community-based HIV clinics, correctional settings and the inpatient Infectious Disease service, learning HIV primary and specialty care as well as the management of complications, co-morbidities and co-infections associated with HIV. Additional training in Addiction Medicine and Gender Affirming Care is incorporated into the curriculum to meet the needs of our diverse patient population and prepare fellows to provide excellence in standard of care practices.
               </p>
             </div>
             <div className="p-4">
-              <h3 className="text-2xl font-bold mb-4">Serving Underserved Populations.</h3>
-              <p>
+              <h3 className="text-2xl font-bold mb-4 text-white">Serving Underserved Populations</h3>
+              <p className="text-gray-400">
                 Our patient-centered training program is located within one of the largest safety-net systems in the US, with a strong commitment to serving underserved populations. Our alumni have a strong track record of continued commitment to serving vulnerable patient populations after graduation.
               </p>
             </div>
             <div className="p-4">
-              <h3 className="text-2xl font-bold mb-4">Leadership Experience.</h3>
-              <p>
+              <h3 className="text-2xl font-bold mb-4 text-white">Leadership Experience</h3>
+              <p className="text-gray-400">
                 In partnership with the UCLA National Clinician Scholars program, fellows will gain knowledge in health policy, research methods, community-based participatory research, pressing issues in healthcare, and executive leadership skills. Under the guidance of expert clinical research mentors, fellows will complete a scholarly project in an area of interest prior to graduation. Fellows are encouraged to demonstrate acquired knowledge, skills, and scholarly results through presentation at professional meetings or publication in scientific/academic journals.
               </p>
             </div>
@@ -126,7 +114,7 @@ export default function Home() {
             <span className="block mt-4 text-red-600">- Paulo Freire, Pedagogy of the Oppressed</span>
           </blockquote>
           <Image src="/images/home/index/aidsvu.png" alt="HIV Map" width={500} height={300} className="mx-auto mb-8" />
-          <p className="text-xl mb-8">
+          <p className="text-xl mb-8 text-gray-900">
             Black, Latinx, BIPOC and LGBTQIA2S+ physicians strongly encouraged to apply! <br />
             Due to the current trends of the HIV epidemic in the US, physicians with interest in working in the <span className="text-red-600">SOUTH</span> and <span className="text-red-600">MID-ATLANTIC STATES</span> are also strongly encouraged to apply!
           </p>

@@ -78,7 +78,7 @@ const Faculty: React.FC = () => {
     },
     {
       name: 'Becca Cohen, MD, MPH, AAHIVS',
-      title: 'FFamily Medicine / HIV Primary Care',
+      title: 'Family Medicine / HIV Primary Care',
       pronouns: '(She/Her)',
       image: '/images/about/becca-cohen.jpg',
     },
@@ -105,14 +105,14 @@ const Faculty: React.FC = () => {
   return (
     <>
       <Navbar />
-      <section className="bg-gray-900 text-white text-center py-20">
+      <section className="bg-gray-900 text-white text-center py-20 px-4">
         <h1 className="text-5xl font-bold mb-4">Faculty<span className="text-red-600">.</span></h1>
-        <p className="text-xl">Meet our core leadership and clinical faculty team.</p>
+        <p className="text-xl max-w-3xl mx-auto">Meet our core leadership and clinical faculty team.</p>
       </section>
 
-      <section className="container mx-auto px-4 py-16 text-center">
-        <h2 className="text-4xl font-bold mb-8">Leadership Team<span className="text-red-600">.</span></h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+      <section className="container mx-auto px-6 py-16 text-center">
+        <h2 className="text-4xl font-bold mb-12">Leadership Team<span className="text-red-600">.</span></h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-16">
           {leadershipTeam.map((member, index) => (
             <div key={index} className="text-center">
               <Image
@@ -120,7 +120,7 @@ const Faculty: React.FC = () => {
                 alt={member.name}
                 width={200}
                 height={200}
-                className="mx-auto"
+                className="mx-auto rounded"
               />
               <h3 className="text-xl font-bold mt-4">{member.name}</h3>
               <p className="italic text-gray-600">{member.title}</p>
@@ -129,8 +129,8 @@ const Faculty: React.FC = () => {
           ))}
         </div>
 
-        <h2 className="text-4xl font-bold mb-8">Clinical Team<span className="text-red-600">.</span></h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <h2 className="text-4xl font-bold mb-12">Clinical Team<span className="text-red-600">.</span></h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-16">
           {clinicalTeam.map((member, index) => (
             <div key={index} className="text-center">
               <Image
@@ -138,7 +138,7 @@ const Faculty: React.FC = () => {
                 alt={member.name}
                 width={200}
                 height={200}
-                className="mx-auto"
+                className="mx-auto rounded"
               />
               <h3 className="text-xl font-bold mt-4">{member.name}</h3>
               <p className="italic text-gray-600">{member.title}</p>

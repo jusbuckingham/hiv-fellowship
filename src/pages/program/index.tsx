@@ -1,4 +1,3 @@
-// src/pages/program/index.tsx
 import React from 'react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
@@ -9,11 +8,11 @@ const Program: React.FC = () => {
     <div>
       <Navbar />
       <div className="header bg-gray-900 text-white py-16 text-center">
-        <h1 className="text-5xl font-bold">Program.</h1>
+        <h1 className="text-5xl font-bold">Program<span className="text-red-600">.</span></h1>
         <p className="text-xl mt-4">Overview of the HIV CLP fellowship two-year program.</p>
       </div>
       <section className="container mx-auto px-4 py-12">
-        <div className="grid gap-8">
+        <div className="grid gap-16">
           <div className="bg-white shadow-md rounded-lg overflow-hidden">
             <div className="relative">
               <Image

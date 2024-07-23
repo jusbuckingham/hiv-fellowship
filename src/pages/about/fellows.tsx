@@ -59,14 +59,14 @@ const Fellows: React.FC = () => {
   return (
     <>
       <Navbar />
-      <section className="bg-gray-900 text-white text-center py-20">
+      <section className="bg-gray-900 text-white text-center py-20 px-4">
         <h1 className="text-5xl font-bold mb-4">Fellows<span className="text-red-600">.</span></h1>
-        <p className="text-xl">Meet our current HIV Fellow cohort.</p>
+        <p className="text-xl max-w-3xl mx-auto">Meet our current HIV Fellow cohort.</p>
       </section>
 
-      <section className="container mx-auto px-4 py-16 text-center">
-        <h2 className="text-4xl font-bold mb-8">Class of <span className="text-red-600">2026</span></h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+      <section className="container mx-auto px-6 py-16 text-center">
+        <h2 className="text-4xl font-bold mb-12">Class of <span className="text-red-600">2026</span></h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
           {fellows2026.map((fellow, index) => (
             <div key={index} className="text-center">
               <Image
@@ -74,7 +74,7 @@ const Fellows: React.FC = () => {
                 alt={fellow.name}
                 width={200}
                 height={200}
-                className="mx-auto"
+                className="mx-auto rounded"
               />
               <h3 className="text-xl font-bold mt-4">{fellow.name}</h3>
               <p className="italic text-gray-600">{fellow.pronouns}</p>
@@ -83,8 +83,8 @@ const Fellows: React.FC = () => {
           ))}
         </div>
 
-        <h2 className="text-4xl font-bold mb-8">Class of <span className="text-red-600">2025</span></h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <h2 className="text-4xl font-bold mb-12">Class of <span className="text-red-600">2025</span></h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-16">
           {fellows2025.map((fellow, index) => (
             <div key={index} className="text-center">
               <Image
@@ -92,7 +92,7 @@ const Fellows: React.FC = () => {
                 alt={fellow.name}
                 width={200}
                 height={200}
-                className="mx-auto"
+                className="mx-auto rounded"
               />
               <h3 className="text-xl font-bold mt-4">{fellow.name}</h3>
               <p className="italic text-gray-600">{fellow.pronouns}</p>

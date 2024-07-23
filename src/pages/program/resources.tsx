@@ -6,16 +6,16 @@ const Resources: React.FC = () => {
   return (
     <>
       <Navbar />
-      <div className="header-section">
-        <h1>Resources</h1>
-        <p>Access a variety of resources to help you succeed in the HIV Clinical Leadership Program.</p>
+      <div className="header-section bg-gray-900 text-white text-center py-20">
+        <h1 className="text-5xl font-bold mb-4">Resources<span className="text-red-600">.</span></h1>
+        <p className="text-xl">Access a variety of resources to help you succeed in the HIV Clinical Leadership Program.</p>
       </div>
-      <div className="container mx-auto px-4 py-8">
-        <h1 className="text-4xl font-bold text-center text-gray-900 mb-8">Resources.</h1>
+      <div className="container mx-auto px-4 py-16">
+        <h1 className="text-4xl font-bold text-center text-gray-900 mb-16">Resources<span className="text-red-600">.</span></h1>
 
-        <div className="mb-8">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-4">Clinical Resources.</h2>
-          <ul className="list-disc list-inside">
+        <div className="mb-16">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-8">Clinical Resources<span className="text-red-600">.</span></h2>
+          <ul className="list-disc list-inside space-y-2">
             <li><a href="https://aahivm.org" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">American Academy of HIV Medicine (AAHIVM)</a></li>
             <li><a href="https://aidsinfo.nih.gov/guidelines" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">DHHS - HIV Practice Guidelines</a></li>
             <li><a href="https://www.idsociety.org/practice-guideline/hiv-primary-care/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">IDSA HIV Primary Care Guidelines</a></li>
@@ -35,18 +35,18 @@ const Resources: React.FC = () => {
           </ul>
         </div>
 
-        <div className="mb-8">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-4">Global Resources.</h2>
-          <ul className="list-disc list-inside">
+        <div className="mb-16">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-8">Global Resources<span className="text-red-600">.</span></h2>
+          <ul className="list-disc list-inside space-y-2">
             <li><a href="https://www.unaids.org" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">UNAIDS</a></li>
             <li><a href="https://www.hiv.gov" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">HIV.gov</a></li>
             <li><a href="https://www.theglobalfund.org" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">The Global Fund</a></li>
           </ul>
         </div>
 
-        <div className="mb-8">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-4">National Resources.</h2>
-          <ul className="list-disc list-inside">
+        <div className="mb-16">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-8">National Resources<span className="text-red-600">.</span></h2>
+          <ul className="list-disc list-inside space-y-2">
             <li><a href="https://hab.hrsa.gov" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Health Resources & Services Administration - Ryan White HIV/AIDS Program</a></li>
             <li><a href="https://www.hiv.gov/federal-response/federal-activities-aids" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">United States Government Office of HIV/AIDS - Federal Response to HIV</a></li>
             <li><a href="https://aidsvu.org" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">America's HIV Epidemic Analysis Dashboard</a></li>
@@ -55,9 +55,9 @@ const Resources: React.FC = () => {
           </ul>
         </div>
 
-        <div className="mb-8">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-4">Local Resources.</h2>
-          <ul className="list-disc list-inside">
+        <div className="mb-16">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-8">Local Resources<span className="text-red-600">.</span></h2>
+          <ul className="list-disc list-inside space-y-2">
             <li><a href="http://publichealth.lacounty.gov/dhsp" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Los Angeles County Department of Health Services</a></li>
             <li><a href="http://publichealth.lacounty.gov/dhsp" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Los Angeles County Dept of Public Health, Division of HIV and STD Programs</a></li>
             <li><a href="https://endhivla.org" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Ending the HIV Epidemic in Los Angeles County</a></li>
@@ -78,9 +78,9 @@ const Resources: React.FC = () => {
           </ul>
         </div>
 
-        <div className="mb-8">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-4">Research & Policy Resources.</h2>
-          <ul className="list-disc list-inside">
+        <div>
+          <h2 className="text-2xl font-semibold text-gray-900 mb-8">Research & Policy Resources<span className="text-red-600">.</span></h2>
+          <ul className="list-disc list-inside space-y-2">
             <li><a href="https://uclancsp.med.ucla.edu" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">UCLA National Clinician Scholars Program</a></li>
             <li><a href="https://chipts.ucla.edu" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Center for HIV Identification, Prevention and Treatment Services</a></li>
           </ul>
