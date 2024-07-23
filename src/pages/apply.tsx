@@ -9,7 +9,7 @@ const Apply: React.FC = () => {
     <>
       <Navbar />
       <main className="bg-white">
-        <section className="bg-gray-900 text-white text-center py-20">
+        <section className="bg-gray-900 text-white text-center py-20" role="banner">
           <h1 className="text-5xl font-bold mb-4">Apply<span className="text-red-600">.</span></h1>
           <p className="text-xl">Apply for the HIV Clinical Leadership Program today!</p>
         </section>
@@ -21,7 +21,9 @@ const Apply: React.FC = () => {
               width={400}
               height={400}
               className="mb-8"
+              aria-describedby="apply-image"
             />
+            <p id="apply-image" className="sr-only">Image of a doctor holding a stethoscope</p>
             <p className="text-lg font-bold text-red-600 mb-2 text-center">
               Due to the current trends of the HIV epidemic in the United States, physicians from the SOUTH and MID-ATLANTIC STATES strongly encouraged to apply!
             </p>

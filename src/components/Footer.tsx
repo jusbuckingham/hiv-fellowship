@@ -1,13 +1,8 @@
-import React from 'react';
-
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-white text-gray-700 py-4">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-center">
-          <p>Copyright © 2024 - HIV Clinical Leadership Program</p>
-        </div>
-      </div>
+    <footer className="bg-gray-900 text-white text-center py-8" role="contentinfo">
+      <p className="text-sm">© 2024 - HIV Clinical Leadership Program</p>
+      <p className="text-sm">The HIV Clinical Leadership Program does not and shall not discriminate on the basis of race, color, religion (creed), gender, gender expression, age, national origin (ancestry), disability, marital status, sexual orientation, or military status, in any of its activities or operations.</p>
     </footer>
   );
 };
