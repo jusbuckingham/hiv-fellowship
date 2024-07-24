@@ -15,8 +15,8 @@ export default function Home() {
       <Navbar />
 
       <main>
-        <section className="bg-gray-900 text-white text-center py-20">
-          <h1 className="text-5xl font-bold mb-4">
+        <section className="bg-gray-900 text-white text-center py-20 px-4">
+          <h1 className="text-5xl font-bold mb-4 max-w-screen-md mx-auto leading-tight">
             Training the next generation of leaders in HIV clinical care<span className="text-red-600">.</span>
           </h1>
         </section>
