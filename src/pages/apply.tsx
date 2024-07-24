@@ -14,6 +14,7 @@ const Apply: React.FC = () => {
           <p className="text-xl">Apply for the HIV Clinical Leadership Program today!</p>
         </section>
         <section className="container mx-auto px-6 py-12">
+        <h2 className="text-4xl font-bold mb-8 text-center"></h2>
           <div className="flex flex-col items-center">
             <Image
               src="/images/apply/tasha-dixon.jpg"

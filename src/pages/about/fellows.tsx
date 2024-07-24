@@ -8,7 +8,7 @@ const Fellows: React.FC = () => {
     {
       name: 'Kenya Bingham-Psalms, MD',
       pronouns: '(She/Her)',
-      image: '/images/about/kenya-bingham-psalms.jpg', 
+      image: '/images/about/kenya-bingham-psalms.jpg',
       description: `
         Growing up in a military family, Dr. Bingham-Psalms' upbringing was enriched with cultural diversity. She is bilingual in English and Spanish, a passion she pursued from a young age. As a first-generation college graduate, she earned a B.A. in Spanish Language & Literature from the University of California, Berkeley, and was among the first U.S. graduates from the Latin American School of Medicine in Havana, Cuba.
         
@@ -63,7 +63,7 @@ const Fellows: React.FC = () => {
         <h1 className="text-5xl font-bold mb-4">Fellows<span className="text-red-600">.</span></h1>
         <p className="text-xl max-w-3xl mx-auto">Meet our current HIV Fellow cohort.</p>
       </section>
-
+      <h2 className="text-4xl font-bold mb-8 text-center"></h2>
       <section className="container mx-auto px-6 py-16 text-center">
         <h2 className="text-4xl font-bold mb-12">Class of <span className="text-red-600">2026</span></h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">

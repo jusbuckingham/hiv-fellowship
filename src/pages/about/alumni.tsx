@@ -156,7 +156,7 @@ const Alumni: React.FC = () => {
         <h1 className="text-5xl font-bold mb-4">Alumni<span className="text-red-600">.</span></h1>
         <p className="text-xl max-w-3xl mx-auto">Our alumni have graduated into a variety of prestigious HIV leadership positions around the country.</p>
       </section>
-
+      <h2 className="text-4xl font-bold mb-8 text-center"></h2>
       <section className="container mx-auto px-6 py-16 text-center">
         <h2 className="text-4xl font-bold mb-12">Class of <span className="text-red-600">2024</span></h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">

@@ -13,6 +13,7 @@ const Contact: React.FC = () => {
             <p className="mt-4 text-xl">We look forward to hearing from you!</p>
           </div>
         </section>
+        <h2 className="text-4xl font-bold mb-8 text-center"></h2>
         <section className="container mx-auto px-4 py-12">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold">To request additional information, please contact the Director of Operations:</h2>

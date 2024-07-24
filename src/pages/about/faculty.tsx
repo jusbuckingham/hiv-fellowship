@@ -9,7 +9,7 @@ const Faculty: React.FC = () => {
       name: 'Jenica Ryu, MD, AAHIVS',
       title: 'Program Director',
       pronouns: '(She/Her)',
-      image: '/images/about/jenica-ryan.png', 
+      image: '/images/about/jenica-ryan.png',
     },
     {
       name: 'LaShonda Spencer, MD, AAHIVS',
@@ -28,7 +28,7 @@ const Faculty: React.FC = () => {
       title: '​Associate Program Co-Director',
       subtitle: 'Principal Investigator, AIDS Education and Training Center (AETC) of USC Keck School of Medicine Department of Family Medicine',
       pronouns: '(He/Him)',
-      image: '/images/about/christian-takayama.png', 
+      image: '/images/about/christian-takayama.png',
     },
     {
       name: 'Shanna Livermore, MPH',
@@ -109,7 +109,7 @@ const Faculty: React.FC = () => {
         <h1 className="text-5xl font-bold mb-4">Faculty<span className="text-red-600">.</span></h1>
         <p className="text-xl max-w-3xl mx-auto">Meet our core leadership and clinical faculty team.</p>
       </section>
-
+      <h2 className="text-4xl font-bold mb-8 text-center"></h2>
       <section className="container mx-auto px-6 py-16 text-center">
         <h2 className="text-4xl font-bold mb-12">Leadership Team<span className="text-red-600">.</span></h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-16">

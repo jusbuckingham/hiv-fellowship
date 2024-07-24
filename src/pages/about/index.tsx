@@ -12,6 +12,7 @@ const AboutPage: React.FC = () => {
           <h1 className="text-5xl font-bold mb-4">About<span className="text-red-600">.</span></h1>
           <p className="text-xl max-w-3xl mx-auto">The HIV Clinical Leadership Program is a two-year postdoctoral fellowship program that focuses on training physicians to enter leadership positions in HIV healthcare.</p>
         </section>
+        <h2 className="text-4xl font-bold mb-8 text-center"></h2>
         <section className="container mx-auto px-6 py-16 text-center">
           <h2 className="text-3xl font-bold mb-6">Celebrating 20+ years of excellence in HIV specialty training<span className="text-red-600">.</span></h2>
           <div className="relative w-full h-80 mb-12">

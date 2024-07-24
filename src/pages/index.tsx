@@ -22,6 +22,7 @@ export default function Home() {
         </section>
 
         <section className="container mx-auto px-4 py-16 text-center">
+          <h2 className="text-4xl font-bold mb-8 text-center"></h2>
           <h2 className="text-4xl font-bold mb-8">Welcome to the HIV Clinical Leadership Program</h2>
           <h2 className="text-4xl font-bold mb-8">An Opportunity to serve</h2>
           <p className="text-xl max-w-2xl mx-auto">
@@ -71,7 +72,7 @@ export default function Home() {
         </section>
 
         <section className="container mx-auto px-4 py-16">
-          <h2 className="text-4xl font-bold mb-8 text-center">Gallery</h2>
+          <h2 className="text-4xl font-bold mb-8 text-center"></h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {['/images/home/dr-tasha-dixon-17.jpg', '/images/home/hhhchc.jpeg', '/images/home/alihug.jpeg', '/images/home/img-3462.jpg', '/images/home/img-6206.jpg', '/images/home/p81.png'].map((src, index) => (
               <div key={index} className="w-full h-64 relative">
@@ -83,9 +84,10 @@ export default function Home() {
         </section>
 
         <section className="bg-gray-900 text-white text-center py-16">
-          <h2 className="text-4xl font-bold mb-8">
+          <h2 className="text-4xl font-bold text-white">
             All the <span className="text-red-600">Tools</span> You Need to Succeed
           </h2>
+          <h2 className="text-4xl font-bold mb-8 text-center"></h2>
           <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="p-4">
               <h3 className="text-2xl font-bold mb-4 text-white">Training & Education</h3>
@@ -109,10 +111,12 @@ export default function Home() {
         </section>
 
         <section className="container mx-auto px-4 py-16 text-center">
+        <h2 className="text-4xl font-bold mb-8 text-center"></h2>
           <blockquote className="italic mb-8">
             "Knowledge emerges only through invention and reinvention, the restless, impatient, continuing, hopeful inquiry beings pursue with the world and with others."
             <span className="block mt-4 text-red-600">- Paulo Freire, Pedagogy of the Oppressed</span>
           </blockquote>
+          <h2 className="text-4xl font-bold mb-8 text-center"></h2>
           <Image src="/images/home/index/aidsvu.png" alt="HIV Map" width={500} height={300} className="mx-auto mb-8" />
           <p className="text-xl mb-8 text-gray-900">
             Black, Latinx, BIPOC and LGBTQIA2S+ physicians strongly encouraged to apply! <br />
