@@ -7,12 +7,11 @@ const Program: React.FC = () => {
   return (
     <div>
       <Navbar />
-      <div className="header bg-gray-900 text-white py-16 text-center">
-        <h1 className="text-5xl font-bold">Program<span className="text-red-600">.</span></h1>
-        <p className="text-xl mt-4">Overview of the HIV CLP fellowship two-year program.</p>
-      </div>
-      <h2 className="text-4xl font-bold mb-8 text-center"></h2>
-      <section className="container mx-auto px-4 py-12">
+      <section className="bg-gray-900 text-white text-center py-20 px-4">
+        <h1 className="text-5xl font-bold mb-4">Program<span className="text-red-600">.</span></h1>
+        <p className="text-xl max-w-3xl mx-auto">Overview of the HIV CLP fellowship two-year program.</p>
+      </section>
+      <section className="container mx-auto px-4 py-20"> {/* Added padding to ensure space below the header */}
         <div className="grid gap-16">
           <div className="bg-white shadow-md rounded-lg overflow-hidden">
             <div className="relative">

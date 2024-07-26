@@ -6,10 +6,10 @@ const Resources: React.FC = () => {
   return (
     <>
       <Navbar />
-      <div className="header-section bg-gray-900 text-white text-center py-20">
+      <section className="bg-gray-900 text-white text-center py-20 px-4">
         <h1 className="text-5xl font-bold mb-4">Resources<span className="text-red-600">.</span></h1>
-        <p className="text-xl">Access a variety of resources to help you succeed in the HIV Clinical Leadership Program.</p>
-      </div>
+        <p className="text-xl max-w-3xl mx-auto">Access a variety of resources to help you succeed in the HIV Clinical Leadership Program.</p>
+      </section>
       <div className="container mx-auto px-4 py-16">
       <h2 className="text-4xl font-bold mb-8 text-center"></h2>
 

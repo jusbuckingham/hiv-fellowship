@@ -7,10 +7,10 @@ const SalaryBenefits: React.FC = () => {
   return (
     <>
       <Navbar />
-      <div className="header-section text-center bg-gray-900 text-white py-20">
-        <h1 className="text-5xl font-bold">Salary & Benefits<span className="text-red-600">.</span></h1>
-        <p className="text-xl mt-4">Our program offers a competitive salary & benefits package that includes medical & dental benefits and an annual housing stipend. Educational loan repayment is also available to qualifying fellows.</p>
-      </div>
+      <section className="bg-gray-900 text-white text-center py-20 px-4">
+        <h1 className="text-5xl font-bold mb-4">Salary & Benefits<span className="text-red-600">.</span></h1>
+        <p className="text-xl max-w-3xl mx-auto">Our program offers a competitive salary & benefits package that includes medical & dental benefits and an annual housing stipend. Educational loan repayment is also available to qualifying fellows.</p>
+      </section>
       <h2 className="text-4xl font-bold mb-8 text-center"></h2>
       <div className="container mx-auto px-4 py-8">
         <div className="mb-8">
