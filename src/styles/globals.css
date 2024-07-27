@@ -210,7 +210,7 @@ h2 {
   background-color: #1a202c; /* Background color */
   color: white; /* Text color */
   text-align: center; /* Centers the text */
-  padding: 3rem 1rem; /* Padding for top, bottom, left, and right */
+  padding: 6rem 1rem; /* Padding for top, bottom, left, and right */
 }
 
 .header-section h1 {
@@ -274,7 +274,7 @@ h2 {
   object-fit: cover; /* Ensures the image covers the entire area without stretching */
 }
 
-/* Adjustments for mobile header text */
+/* Mobile adjustments for headers and sections */
 @media (max-width: 768px) {
   .header-section h1 {
     font-size: 2rem; /* Smaller font size for mobile */
@@ -282,10 +282,17 @@ h2 {
 
   .header-section p {
     font-size: 1rem; /* Smaller font size for mobile */
-    padding: 0 1rem; /* Add padding to prevent text from touching the edges */
   }
 
   .first-content-section {
-    padding-top: 6rem; /* Increase padding to create more space under the header */
+    padding-top: 2rem; /* Reduce padding for mobile */
+  }
+
+  .quote-section .quote {
+    font-size: 1.25rem; /* Smaller font size for mobile */
+  }
+
+  .quote-section .author {
+    font-size: 0.875rem; /* Smaller font size for mobile */
   }
 }
