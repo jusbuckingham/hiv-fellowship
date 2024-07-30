@@ -10,6 +10,31 @@ export default function Home() {
         <title>HIV Clinical Leadership Program</title>
         <meta name="description" content="Training the next generation of leaders in HIV clinical care." />
         <link rel="icon" href="/images/home/hiv-logo.jpg" />
+
+        {/* Open Graph meta tags */}
+        <meta property="og:title" content="HIV Clinical Leadership Program" />
+        <meta property="og:description" content="Training the next generation of leaders in HIV clinical care." />
+        <meta property="og:image" content="/images/home/hiv-logo.jpg" />
+        <meta property="og:url" content="https://www.hivfellowship.com" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter Card meta tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="HIV Clinical Leadership Program" />
+        <meta name="twitter:description" content="Training the next generation of leaders in HIV clinical care." />
+        <meta name="twitter:image" content="/images/home/hiv-logo.jpg" />
+
+        {/* Structured Data JSON-LD */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "url": "https://www.hivfellowship.com",
+            "name": "HIV Clinical Leadership Program",
+            "description": "Training the next generation of leaders in HIV clinical care.",
+            "logo": "/images/home/hiv-logo.jpg"
+          })}
+        </script>
       </Head>
 
       <Navbar />
@@ -22,9 +47,8 @@ export default function Home() {
         </section>
 
         <section className="container mx-auto px-4 py-16 text-center">
-          <h2 className="text-4xl font-bold mb-8 text-center"></h2>
           <h2 className="text-4xl font-bold mb-8">Welcome to the HIV Clinical Leadership Program</h2>
-          <h2 className="text-4xl font-bold mb-8">An Opportunity to serve</h2>
+          <h2 className="text-4xl font-bold mb-8">An Opportunity to Serve</h2>
           <p className="text-xl max-w-2xl mx-auto">
             More than 1.2 million people are living with HIV in the U.S. with more than 35,000 new infections each year. After 40 years, the HIV epidemic continues to devastate our communities, disproportionately impacting vulnerable populations.
           </p>
@@ -87,7 +111,6 @@ export default function Home() {
           <h2 className="text-4xl font-bold text-white">
             All the <span className="text-red-600">Tools</span> You Need to Succeed
           </h2>
-          <h2 className="text-4xl font-bold mb-8 text-center"></h2>
           <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="p-4">
               <h3 className="text-2xl font-bold mb-4 text-white">Training & Education</h3>
@@ -111,12 +134,10 @@ export default function Home() {
         </section>
 
         <section className="container mx-auto px-4 py-16 text-center">
-        <h2 className="text-4xl font-bold mb-8 text-center"></h2>
           <blockquote className="italic mb-8">
             "Knowledge emerges only through invention and reinvention, the restless, impatient, continuing, hopeful inquiry beings pursue with the world and with others."
             <span className="block mt-4 text-red-600">- Paulo Freire, Pedagogy of the Oppressed</span>
           </blockquote>
-          <h2 className="text-4xl font-bold mb-8 text-center"></h2>
           <Image src="/images/home/index/aidsvu.png" alt="HIV Map" width={500} height={300} className="mx-auto mb-8" />
           <p className="text-xl mb-8 text-gray-900">
             Black, Latinx, BIPOC and LGBTQIA2S+ physicians strongly encouraged to apply! <br />
