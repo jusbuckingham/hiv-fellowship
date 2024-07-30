@@ -12,6 +12,7 @@ const Program: React.FC = () => {
         <p className="text-xl max-w-3xl mx-auto">Overview of the HIV CLP fellowship two-year program.</p>
       </section>
       <section className="container mx-auto px-4 py-20"> {/* Added padding to ensure space below the header */}
+      <div className="pt-8"></div> {/* Added padding */}
         <div className="grid gap-16">
           <div className="bg-white shadow-md rounded-lg overflow-hidden">
             <div className="relative">

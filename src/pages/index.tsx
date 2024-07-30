@@ -47,6 +47,7 @@ export default function Home() {
         </section>
 
         <section className="container mx-auto px-4 py-16 text-center">
+          <div className="pt-8"></div> {/* Added padding */}
           <h2 className="text-4xl font-bold mb-8">Welcome to the HIV Clinical Leadership Program</h2>
           <h2 className="text-4xl font-bold mb-8">An Opportunity to Serve</h2>
           <p className="text-xl max-w-2xl mx-auto">
