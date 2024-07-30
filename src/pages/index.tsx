@@ -133,6 +133,26 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <section className="grid grid-cols-1 sm:grid-cols-2 gap-12 mt-16">
+          <div className="aspect-w-16 aspect-h-9">
+            <iframe
+              className="w-full h-full"
+              src="https://www.youtube.com/embed/mg3r-IR4Eyo?si=ZPEYby8UXtnP-xVV"
+              title="Video 1"
+              frameBorder="0"
+              allowFullScreen
+            />
+          </div>
+          <div className="aspect-w-16 aspect-h-9">
+            <iframe
+              className="w-full h-full"
+              src="https://www.youtube.com/embed/NOfaV2uoZPg?si=hbmZFjXPWutz4DKx"
+              title="Video 2"
+              frameBorder="0"
+              allowFullScreen
+            />
+          </div>
+          </section>
 
         <section className="container mx-auto px-4 py-16 text-center">
           <blockquote className="italic mb-8">
