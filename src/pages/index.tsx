@@ -137,8 +137,8 @@ export default function Home() {
           <div className="aspect-w-16 aspect-h-9">
             <iframe
               className="w-full h-full"
-              src="https://www.youtube.com/embed/mg3r-IR4Eyo?si=ZPEYby8UXtnP-xVV"
-              title="Video 1"
+              src="https://www.youtube.com/embed/nnctoOwZw0w?si=DJ1HB2cvRx1ficBX"
+              title='Dr. Lauren Wolchok: “It’s all about care”'
               frameBorder="0"
               allowFullScreen
             />
@@ -146,8 +146,8 @@ export default function Home() {
           <div className="aspect-w-16 aspect-h-9">
             <iframe
               className="w-full h-full"
-              src="https://www.youtube.com/embed/NOfaV2uoZPg?si=hbmZFjXPWutz4DKx"
-              title="Video 2"
+              src="https://www.youtube.com/embed/dcdtBS5A9aM?si=4RrPXT_zXPgTqgRw"
+              title="HIV FELLOWSHIP 2021"
               frameBorder="0"
               allowFullScreen
             />
