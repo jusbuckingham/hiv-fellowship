@@ -11,7 +11,7 @@ const Resources: React.FC = () => {
         <p className="text-xl max-w-3xl mx-auto">Access a variety of resources to help you succeed in the HIV Clinical Leadership Program.</p>
       </section>
       <div className="container mx-auto px-4 py-16">
-      <h2 className="text-4xl font-bold mb-8 text-center"></h2>
+        <h2 className="text-4xl font-bold mb-8 text-center"></h2>
 
         <div className="mb-16">
           <h2 className="text-2xl font-semibold text-gray-900 mb-8">Clinical Resources<span className="text-red-600">.</span></h2>

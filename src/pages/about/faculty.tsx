@@ -25,7 +25,7 @@ const Faculty: React.FC = () => {
     },
     {
       name: 'Christian Takayama, MD, AAHIVS',
-      title: '​Associate Program Co-Director',
+      title: 'Associate Program Co-Director',
       subtitle: 'Principal Investigator, AIDS Education and Training Center (AETC) of USC Keck School of Medicine Department of Family Medicine',
       pronouns: '(He/Him)',
       image: '/images/about/christian-takayama.png',
@@ -72,7 +72,7 @@ const Faculty: React.FC = () => {
     },
     {
       name: 'Hrishikesh Belani, MD, AAHIVS',
-      title: '​​Internal Medicine/ HIV/ Addiction Medicine Director of Primary Care, LA County ACN',
+      title: 'Internal Medicine/ HIV/ Addiction Medicine Director of Primary Care, LA County ACN',
       pronouns: '(He/Him)',
       image: '/images/about/hrishikesh-belani.jpeg',
     },
@@ -90,7 +90,7 @@ const Faculty: React.FC = () => {
     },
     {
       name: 'Katherine Loomis, MD',
-      title: '​​Internal Medicine / Infectious Disease Clinical Instructor of Internal Medicine/ ID',
+      title: 'Internal Medicine / Infectious Disease Clinical Instructor of Internal Medicine/ ID',
       pronouns: '(She/Her)',
       image: '/images/about/katherine-loomis.jpeg',
     },
@@ -117,7 +117,7 @@ const Faculty: React.FC = () => {
             <div key={index} className="text-center">
               <Image
                 src={member.image}
-                alt={member.name}
+                alt={`${member.name}, ${member.title}, ${member.pronouns}`}
                 width={200}
                 height={200}
                 className="mx-auto rounded"
@@ -135,7 +135,7 @@ const Faculty: React.FC = () => {
             <div key={index} className="text-center">
               <Image
                 src={member.image}
-                alt={member.name}
+                alt={`${member.name}, ${member.title}, ${member.pronouns}`}
                 width={200}
                 height={200}
                 className="mx-auto rounded"

@@ -164,7 +164,7 @@ const Alumni: React.FC = () => {
             <div key={index} className="text-center">
               <Image
                 src={alumnus.image}
-                alt={alumnus.name}
+                alt={`${alumnus.name}, ${alumnus.location}, ${alumnus.pronouns}`}
                 width={200}
                 height={200}
                 className="mx-auto rounded"
@@ -182,7 +182,7 @@ const Alumni: React.FC = () => {
             <div key={index} className="text-center">
               <Image
                 src={alumnus.image}
-                alt={alumnus.name}
+                alt={`${alumnus.name}, ${alumnus.title}, ${alumnus.location}, ${alumnus.pronouns}`}
                 width={200}
                 height={200}
                 className="mx-auto rounded"
@@ -201,7 +201,7 @@ const Alumni: React.FC = () => {
             <div key={index} className="text-center">
               <Image
                 src={alumnus.image}
-                alt={alumnus.name}
+                alt={`${alumnus.name}, ${alumnus.title}, ${alumnus.location}, ${alumnus.pronouns}`}
                 width={200}
                 height={200}
                 className="mx-auto rounded"
@@ -220,7 +220,7 @@ const Alumni: React.FC = () => {
             <div key={index} className="text-center">
               <Image
                 src={alumnus.image}
-                alt={alumnus.name}
+                alt={`${alumnus.name}, ${alumnus.title}, ${alumnus.location}, ${alumnus.pronouns}`}
                 width={200}
                 height={200}
                 className="mx-auto rounded"
@@ -239,7 +239,7 @@ const Alumni: React.FC = () => {
             <div key={index} className="text-center">
               <Image
                 src={alumnus.image}
-                alt={alumnus.name}
+                alt={`${alumnus.name}, ${alumnus.title}, ${alumnus.location}, ${alumnus.pronouns}`}
                 width={200}
                 height={200}
                 className="mx-auto rounded"
@@ -258,7 +258,7 @@ const Alumni: React.FC = () => {
             <div key={index} className="text-center">
               <Image
                 src={alumnus.image}
-                alt={alumnus.name}
+                alt={`${alumnus.name}, ${alumnus.title}, ${alumnus.location}, ${alumnus.pronouns}`}
                 width={200}
                 height={200}
                 className="mx-auto rounded"
@@ -277,7 +277,7 @@ const Alumni: React.FC = () => {
             <div key={index} className="text-center">
               <Image
                 src={alumnus.image}
-                alt={alumnus.name}
+                alt={`${alumnus.name}, ${alumnus.title}, ${alumnus.location}, ${alumnus.pronouns}`}
                 width={200}
                 height={200}
                 className="mx-auto rounded"
@@ -303,6 +303,7 @@ const Alumni: React.FC = () => {
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
+              aria-label="Video: Dr. Revery Barnes"
             ></iframe>
           </div>
           <div className="aspect-w-16 aspect-h-9">
@@ -313,6 +314,7 @@ const Alumni: React.FC = () => {
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
+              aria-label="Video: Dr. Becca Cohen"
             ></iframe>
           </div>
           <div className="aspect-w-16 aspect-h-9">

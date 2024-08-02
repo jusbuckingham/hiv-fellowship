@@ -59,18 +59,20 @@ const Partners: React.FC = () => {
             <iframe
               className="w-full h-full"
               src="https://www.youtube.com/embed/mg3r-IR4Eyo?si=ZPEYby8UXtnP-xVV"
-              title="Video 1"
+              title="Partner Video 1"
               frameBorder="0"
               allowFullScreen
+              aria-label="Video about one of our partners"
             />
           </div>
           <div className="aspect-w-16 aspect-h-9">
             <iframe
               className="w-full h-full"
               src="https://www.youtube.com/embed/NOfaV2uoZPg?si=hbmZFjXPWutz4DKx"
-              title="Video 2"
+              title="Partner Video 2"
               frameBorder="0"
               allowFullScreen
+              aria-label="Video about one of our partners"
             />
           </div>
         </div>

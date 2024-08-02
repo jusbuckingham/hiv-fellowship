@@ -11,14 +11,14 @@ const Program: React.FC = () => {
         <h1 className="text-5xl font-bold mb-4">Program<span className="text-red-600">.</span></h1>
         <p className="text-xl max-w-3xl mx-auto">Overview of the HIV CLP fellowship two-year program.</p>
       </section>
-      <section className="container mx-auto px-4 py-20"> {/* Added padding to ensure space below the header */}
-      <div className="pt-8"></div> {/* Added padding */}
+      <section className="container mx-auto px-4 py-20">
+        <div className="pt-8"></div>
         <div className="grid gap-16">
           <div className="bg-white shadow-md rounded-lg overflow-hidden">
             <div className="relative">
               <Image
                 src="/images/program/program-1.png"
-                alt="Program Image"
+                alt="Participants in a training session"
                 width={800}
                 height={600}
                 className="w-full h-72 object-cover"
@@ -48,7 +48,7 @@ const Program: React.FC = () => {
             <div className="relative">
               <Image
                 src="/images/program/program-2.jpg"
-                alt="Program Image"
+                alt="Medical professionals discussing a case"
                 width={800}
                 height={600}
                 className="w-full h-72 object-cover"
@@ -58,7 +58,7 @@ const Program: React.FC = () => {
               <h2 className="text-2xl font-semibold mb-4">01 YEAR 1, Session 2</h2>
               <h3 className="text-xl font-semibold mb-2">Clinical Training/Care 60%</h3>
               <p className="text-gray-700 mb-4">
-                HIV clinical settings: Rand Schrader Clinic, LAC+USC Medical Center, EIC Skid Row, Material-Child-Adolescent (MCA) HIV
+                HIV clinical settings: Rand Schrader Clinic, LAC+USC Medical Center, EIC Skid Row, Maternal-Child-Adolescent (MCA) HIV
                 Clinic, LAC+USC Emergency Department, LAC+USC Medical Center Jail Clinic, Street Medicine Clinic, LAC+USC Inpatient ID
                 (functions as co-fellow on ID service), DHS South LA Positive Care Clinics (Main Street, Oasis), HIV Sub-specialty
                 Clinics (LAC+USC, CHLA, HRA, etc.)
@@ -85,7 +85,7 @@ const Program: React.FC = () => {
             <div className="relative">
               <Image
                 src="/images/program/program-3.jpg"
-                alt="Program Image"
+                alt="Group of medical professionals collaborating"
                 width={800}
                 height={600}
                 className="w-full h-72 object-cover"
@@ -95,7 +95,7 @@ const Program: React.FC = () => {
               <h2 className="text-2xl font-semibold mb-4">02 YEAR 2</h2>
               <h3 className="text-xl font-semibold mb-2">Clinical Training/Care 50%</h3>
               <p className="text-gray-700 mb-4">
-                HIV Training Settings Rand Schrader Clinic, LAC+USC Medical Center Early Intervention Clinic (Skid Row) Material-Child
+                HIV Training Settings Rand Schrader Clinic, LAC+USC Medical Center Early Intervention Clinic (Skid Row) Maternal-Child
                 HIV Clinic, LAC+USC Medical Center Emergency Department, LAC+USC Medical Center LAC Jail Clinic USC Family Medicine
                 Street Medicine clinic Hubert H. Humphrey Comprehensive Health Center LA Department of Public Health Clinics - HIV
                 Sub-specialty Clinics (LAC+USC Medical Center) - Clinical teaching of residents, medical, and other students - General
@@ -113,7 +113,7 @@ const Program: React.FC = () => {
             <div className="relative">
               <Image
                 src="/images/program/program-4.png"
-                alt="Program Image"
+                alt="Medical professionals in a clinical setting"
                 width={800}
                 height={600}
                 className="w-full h-72 object-cover"
@@ -147,7 +147,7 @@ const Program: React.FC = () => {
               </p>
               <h3 className="text-xl font-semibold mb-2">Inpatient Infectious Disease Training:</h3>
               <p className="text-gray-700">
-                management of hospitalized HIV-positive patients will occur at the LAC+USC Medical Center. Fellows rotate on the USC
+                Management of hospitalized HIV-positive patients will occur at the LAC+USC Medical Center. Fellows rotate on the USC
                 Infectious Disease (ID) Consult Service for a minimum of one month. They function as a co-fellow alongside the ID
                 fellow to oversee the consult service and attend/participate in ID conferences. They assist in the care of
                 HIV-positive and negative patients with ID pathology. Conditions seen on this service include, but are not limited to:

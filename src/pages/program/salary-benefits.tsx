@@ -11,13 +11,12 @@ const SalaryBenefits: React.FC = () => {
         <h1 className="text-5xl font-bold mb-4">Salary & Benefits<span className="text-red-600">.</span></h1>
         <p className="text-xl max-w-3xl mx-auto">Our program offers a competitive salary & benefits package that includes medical & dental benefits and an annual housing stipend. Educational loan repayment is also available to qualifying fellows.</p>
       </section>
-      <h2 className="text-4xl font-bold mb-8 text-center"></h2>
       <div className="container mx-auto px-4 py-8">
         <div className="mb-8">
           <Image
             src="/images/program/palm-trees.jpg"
-            alt="Los Angeles"
-            width={1600}
+            alt="Palm trees in Los Angeles"
+            width={800}
             height={800}
             className="rounded-lg mx-auto w-full h-auto"
           />
@@ -52,12 +51,12 @@ const SalaryBenefits: React.FC = () => {
           <h2 className="text-3xl font-bold mb-4">Life in Los Angeles<span className="text-red-600">.</span></h2>
           <p><strong>Los Angeles County</strong>, officially the <strong>County of Los Angeles</strong>, is the most populous county in the United States and in the U.S. state of California, with more than ten million inhabitants as of the 2020 census. It is the most populous non–state-level government entity in the United States. Its population is greater than that of 41 individual U.S. states. The county is home to more than one-quarter of California residents and is one of the most ethnically diverse counties in the United States. <strong>Los Angeles is home to people from more than 140 countries speaking 224 different identified languages.</strong></p>
           <p>Fellowship primary clinics and rotation sites span Los Angeles from <strong>Boyle Heights</strong> (LA General Medical Center) to <strong>Westwood Village</strong> (UCLA National Scholars Program), <strong>Hollywood</strong> (Children's Hospital Los Angeles) and <strong>Skid Row in DTLA</strong> (Street Medicine & JWCH Clinic), to <strong>South Central</strong> (South LA Health Center Group, Main Street Clinic) & <strong>Compton/Watts</strong> (CDU/MLK OPC - Oasis Clinic).</p>
-          <p>Explore more of LA here: <a href="https://www.discoverlosangeles.com" className="text-red-600">www.discoverlosangeles.com</a></p>
+          <p>Explore more of LA here: <a href="https://www.discoverlosangeles.com" className="text-red-600 hover:underline">www.discoverlosangeles.com</a></p>
         </div>
         <div className="mb-8">
           <Image
             src="/images/program/los-angeles-with-mount-baldy-credit-alek-leckszas_orig.jpeg"
-            alt="Los Angeles Skyline"
+            alt="Los Angeles skyline with Mount Baldy in the background"
             width={1600}
             height={800}
             className="rounded-lg mx-auto w-full h-auto"
@@ -71,6 +70,7 @@ const SalaryBenefits: React.FC = () => {
             style={{ border: 0 }}
             allowFullScreen
             loading="lazy"
+            aria-label="Map of Los Angeles"
           ></iframe>
         </div>
       </div>

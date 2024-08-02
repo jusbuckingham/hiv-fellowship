@@ -71,7 +71,7 @@ const Fellows: React.FC = () => {
             <div key={index} className="text-center">
               <Image
                 src={fellow.image}
-                alt={fellow.name}
+                alt={`${fellow.name}, ${fellow.pronouns}`}
                 width={200}
                 height={200}
                 className="mx-auto rounded"
@@ -89,7 +89,7 @@ const Fellows: React.FC = () => {
             <div key={index} className="text-center">
               <Image
                 src={fellow.image}
-                alt={fellow.name}
+                alt={`${fellow.name}, ${fellow.pronouns}`}
                 width={200}
                 height={200}
                 className="mx-auto rounded"

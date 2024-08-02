@@ -51,9 +51,11 @@ export default function Home() {
           <h2 className="text-4xl font-bold mb-8">Welcome to the HIV Clinical Leadership Program</h2>
           <h2 className="text-4xl font-bold mb-8">An Opportunity to Serve</h2>
           <p className="text-xl max-w-2xl mx-auto">
-            Over 1.2 million people in the U.S. live with HIV, with over 35,000 new infections annually. After 40 years, the epidemic continues to devastate vulnerable communities. </p>
+            Over 1.2 million people in the U.S. live with HIV, with over 35,000 new infections annually. After 40 years, the epidemic continues to devastate vulnerable communities.
+          </p>
           <p className="text-xl max-w-2xl mx-auto mt-4">
-            The HIV Clinical Leadership Program is a postdoctoral fellowship dedicated to training HIV specialists to tackle health inequities. We successfully place fellows in competitive leadership positions nationwide.          </p>
+            The HIV Clinical Leadership Program is a postdoctoral fellowship dedicated to training HIV specialists to tackle health inequities. We successfully place fellows in competitive leadership positions nationwide.
+          </p>
         </section>
 
         <section className="bg-gray-100 text-center py-16">
@@ -62,7 +64,8 @@ export default function Home() {
             <div className="p-4 bg-white rounded-lg shadow-md">
               <h3 className="text-2xl font-bold mb-4 text-gray-900">Training & Education</h3>
               <p className="text-gray-700">
-                With over 20 years of clinical excellence in HIV specialty fellowship training, fellows train at LA General Medical Center's high-volume outpatient HIV clinics. Experienced Family Medicine and Infectious Disease faculty guide them through rotations in community-based HIV clinics, correctional settings, and the inpatient Infectious Disease service. The curriculum covers HIV primary and specialty care, managing complications, co-morbidities, and co-infections. Additional training in Addiction Medicine and Gender Affirming Care ensures fellows meet the needs of our diverse patient population and provide excellence in standard care practices.              </p>
+                With over 20 years of clinical excellence in HIV specialty fellowship training, fellows train at LA General Medical Center's high-volume outpatient HIV clinics. Experienced Family Medicine and Infectious Disease faculty guide them through rotations in community-based HIV clinics, correctional settings, and the inpatient Infectious Disease service. The curriculum covers HIV primary and specialty care, managing complications, co-morbidities, and co-infections. Additional training in Addiction Medicine and Gender Affirming Care ensures fellows meet the needs of our diverse patient population and provide excellence in standard care practices.
+              </p>
             </div>
             <div className="p-4 bg-white rounded-lg shadow-md">
               <h3 className="text-2xl font-bold mb-4 text-gray-900">Mentorship</h3>
@@ -134,6 +137,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+        
         <section className="grid grid-cols-1 sm:grid-cols-2 gap-12 mt-16">
           <div className="aspect-w-16 aspect-h-9">
             <iframe
@@ -142,6 +146,7 @@ export default function Home() {
               title='Dr. Lauren Wolchok: “It’s all about care”'
               frameBorder="0"
               allowFullScreen
+              aria-label="Video: Dr. Lauren Wolchok: 'It’s all about care'"
             />
           </div>
           <div className="aspect-w-16 aspect-h-9">
@@ -151,6 +156,7 @@ export default function Home() {
               title="HIV FELLOWSHIP 2021"
               frameBorder="0"
               allowFullScreen
+              aria-label="Video: HIV FELLOWSHIP 2021"
             />
           </div>
         </section>
@@ -166,12 +172,12 @@ export default function Home() {
             Due to the current trends of the HIV epidemic in the US, physicians with interest in working in the <span className="text-red-600">SOUTH</span> and <span className="text-red-600">MID-ATLANTIC STATES</span> are also strongly encouraged to apply!
           </p>
           <div className="flex justify-center items-center space-x-8">
-            <Image src="/images/about/health-services-lac.png" alt="Partner Logo 1" width={100} height={100} />
-            <Image src="/images/about/kecklogo.jpeg" alt="Partner Logo 2" width={100} height={100} />
-            <Image src="/images/about/aetc-pacific.jpg" alt="Partner Logo 3" width={100} height={100} />
-            <Image src="/images/about/ucla-ncsp.png" alt="Partner Logo 4" width={100} height={100} />
-            <Image src="/images/about/lundquist.png" alt="Partner Logo 5" width={100} height={100} />
-            <Image src="/images/about/viivlogo.png" alt="Partner Logo 6" width={100} height={100} />
+            <Image src="/images/about/health-services-lac.png" alt="Health Services LAC Logo" width={100} height={100} />
+            <Image src="/images/about/kecklogo.jpeg" alt="Keck Logo" width={100} height={100} />
+            <Image src="/images/about/aetc-pacific.jpg" alt="AETC Pacific Logo" width={100} height={100} />
+            <Image src="/images/about/ucla-ncsp.png" alt="UCLA NCSP Logo" width={100} height={100} />
+            <Image src="/images/about/lundquist.png" alt="Lundquist Logo" width={100} height={100} />
+            <Image src="/images/about/viivlogo.png" alt="ViiV Logo" width={100} height={100} />
           </div>
         </section>
       </main>

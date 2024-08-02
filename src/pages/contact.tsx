@@ -7,25 +7,25 @@ const Contact: React.FC = () => {
     <>
       <Navbar />
       <main className="bg-gray-100 min-h-screen">
-        <section className="bg-gray-900 text-white py-20">
+        <section className="bg-gray-900 text-white py-20" role="banner">
           <div className="container mx-auto px-6 text-center">
             <h1 className="text-5xl font-bold">Contact Us<span className="text-red-600">.</span></h1>
             <p className="mt-4 text-xl">We look forward to hearing from you!</p>
           </div>
         </section>
-        <h2 className="text-4xl font-bold mb-8 text-center"></h2>
         <section className="container mx-auto px-4 py-12">
+          <h2 className="sr-only">Contact Information</h2>
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold">To request additional information, please contact the Director of Operations:</h2>
             <p className="mt-4 text-xl">
               <strong>Shanna Livermore, MPH, MCHES®, FRSPH</strong><br />
               Director of Operations, HIV Clinical Leadership Program<br />
               Co-Director, Pacific AIDS Education and Training Center at USC<br />
-              EMAIL: <a href="mailto:shanna.livermore@med.usc.edu" className="text-red-600">shanna.livermore@med.usc.edu</a>
+              EMAIL: <a href="mailto:shanna.livermore@med.usc.edu" className="text-red-600 hover:underline">shanna.livermore@med.usc.edu</a>
             </p>
           </div>
           <div className="bg-white shadow-md rounded-lg px-8 pt-6 pb-8 mb-12">
-            <form>
+            <form aria-label="Contact form">
               <div className="mb-4">
                 <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="firstName">
                   First Name *
@@ -35,6 +35,7 @@ const Contact: React.FC = () => {
                   id="firstName"
                   type="text"
                   placeholder="First Name"
+                  required
                 />
               </div>
               <div className="mb-4">
@@ -46,6 +47,7 @@ const Contact: React.FC = () => {
                   id="lastName"
                   type="text"
                   placeholder="Last Name"
+                  required
                 />
               </div>
               <div className="mb-4">
@@ -57,6 +59,7 @@ const Contact: React.FC = () => {
                   id="email"
                   type="email"
                   placeholder="Email"
+                  required
                 />
               </div>
               <div className="mb-6">
@@ -68,12 +71,13 @@ const Contact: React.FC = () => {
                   id="message"
                   placeholder="Your message here"
                   rows={5}
+                  required
                 ></textarea>
               </div>
               <div className="flex items-center justify-center">
                 <button
                   className="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                  type="button"
+                  type="submit"
                 >
                   Submit
                 </button>
@@ -98,6 +102,7 @@ const Contact: React.FC = () => {
             style={{ border: 0 }}
             allowFullScreen
             loading="lazy"
+            aria-label="Map showing the location of 1000 S. Fremont Ave, Alhambra, CA 91803"
           ></iframe>
         </div>
       </main>

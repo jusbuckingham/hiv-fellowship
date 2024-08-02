@@ -18,7 +18,7 @@ const AboutPage: React.FC = () => {
           <div className="relative w-full h-80 mb-12">
             <Image
               src="/images/about/fellowshipgrouppic.png"
-              alt="Celebrating 20+ years"
+              alt="Group of fellowship members celebrating 20+ years of excellence in HIV specialty training"
               layout="fill"
               objectFit="cover"
               quality={100}
