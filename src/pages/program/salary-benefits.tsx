@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import Image from 'next/image';
@@ -6,12 +7,19 @@ import Image from 'next/image';
 const SalaryBenefits: React.FC = () => {
   return (
     <>
+      <Head>
+        <title>Salary & Benefits | HIV Clinical Leadership Program</title>
+        <meta name="description" content="Explore the competitive salary and benefits package offered by the HIV Clinical Leadership Program." />
+        <meta name="keywords" content="HIV Clinical Leadership Program, salary, benefits, healthcare, medical, dental, housing stipend, loan repayment" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charSet="UTF-8" />
+      </Head>
       <Navbar />
       <section className="bg-gray-900 text-white text-center py-20 px-4">
         <h1 className="text-5xl font-bold mb-4">Salary & Benefits<span className="text-red-600">.</span></h1>
         <p className="text-xl max-w-3xl mx-auto">Our program offers a competitive salary & benefits package that includes medical & dental benefits and an annual housing stipend. Educational loan repayment is also available to qualifying fellows.</p>
       </section>
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto px-4 py-24"> {/* Increased padding here */}
         <div className="mb-8">
           <Image
             src="/images/program/palm-trees.jpg"
@@ -33,7 +41,7 @@ const SalaryBenefits: React.FC = () => {
             <li>PHYSICIAN POST GRADUATE YEAR 7 (PGY-7): $101,851.64</li>
           </ul>
           <h3>Medical & Dental Benefits</h3>
-          <p>Benefit packages available to all employees of Lundquist Institute will be offered to all fellows and paid for by the fellowship program. Fellows may opt-out of the coverage, but will not receive monetary reimbursement for any declined benefits. Dependents of fellows may also receive medical and dental benefits through available benefit packages that are covered by the fellowship program.</p>
+          <p>Benefit packages available to all employees of Lundquist Institute will be offered to all fellows and paid for by the fellowship program. Fellows may opt-out of the coverage but will not receive monetary reimbursement for any declined benefits. Dependents of fellows may also receive medical and dental benefits through available benefit packages covered by the fellowship program.</p>
           <h3>Housing Stipend</h3>
           <p>A housing stipend of <span className="text-red-600">$10,000</span> per year is provided to all active fellows in August of each academic year as of July 1, 2023.</p>
           <h3>Educational Stipend</h3>

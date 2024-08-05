@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import Image from 'next/image';
@@ -104,50 +105,57 @@ const Faculty: React.FC = () => {
 
   return (
     <>
+      <Head>
+        <title>Faculty | HIV Fellowship Program</title>
+        <meta name="description" content="Meet the faculty of the HIV Fellowship Program, including our core leadership and clinical teams." />
+        <meta name="keywords" content="HIV Fellowship, faculty, healthcare, medicine, HIV specialists" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charSet="UTF-8" />
+      </Head>
       <Navbar />
-      <section className="bg-gray-900 text-white text-center py-20 px-4">
-        <h1 className="text-5xl font-bold mb-4">Faculty<span className="text-red-600">.</span></h1>
-        <p className="text-xl max-w-3xl mx-auto">Meet our core leadership and clinical faculty team.</p>
-      </section>
-      <h2 className="text-4xl font-bold mb-8 text-center"></h2>
-      <section className="container mx-auto px-6 py-16 text-center">
-        <h2 className="text-4xl font-bold mb-12">Leadership Team<span className="text-red-600">.</span></h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-16">
-          {leadershipTeam.map((member, index) => (
-            <div key={index} className="text-center">
-              <Image
-                src={member.image}
-                alt={`${member.name}, ${member.title}, ${member.pronouns}`}
-                width={200}
-                height={200}
-                className="mx-auto rounded"
-              />
-              <h3 className="text-xl font-bold mt-4">{member.name}</h3>
-              <p className="italic text-gray-600">{member.title}</p>
-              <p className="text-gray-600">{member.pronouns}</p>
-            </div>
-          ))}
-        </div>
+      <main>
+        <section className="bg-gray-900 text-white text-center py-20 px-4">
+          <h1 className="text-5xl font-bold mb-4">Faculty<span className="text-red-600">.</span></h1>
+          <p className="text-xl max-w-3xl mx-auto">Meet our core leadership and clinical faculty team.</p>
+        </section>
+        <section className="container mx-auto px-6 py-16 text-center">
+          <h2 className="text-4xl font-bold mb-12">Leadership Team<span className="text-red-600">.</span></h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-16">
+            {leadershipTeam.map((member, index) => (
+              <div key={index} className="text-center">
+                <Image
+                  src={member.image}
+                  alt={`Portrait of ${member.name}, ${member.title}, pronouns: ${member.pronouns}`}
+                  width={200}
+                  height={200}
+                  className="mx-auto rounded"
+                />
+                <h3 className="text-xl font-bold mt-4">{member.name}</h3>
+                <p className="italic text-gray-600">{member.title}</p>
+                <p className="text-gray-600">{member.pronouns}</p>
+              </div>
+            ))}
+          </div>
 
-        <h2 className="text-4xl font-bold mb-12">Clinical Team<span className="text-red-600">.</span></h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-16">
-          {clinicalTeam.map((member, index) => (
-            <div key={index} className="text-center">
-              <Image
-                src={member.image}
-                alt={`${member.name}, ${member.title}, ${member.pronouns}`}
-                width={200}
-                height={200}
-                className="mx-auto rounded"
-              />
-              <h3 className="text-xl font-bold mt-4">{member.name}</h3>
-              <p className="italic text-gray-600">{member.title}</p>
-              <p className="text-gray-600">{member.pronouns}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
+          <h2 className="text-4xl font-bold mb-12">Clinical Team<span className="text-red-600">.</span></h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-16">
+            {clinicalTeam.map((member, index) => (
+              <div key={index} className="text-center">
+                <Image
+                  src={member.image}
+                  alt={`Portrait of ${member.name}, ${member.title}, pronouns: ${member.pronouns}`}
+                  width={200}
+                  height={200}
+                  className="mx-auto rounded"
+                />
+                <h3 className="text-xl font-bold mt-4">{member.name}</h3>
+                <p className="italic text-gray-600">{member.title}</p>
+                <p className="text-gray-600">{member.pronouns}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+      </main>
       <Footer />
     </>
   );

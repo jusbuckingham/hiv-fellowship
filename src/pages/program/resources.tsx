@@ -1,16 +1,24 @@
 import React from 'react';
+import Head from 'next/head';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 
 const Resources: React.FC = () => {
   return (
     <>
+      <Head>
+        <title>Resources | HIV Clinical Leadership Program</title>
+        <meta name="description" content="Access a variety of resources to help you succeed in the HIV Clinical Leadership Program." />
+        <meta name="keywords" content="HIV Clinical Leadership Program, resources, healthcare, HIV, clinical resources, global resources, national resources, local resources, research" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charSet="UTF-8" />
+      </Head>
       <Navbar />
       <section className="bg-gray-900 text-white text-center py-20 px-4">
         <h1 className="text-5xl font-bold mb-4">Resources<span className="text-red-600">.</span></h1>
         <p className="text-xl max-w-3xl mx-auto">Access a variety of resources to help you succeed in the HIV Clinical Leadership Program.</p>
       </section>
-      <div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto px-4 py-24"> {/* Increased padding here */}
         <h2 className="text-4xl font-bold mb-8 text-center"></h2>
 
         <div className="mb-16">

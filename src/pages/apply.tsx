@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Image from 'next/image';
@@ -6,13 +7,20 @@ import Image from 'next/image';
 const Apply: React.FC = () => {
   return (
     <>
+      <Head>
+        <title>Apply | HIV Clinical Leadership Program</title>
+        <meta name="description" content="Apply for the HIV Clinical Leadership Program today!" />
+        <meta name="keywords" content="HIV Clinical Leadership Program, apply, application, fellowship, healthcare" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charSet="UTF-8" />
+      </Head>
       <Navbar />
       <main className="bg-white">
         <section className="bg-gray-900 text-white text-center py-20" role="banner">
           <h1 className="text-5xl font-bold mb-4">Apply<span className="text-red-600">.</span></h1>
           <p className="text-xl">Apply for the HIV Clinical Leadership Program today!</p>
         </section>
-        <section className="container mx-auto px-6 py-12">
+        <section className="container mx-auto px-6 py-24"> {/* Increased padding here */}
           <h2 className="text-4xl font-bold mb-8 text-center sr-only">Application Information</h2>
           <div className="flex flex-col items-center">
             <Image
@@ -25,10 +33,10 @@ const Apply: React.FC = () => {
             />
             <p id="apply-image" className="sr-only">Image of a doctor holding a stethoscope</p>
             <p className="text-lg font-bold text-red-600 mb-2 text-center">
-              Due to the current trends of the HIV epidemic in the United States, physicians from the SOUTH and MID-ATLANTIC STATES strongly encouraged to apply!
+              Due to the current trends of the HIV epidemic in the United States, physicians from the SOUTH and MID-ATLANTIC STATES are strongly encouraged to apply!
             </p>
             <p className="text-lg font-bold text-red-600 mb-8 text-center">
-              Black, Latinx, Indigenous, BIPOC, LGBTQIA2S+ physicians strongly encouraged to apply!
+              Black, Latinx, Indigenous, BIPOC, LGBTQIA2S+ physicians are strongly encouraged to apply!
             </p>
           </div>
           <p className="text-lg mb-8 text-center">

@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import Image from 'next/image';
@@ -10,11 +11,7 @@ const Fellows: React.FC = () => {
       pronouns: '(She/Her)',
       image: '/images/about/kenya-bingham-psalms.jpg',
       description: `
-        Growing up in a military family, Dr. Bingham-Psalms' upbringing was enriched with cultural diversity. She is bilingual in English and Spanish, a passion she pursued from a young age. As a first-generation college graduate, she earned a B.A. in Spanish Language & Literature from the University of California, Berkeley, and was among the first U.S. graduates from the Latin American School of Medicine in Havana, Cuba.
-        
-        After medical school, she supported her family while studying for the USMLEs and completed her Family Medicine residency in rural Pennsylvania, all while raising three children. She shares her journey to inspire others to achieve their dreams, even through unconventional paths. She is now excited to further her medical expertise in HIV medicine, with special interests in medical missions, global health, healthcare disparities, and women's health.
-        
-        Her research interests include healthcare disparities in HIV, HIV prevention, awareness, and education.
+        Dr. Bingham-Psalms grew up in a military family, enriching her upbringing with cultural diversity. Bilingual in English and Spanish, she earned a B.A. in Spanish Language & Literature from UC Berkeley and graduated from the Latin American School of Medicine in Havana, Cuba. After supporting her family while studying for the USMLEs and completing her Family Medicine residency in rural Pennsylvania, she now focuses on HIV medicine with interests in medical missions, global health, healthcare disparities, and women's health. Her research centers on healthcare disparities in HIV, prevention, awareness, and education.
       `,
     },
     {
@@ -22,9 +19,7 @@ const Fellows: React.FC = () => {
       pronouns: '(He/Him)',
       image: '/images/about/zac-badii.png',
       description: `
-        Dr. Badii, a native of San Diego, California, was raised by immigrant parents and is passionately committed to addressing sex disparities in HIV prevention and treatment. As a fluent Spanish speaker with experience living, working, and studying on both sides of the southern border, Dr. Badii brings a unique perspective to the field. Having graduated from the Family Medicine program at the University of Southern California, Dr. Badii is dedicated to providing holistic and comprehensive care. This commitment extends to addressing social determinants of health through evidence-based public health interventions, reflecting a deep understanding of the multifaceted nature of healthcare and a desire to make a positive impact.
-        
-        Research Interests: My research interests revolve around identifying and addressing bias in medical school and residency HIV curriculums, with a focus on promoting inclusivity and accuracy in educational materials. Additionally, I am passionate about investigating and mitigating sex disparities in HIV prevention and treatment strategies to ensure equitable healthcare outcomes for all individuals.
+        Dr. Badii, from San Diego, CA, is dedicated to addressing sex disparities in HIV prevention and treatment. A fluent Spanish speaker, he brings a unique perspective with experience on both sides of the southern border. He graduated from USC's Family Medicine program and focuses on holistic care and social determinants of health through public health interventions. His research interests include identifying bias in medical education and promoting inclusivity, as well as addressing sex disparities in HIV prevention and treatment.
       `,
     },
   ];
@@ -35,7 +30,7 @@ const Fellows: React.FC = () => {
       pronouns: '(He/They)',
       image: '/images/about/licho-cynthia-aguilera.jpg',
       description: `
-        Dr. Aguilera is a Nawat and non-binary physician from Pico-Union, Los Angeles. They are a proud graduate of the Escuela Latinoamericana de Medicina (ELAM) in Havana, Cuba and completed their internal medicine residency at Cedars-Sinai Medical Center. Their career focus is on decolonial medicine for Black and Indigenous communities of Los Angeles. They also enjoy vintage sewing, playing a variety of instruments, and motorcycles.
+        Dr. Aguilera, a Nawat and non-binary physician from Pico-Union, Los Angeles, graduated from ELAM in Havana, Cuba, and completed an internal medicine residency at Cedars-Sinai Medical Center. They focus on decolonial medicine for Black and Indigenous communities in Los Angeles. They enjoy vintage sewing, playing instruments, and motorcycles.
       `,
     },
     {
@@ -43,7 +38,7 @@ const Fellows: React.FC = () => {
       pronouns: '(She/Her)',
       image: '/images/about/bianca-hill.jpeg',
       description: `
-        Dr. Bianca Hill grew up in New York City, where she majored in Biology at the City College of New York. She has an MPH degree in Epidemiology from SUNY Downstate Medical Center, where she discovered her passion for HIV care while completing an internship on Rikers Island. Dr. Hill completed her medical education at Meharry Medical College and Family Medicine training at the Institute for Family Health - Harlem Residency. During her residency she managed the care of patients living with HIV throughout the Bronx and Harlem New York. Dr. Hill has been published for her PrEP research and served as a RAMP and Alumni Scholar for the HIV Vaccine Trial Network (HVTN). She has a strong interest in HIV primary care and research, primary care for all incarcerated women of color, health equity, and advocacy.
+        Dr. Hill, from New York City, majored in Biology at the City College of New York and holds an MPH in Epidemiology from SUNY Downstate Medical Center. She discovered her passion for HIV care during an internship on Rikers Island. She completed her medical education at Meharry Medical College and Family Medicine training at the Institute for Family Health - Harlem Residency. Dr. Hill has published PrEP research and focuses on HIV primary care, health equity, and advocacy.
       `,
     },
     {
@@ -51,57 +46,64 @@ const Fellows: React.FC = () => {
       pronouns: '(He/Him)',
       image: '/images/about/mark-leiber.jpeg',
       description: `
-        Dr. Mark Leiber is originally from Tampa, Florida and completed his undergraduate studies at Stanford, where he majored in Film Studies and Human Biology. After college, he worked as an Associate Producer for National Geographic Television on a documentary series about prisons called, "Lockdown", which initially piqued his interest in HIV medicine. He subsequently worked in Malawi for a year for Partners In Health as a health systems coordinator in a region heavily impacted by the HIV/AIDS epidemic. After returning to the US, he completed medical school at the University of California, Irvine and internal medicine residency at Johns Hopkins Bayview Medical Center in Baltimore, Maryland. He plans to focus his medical career on HIV and LGBTQ+ primary care.
+        Dr. Leiber, originally from Tampa, FL, studied Film Studies and Human Biology at Stanford. He worked as an Associate Producer for National Geographic Television and as a health systems coordinator in Malawi. He completed medical school at UC Irvine and residency at Johns Hopkins Bayview Medical Center. His medical career focuses on HIV and LGBTQ+ primary care.
       `,
     },
   ];
 
   return (
     <>
+      <Head>
+        <title>Fellows | HIV Fellowship Program</title>
+        <meta name="description" content="Meet our current HIV Fellow cohort and learn about their backgrounds, interests, and research focuses." />
+        <meta name="keywords" content="HIV Fellowship, fellows, healthcare, medicine, HIV specialists" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charSet="UTF-8" />
+      </Head>
       <Navbar />
-      <section className="bg-gray-900 text-white text-center py-20 px-4">
-        <h1 className="text-5xl font-bold mb-4">Fellows<span className="text-red-600">.</span></h1>
-        <p className="text-xl max-w-3xl mx-auto">Meet our current HIV Fellow cohort.</p>
-      </section>
-      <h2 className="text-4xl font-bold mb-8 text-center"></h2>
-      <section className="container mx-auto px-6 py-16 text-center">
-        <h2 className="text-4xl font-bold mb-12">Class of <span className="text-red-600">2026</span></h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
-          {fellows2026.map((fellow, index) => (
-            <div key={index} className="text-center">
-              <Image
-                src={fellow.image}
-                alt={`${fellow.name}, ${fellow.pronouns}`}
-                width={200}
-                height={200}
-                className="mx-auto rounded"
-              />
-              <h3 className="text-xl font-bold mt-4">{fellow.name}</h3>
-              <p className="italic text-gray-600">{fellow.pronouns}</p>
-              <p className="whitespace-pre-line mt-4">{fellow.description}</p>
-            </div>
-          ))}
-        </div>
+      <main>
+        <section className="bg-gray-900 text-white text-center py-20 px-4">
+          <h1 className="text-5xl font-bold mb-4">Fellows<span className="text-red-600">.</span></h1>
+          <p className="text-xl max-w-3xl mx-auto">Meet our current HIV Fellow cohort.</p>
+        </section>
+        <section className="container mx-auto px-6 py-16 text-center">
+          <h2 className="text-4xl font-bold mb-12">Class of <span className="text-red-600">2026</span></h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
+            {fellows2026.map((fellow, index) => (
+              <div key={index} className="text-center">
+                <Image
+                  src={fellow.image}
+                  alt={`Portrait of ${fellow.name}, pronouns: ${fellow.pronouns}`}
+                  width={200}
+                  height={200}
+                  className="mx-auto rounded"
+                />
+                <h3 className="text-xl font-bold mt-4">{fellow.name}</h3>
+                <p className="italic text-gray-600">{fellow.pronouns}</p>
+                <p className="whitespace-pre-line mt-4">{fellow.description}</p>
+              </div>
+            ))}
+          </div>
 
-        <h2 className="text-4xl font-bold mb-12">Class of <span className="text-red-600">2025</span></h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-16">
-          {fellows2025.map((fellow, index) => (
-            <div key={index} className="text-center">
-              <Image
-                src={fellow.image}
-                alt={`${fellow.name}, ${fellow.pronouns}`}
-                width={200}
-                height={200}
-                className="mx-auto rounded"
-              />
-              <h3 className="text-xl font-bold mt-4">{fellow.name}</h3>
-              <p className="italic text-gray-600">{fellow.pronouns}</p>
-              <p className="whitespace-pre-line mt-4">{fellow.description}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
+          <h2 className="text-4xl font-bold mb-12">Class of <span className="text-red-600">2025</span></h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-16">
+            {fellows2025.map((fellow, index) => (
+              <div key={index} className="text-center">
+                <Image
+                  src={fellow.image}
+                  alt={`Portrait of ${fellow.name}, pronouns: ${fellow.pronouns}`}
+                  width={200}
+                  height={200}
+                  className="mx-auto rounded"
+                />
+                <h3 className="text-xl font-bold mt-4">{fellow.name}</h3>
+                <p className="italic text-gray-600">{fellow.pronouns}</p>
+                <p className="whitespace-pre-line mt-4">{fellow.description}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+      </main>
       <Footer />
     </>
   );
