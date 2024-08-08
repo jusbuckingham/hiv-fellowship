@@ -1,8 +1,14 @@
 import '../styles/globals.css';
-import { AppProps } from 'next/app';
+import type { AppProps } from 'next/app';
+import JusibleLoader from '../components/JusibleLoader';
 
-const MyApp = ({ Component, pageProps }: AppProps) => {
-  return <Component {...pageProps} />;
-};
+function MyApp({ Component, pageProps }: AppProps) {
+  return (
+    <>
+      <JusibleLoader />
+      <Component {...pageProps} />
+    </>
+  );
+}
 
 export default MyApp;
