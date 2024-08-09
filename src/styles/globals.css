@@ -3,296 +3,245 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Global styles for the body */
+/* Global body styles */
 body {
-  font-family: 'Inter', sans-serif; /* Sets the font family */
-  line-height: 1.6; /* Sets the line height for better readability */
-  background-color: #f9f9f9; /* Background color */
-  color: #333; /* Text color */
-  margin: 0; /* Removes default margin */
-  padding: 0; /* Removes default padding */
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
 }
 
-/* Styles for the navbar */
+/* Navbar styles */
 nav {
-  background-color: #fff; /* Background color */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds shadow to navbar */
-  position: fixed; /* Fixes the navbar at the top */
-  width: 100%; /* Full width */
-  z-index: 50; /* Ensures navbar is above other elements */
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 50;
 }
 
-/* Styles for navbar links */
 nav a {
-  text-decoration: none; /* Removes underline from links */
-  color: #333; /* Text color */
+  text-decoration: none;
+  color: #333;
 }
 
 nav a:hover {
-  color: #e60023; /* Text color on hover */
+  color: #e60023;
 }
 
-nav button {
-  background: none; /* Removes background */
-  border: none; /* Removes border */
-}
-
-/* Global section padding */
+/* General section padding */
 section {
-  padding: 4rem 0; /* Padding for top and bottom */
+  padding: 4rem 0;
 }
 
-/* Styles for the footer */
-footer {
-  background-color: #1a1a1a; /* Background color */
-  color: #fff; /* Text color */
-  text-align: center; /* Centers the text */
-  padding: 2rem 0; /* Padding for top and bottom */
+/* Footer styles */
+footer, .footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 0;
 }
 
-/* Header styles */
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Heading styles */
 h1, h2, h3, h4, h5, h6 {
-  color: #1a202c; /* Text color for headings */
+  color: #1a202c;
 }
 
 h1 {
-  color: #fefefe; /* Specific color for h1 */
-  font-size: 3rem; /* Font size for h1 */
-  line-height: 1.2; /* Line height for h1 */
+  color: #fefefe;
+  font-size: 3rem;
+  line-height: 1.2;
 }
 
 h2 {
-  font-size: 2.25rem; /* Font size for h2 */
-  line-height: 1.3; /* Line height for h2 */
+  font-size: 2.25rem;
+  line-height: 1.3;
 }
 
-/* Text color for specific class */
+/* Red text utility */
 .text-red-600 {
-  color: #e60023; /* Text color */
+  color: #e60023;
 }
 
-/* Custom styles */
-
-/* Styles for the header */
-.header {
-  background-color: #1a202c; /* Background color */
-  color: white; /* Text color */
-  text-align: center; /* Centers the text */
-  padding: 6rem 1rem; /* Padding for top, bottom, left, and right */
-}
-
-.header h1 {
-  font-size: 2.5rem; /* Font size */
-  margin-bottom: 1rem; /* Margin bottom */
-}
-
-.header p {
-  font-size: 1.25rem; /* Font size */
-  margin-bottom: 2rem; /* Margin bottom */
-}
-
-/* Container styles */
+/* Container utility */
 .container {
-  max-width: 1200px; /* Maximum width */
-  margin: 0 auto; /* Centers the container */
-  padding: 0 1rem; /* Padding for left and right */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 /* Grid layout */
 .grid {
-  display: grid; /* Display as grid */
-  grid-template-columns: 1fr; /* Single column on small screens */
-  gap: 1.5rem; /* Gap between grid items */
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
 }
 
-/* Responsive grid for medium screens */
 @media (min-width: 768px) {
   .grid {
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Responsive grid for large screens */
 @media (min-width: 1024px) {
   .grid {
-    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
-/* Fixed navbar styles */
-.navbar-fixed {
-  position: fixed; /* Fixes the navbar */
-  top: 0; /* Positions at the top */
-  left: 0; /* Positions at the left */
-  width: 100%; /* Full width */
-  z-index: 1000; /* Ensures it is on top */
-}
-
-/* Navbar navigation styles */
-.navbar-nav {
-  display: flex; /* Displays as flexbox */
-  justify-content: center; /* Centers the items */
-  list-style: none; /* Removes list styles */
-  padding: 0; /* Removes padding */
-  margin: 0; /* Removes margin */
-}
-
-/* Navbar list item styles */
-.navbar-nav li {
-  margin: 0 1rem; /* Margin for left and right */
-}
-
-/* Navbar link styles */
-.navbar-nav a {
-  color: #333; /* Text color */
-  font-size: 1rem; /* Font size */
-  font-weight: 500; /* Font weight */
-  text-decoration: none; /* Removes underline */
-  padding: 1rem; /* Padding */
-  display: block; /* Displays as block */
-}
-
-.navbar-nav a:hover {
-  color: #e60023; /* Text color on hover */
-}
-
-/* Hamburger menu styles for mobile */
-.hamburger {
-  display: none; /* Hides by default */
-}
-
-/* Media query for mobile devices */
-@media (max-width: 768px) {
-  .navbar-nav {
-    display: none; /* Hides the navbar items */
-    flex-direction: column; /* Displays as column */
-    width: 100%; /* Full width */
-    background-color: #fff; /* Background color */
-  }
-
-  .navbar-nav.open {
-    display: flex; /* Displays the navbar items */
-  }
-
-  .hamburger {
-    display: block; /* Shows the hamburger menu */
-    position: absolute; /* Positions absolutely */
-    top: 1rem; /* Positions from the top */
-    right: 1rem; /* Positions from the right */
-  }
-}
-
-/* Footer styles */
-.footer {
-  background-color: #1a1a1a; /* Background color */
-  color: #fff; /* Text color */
-  text-align: center; /* Centers the text */
-  padding: 2rem 0; /* Padding for top and bottom */
-}
-
-.footer a {
-  color: #fff; /* Text color */
-  text-decoration: none; /* Removes underline */
-  margin: 0 1rem; /* Margin for left and right */
-}
-
-.footer a:hover {
-  text-decoration: underline; /* Underline on hover */
-}
-
-/* Dropdown styles */
-.group:hover .group-hover\:block, .group:focus-within .focus-within\:block {
-  display: block; /* Displays dropdown on hover or focus */
-}
-
-/* Header section styles */
+/* Header section */
 .header-section {
-  background-color: #1a202c; /* Background color */
-  color: white; /* Text color */
-  text-align: center; /* Centers the text */
-  padding: 6rem 1rem; /* Padding for top, bottom, left, and right */
+  background-color: #1a202c;
+  color: white;
+  text-align: center;
+  padding: 6rem 1rem;
 }
 
 .header-section h1 {
-  font-size: 2.5rem; /* Font size */
-  margin-bottom: 1rem; /* Margin bottom */
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 .header-section p {
-  font-size: 1.25rem; /* Font size */
-  margin-bottom: 2rem; /* Margin bottom */
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
 }
 
-.first-content-section {
-  padding-top: 3rem; /* Add padding to the top of the first content section */
-}
-
-/* Gallery image styles */
-.gallery-image {
-  width: 100%; /* Full width */
-  height: auto; /* Auto height */
-  object-fit: cover; /* Ensures the image covers the entire area without stretching */
-}
-
-/* Quote section styles */
-.quote-section {
-  background-color: #f9f9f9; /* Background color */
-  color: #333; /* Text color */
-  text-align: center; /* Centers the text */
-  padding: 4rem 1rem; /* Padding for top, bottom, left, and right */
-  font-style: italic; /* Italic font style */
-}
-
-.quote-section .quote {
-  margin-bottom: 2rem; /* Margin bottom */
-  font-size: 1.5rem; /* Font size */
-}
-
-.quote-section .author {
-  font-size: 1rem; /* Font size */
-  color: #e60023; /* Text color */
-}
-
-/* Partner logos styles */
-.partner-logos {
-  display: flex; /* Displays as flexbox */
-  justify-content: center; /* Centers the items */
-  align-items: center; /* Aligns items vertically */
-  gap: 1rem; /* Gap between items */
-  flex-wrap: wrap; /* Allows wrapping */
-  padding: 2rem 0; /* Padding for top and bottom */
-}
-
-.partner-logos img {
-  max-width: 100px; /* Maximum width */
-  height: auto; /* Auto height */
-  margin: 1rem; /* Margin */
-}
-
-/* Fixed size for images */
-.fixed-size {
-  object-fit: cover; /* Ensures the image covers the entire area without stretching */
-}
-
-/* Mobile adjustments for headers and sections */
 @media (max-width: 768px) {
   .header-section h1 {
-    font-size: 2rem; /* Smaller font size for mobile */
+    font-size: 2rem;
   }
 
   .header-section p {
-    font-size: 1rem; /* Smaller font size for mobile */
+    font-size: 1rem;
+  }
+}
+
+/* Fixed navbar */
+.navbar-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Navbar items */
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-nav li {
+  margin: 0 1rem;
+}
+
+.navbar-nav a {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 1rem;
+  display: block;
+}
+
+.navbar-nav a:hover {
+  color: #e60023;
+}
+
+/* Hamburger menu for mobile */
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
   }
 
-  .first-content-section {
-    padding-top: 2rem; /* Reduce padding for mobile */
+  .navbar-nav.open {
+    display: flex;
   }
 
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+}
+
+/* Dropdown utility */
+.group:hover .group-hover\:block, .group:focus-within .focus-within\:block {
+  display: block;
+}
+
+/* Gallery image styles */
+.gallery-image, .fixed-size {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Quote section */
+.quote-section {
+  background-color: #f9f9f9;
+  color: #333;
+  text-align: center;
+  padding: 4rem 1rem;
+  font-style: italic;
+}
+
+.quote-section .quote {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+.quote-section .author {
+  font-size: 1rem;
+  color: #e60023;
+}
+
+@media (max-width: 768px) {
   .quote-section .quote {
-    font-size: 1.25rem; /* Smaller font size for mobile */
+    font-size: 1.25rem;
   }
 
   .quote-section .author {
-    font-size: 0.875rem; /* Smaller font size for mobile */
+    font-size: 0.875rem;
   }
+}
+
+/* Partner logos */
+.partner-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+}
+
+.partner-logos img {
+  max-width: 100px;
+  height: auto;
+  margin: 1rem;
 }
