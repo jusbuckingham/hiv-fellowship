@@ -21,15 +21,15 @@ const Contact: React.FC = () => {
             <p className="mt-4 text-xl">We look forward to hearing from you!</p>
           </div>
         </section>
-        <section className="container mx-auto px-6 py-24"> {/* Increased padding here */}
+        <section className="container mx-auto px-6 py-24">
           <h2 className="sr-only">Contact Information</h2>
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold">To request additional information, please contact the Director of Operations:</h2>
+            <h2 className="text-3xl font-bold">Contact Information:</h2>
             <p className="mt-4 text-xl">
               <strong>Shanna Livermore, MPH, MCHES®, FRSPH</strong><br />
               Director of Operations, HIV Clinical Leadership Program<br />
               Co-Director, Pacific AIDS Education and Training Center at USC<br />
-              EMAIL: <a href="mailto:shanna.livermore@med.usc.edu" className="text-red-600 hover:underline">shanna.livermore@med.usc.edu</a>
+              Email: <a href="mailto:shanna.livermore@med.usc.edu" className="text-red-600 hover:underline">shanna.livermore@med.usc.edu</a>
             </p>
           </div>
           <div className="bg-white shadow-md rounded-lg px-8 pt-6 pb-8 mb-12">
@@ -95,7 +95,7 @@ const Contact: React.FC = () => {
         </section>
         <section className="bg-gray-900 text-white py-20">
           <div className="container mx-auto px-6 text-center">
-            <h2 className="text-3xl font-bold text-white">HIV Clinical Leadership Program</h2>
+            <h2 className="text-3xl font-bold">HIV Clinical Leadership Program</h2>
             <p className="mt-4 text-xl">
               1000 S. Fremont Ave. Unit 22, Building A-7, 4th Floor<br />
               Alhambra, CA 91803

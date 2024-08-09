@@ -9,7 +9,7 @@ const SalaryBenefits: React.FC = () => {
     <>
       <Head>
         <title>Salary & Benefits | HIV Clinical Leadership Program</title>
-        <meta name="description" content="Explore the competitive salary and benefits package offered by the HIV Clinical Leadership Program." />
+        <meta name="description" content="Discover the competitive salary and benefits package offered by the HIV Clinical Leadership Program, including medical, dental, housing stipend, and loan repayment options." />
         <meta name="keywords" content="HIV Clinical Leadership Program, salary, benefits, healthcare, medical, dental, housing stipend, loan repayment" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charSet="UTF-8" />
@@ -17,9 +17,9 @@ const SalaryBenefits: React.FC = () => {
       <Navbar />
       <section className="bg-gray-900 text-white text-center py-20 px-4">
         <h1 className="text-5xl font-bold mb-4">Salary & Benefits<span className="text-red-600">.</span></h1>
-        <p className="text-xl max-w-3xl mx-auto">Our program offers a competitive salary & benefits package that includes medical & dental benefits and an annual housing stipend. Educational loan repayment is also available to qualifying fellows.</p>
+        <p className="text-xl max-w-3xl mx-auto">Explore our competitive salary and benefits package, including medical, dental, housing stipend, and loan repayment options for qualifying fellows.</p>
       </section>
-      <div className="container mx-auto px-4 py-24"> {/* Increased padding here */}
+      <div className="container mx-auto px-4 py-24">
         <div className="mb-8">
           <Image
             src="/images/program/palm-trees.jpg"
@@ -32,34 +32,34 @@ const SalaryBenefits: React.FC = () => {
         <div className="prose prose-lg max-w-none">
           <h2>Up to <span className="text-red-600">$150,000</span> in student loan repayment for qualifying graduates!</h2>
           <h3>Salary</h3>
-          <p>Postgraduate physician salaries and benefits are established periodically by the County of Los Angeles Board of Supervisors, by way of County ordinance and/or through an applicable Memorandum of Understanding with the Joint Council of Interns and Residents (JCIR).</p>
+          <p>Salaries for postgraduate physicians are established by the County of Los Angeles Board of Supervisors, guided by County ordinance and agreements with the Joint Council of Interns and Residents (JCIR).</p>
           <ul>
-            <li>ANNUAL GROSS SALARY</li>
-            <li>PHYSICIAN POST GRADUATE YEAR 4 (PGY-4): $84,123.48</li>
-            <li>PHYSICIAN POST GRADUATE YEAR 5 (PGY-5): $90,019.06</li>
-            <li>PHYSICIAN POST GRADUATE YEAR 6 (PGY-6): $96,118.29</li>
-            <li>PHYSICIAN POST GRADUATE YEAR 7 (PGY-7): $101,851.64</li>
+            <li><strong>Annual Gross Salary:</strong></li>
+            <li>PGY-4: $84,123.48</li>
+            <li>PGY-5: $90,019.06</li>
+            <li>PGY-6: $96,118.29</li>
+            <li>PGY-7: $101,851.64</li>
           </ul>
           <h3>Medical & Dental Benefits</h3>
-          <p>Benefit packages available to all employees of Lundquist Institute will be offered to all fellows and paid for by the fellowship program. Fellows may opt-out of the coverage but will not receive monetary reimbursement for any declined benefits. Dependents of fellows may also receive medical and dental benefits through available benefit packages covered by the fellowship program.</p>
+          <p>Fellows receive medical and dental benefits through the Lundquist Institute, covered by the program. Fellows may opt-out of coverage but will not receive reimbursement for declined benefits. Dependents are also eligible for coverage.</p>
           <h3>Housing Stipend</h3>
-          <p>A housing stipend of <span className="text-red-600">$10,000</span> per year is provided to all active fellows in August of each academic year as of July 1, 2023.</p>
+          <p>Fellows receive a housing stipend of <span className="text-red-600">$10,000</span> annually, disbursed each August for the academic year.</p>
           <h3>Educational Stipend</h3>
-          <p>Conference fees, airfare, lodging, and per diem reimbursements are available for up to two (2) relevant continuing medical education conferences and/or activities per year.</p>
+          <p>Conference fees, airfare, lodging, and per diem are reimbursed for up to two relevant continuing medical education (CME) activities per year.</p>
           <h3>Relocation</h3>
-          <p>There are no additional relocation benefits provided. Fellows are responsible for any incurred moving expenses and for all required professional licensure expenses (California medical license, board certification, CPR certification, CME coursework).</p>
+          <p>No additional relocation benefits are provided. Fellows are responsible for moving expenses and required professional licensure costs (e.g., California medical license, board certification, CPR certification, CME coursework).</p>
           <h3>Licensure Fees</h3>
-          <p>Fellows may apply for DEA license fee exemption for services provided in Los Angeles County Department of Health Services facilities. AAHIVM HIV Specialist examination fees and study materials are reimbursed.</p>
+          <p>Fellows may apply for DEA license fee exemption for services provided at LA County DHS facilities. AAHIVM HIV Specialist exam fees and study materials are reimbursed.</p>
           <h3>Leave Time</h3>
-          <p>Each fellow is allotted 25 paid leave days per year; these may be used for vacation, sick, or personal time off. Leave requests must be submitted to the Director of Operations at least 90 days in advance whenever possible via the Time-Off Request Form. Program leadership will review all requests and respond in a timely manner. Any requests for emergency time off will be approved with consideration of the circumstances. For more information please refer to the HIV CLP Orientation Packet.</p>
+          <p>Fellows are allotted 25 paid leave days per year, usable for vacation, sick leave, or personal time. Leave requests should be submitted at least 90 days in advance via the Time-Off Request Form. Emergency time off will be approved based on circumstances. For more information, refer to the HIV CLP Orientation Packet.</p>
           <h3>Educational Loan Repayment</h3>
-          <p>The Fellowship Loan Repayment Program (FLRP) has been established as a benefit to all eligible fellows who complete the 2-year HIV Clinical Leadership Program. The FLRP offers up to a total of <span className="text-red-600">$150,000</span> ($50,000 per year for 3 years) of taxable (federal and state) payments to be applied towards educational debt. To receive the loan repayment, fellows must be employed in a position that commits at least 50% of salaried time to direct HIV clinical care or HIV-related health services research; the work must be focused on services for underserved communities. Eligibility will be determined by program leadership on an annual basis. Per IRS regulations, loan repayments are considered taxable. Payments will be disbursed by The Lundquist Institute directly to each eligible fellow. Details can be found in the HIV Clinical Leadership Program – Fellowship Loan Repayment Program (FLRP) policy.</p>
+          <p>The Fellowship Loan Repayment Program (FLRP) offers up to <span className="text-red-600">$150,000</span> ($50,000 per year for 3 years) for eligible fellows who complete the two-year program. Fellows must work at least 50% of their time in HIV clinical care or research focused on underserved communities. Loan repayments are taxable and disbursed by The Lundquist Institute.</p>
         </div>
         <div className="mt-16 mb-8">
           <h2 className="text-3xl font-bold mb-4">Life in Los Angeles<span className="text-red-600">.</span></h2>
-          <p><strong>Los Angeles County</strong>, officially the <strong>County of Los Angeles</strong>, is the most populous county in the United States and in the U.S. state of California, with more than ten million inhabitants as of the 2020 census. It is the most populous non–state-level government entity in the United States. Its population is greater than that of 41 individual U.S. states. The county is home to more than one-quarter of California residents and is one of the most ethnically diverse counties in the United States. <strong>Los Angeles is home to people from more than 140 countries speaking 224 different identified languages.</strong></p>
-          <p>Fellowship primary clinics and rotation sites span Los Angeles from <strong>Boyle Heights</strong> (LA General Medical Center) to <strong>Westwood Village</strong> (UCLA National Scholars Program), <strong>Hollywood</strong> (Children's Hospital Los Angeles) and <strong>Skid Row in DTLA</strong> (Street Medicine & JWCH Clinic), to <strong>South Central</strong> (South LA Health Center Group, Main Street Clinic) & <strong>Compton/Watts</strong> (CDU/MLK OPC - Oasis Clinic).</p>
-          <p>Explore more of LA here: <a href="https://www.discoverlosangeles.com" className="text-red-600 hover:underline">www.discoverlosangeles.com</a></p>
+          <p><strong>Los Angeles County</strong>, officially the <strong>County of Los Angeles</strong>, is the most populous county in the United States, home to over ten million residents. The county is ethnically diverse, with people from more than 140 countries speaking 224 different languages. Los Angeles is a vibrant, multicultural hub offering a dynamic lifestyle.</p>
+          <p>The fellowship includes rotations across Los Angeles, from <strong>Boyle Heights</strong> (LA General Medical Center) to <strong>Westwood Village</strong> (UCLA National Scholars Program), <strong>Hollywood</strong> (Children's Hospital Los Angeles), <strong>Skid Row</strong> (Street Medicine & JWCH Clinic), <strong>South Central</strong> (South LA Health Center Group, Main Street Clinic), and <strong>Compton/Watts</strong> (CDU/MLK OPC - Oasis Clinic).</p>
+          <p>Learn more about life in LA: <a href="https://www.discoverlosangeles.com" className="text-red-600 hover:underline">www.discoverlosangeles.com</a></p>
         </div>
         <div className="mb-8">
           <Image
