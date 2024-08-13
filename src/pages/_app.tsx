@@ -1,14 +1,12 @@
 import '../styles/globals.css';
 import type { AppProps } from 'next/app';
-import Script from 'next/script';
+import Accessibility from '../components/Accessibility';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <Script
-        src="https://jusible.vercel.app/jusible.js"
-        strategy="afterInteractive"
-      />
+      {/* Remove the external script and add the Accessibility component */}
+      <Accessibility />
       <Component {...pageProps} />
     </>
   );
