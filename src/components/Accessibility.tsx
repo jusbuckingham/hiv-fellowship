@@ -5,6 +5,7 @@ import Image from 'next/image';
 
 const Accessibility = () => {
   const [open, setOpen] = useState(false);
+
   const [highlightLinks, setHighlightLinks] = useState(false);
   const [colorShift, setColorShift] = useState(false);
   const [animationsEnabled, setAnimationsEnabled] = useState(true);
@@ -19,17 +20,10 @@ const Accessibility = () => {
   const [showPageStructure, setShowPageStructure] = useState(false);
 
   useEffect(() => {
-    if (highlightLinks) {
-      document.querySelectorAll('a').forEach((link) => {
-        const element = link as HTMLElement;
-        element.style.backgroundColor = 'yellow';
-      });
-    } else {
-      document.querySelectorAll('a').forEach((link) => {
-        const element = link as HTMLElement;
-        element.style.backgroundColor = '';
-      });
-    }
+    document.querySelectorAll('a').forEach((link) => {
+      const element = link as HTMLElement;
+      element.style.backgroundColor = highlightLinks ? 'yellow' : '';
+    });
   }, [highlightLinks]);
 
   useEffect(() => {
@@ -102,17 +96,27 @@ const Accessibility = () => {
   );
 
   return (
-    <div className="fixed bottom-0 right-0 m-4 z-50">
+    <div className="fixed bottom-4 right-4 z-50 md:bottom-6 md:right-6 lg:bottom-8 lg:right-8">
       <button
         onClick={() => setOpen(!open)}
-        className="p-2 bg-blue-600 text-white rounded-full flex items-center justify-center"
+        className="p-3 bg-blue-600 text-white rounded-full flex items-center justify-center"
+        aria-label="Toggle Accessibility Widget"
       >
         <Image src="/images/accessibility/accessibility-icon.jpg" alt="Accessibility Icon" width={24} height={24} />
       </button>
       {open && (
-        <div className="bg-white shadow-lg rounded-lg p-4 mt-2">
-          <h2 className="text-lg font-semibold mb-2">Visual Toolkit</h2>
-          <div className="grid grid-cols-3 gap-2">
+        <div className="bg-white shadow-lg rounded-lg p-4 mt-2 w-72 sm:w-80 md:w-96 lg:w-104 max-h-[80vh] overflow-y-auto relative">
+          <div className="sticky top-0 bg-white z-10 pb-2">
+            <button
+              onClick={() => setOpen(false)}
+              className="text-gray-600 hover:text-gray-800"
+              aria-label="Close Accessibility Widget"
+            >
+              Close
+            </button>
+            <h2 className="text-lg font-semibold mb-2">Visual Toolkit</h2>
+          </div>
+          <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
             <button className="p-2 bg-gray-200 rounded" onClick={() => setFocusEnabled(!focusEnabled)}>
               {focusEnabled ? 'Unfocus' : 'Focus'}
             </button>
