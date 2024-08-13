@@ -121,7 +121,7 @@ const AboutPage: React.FC = () => {
                 <li>Trauma-Informed Care</li>
               </ul>
             </div>
-          </div>
+            </div>
         </section>
         <Footer />
       </main>
