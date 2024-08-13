@@ -11,7 +11,6 @@ class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
-          <script src="https://jusible.vercel.app/jusible.js" defer></script>
         </body>
       </Html>
     );
