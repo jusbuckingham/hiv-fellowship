@@ -15,10 +15,11 @@ Welcome to the official website repository for the HIV Clinical Leadership Progr
 - **Resources:** Access to valuable resources for clinicians and researchers.
 - **Application Details:** Instructions on how to apply, including an application form.
 - **Responsive Design:** Optimized for all devices to ensure a seamless experience across desktops, tablets, and mobile phones.
+- **Accessibility Widget:** Integrated accessibility features to enhance user experience for all visitors.
 
 ## Project Structure
 
-- `components/`: Contains reusable components like Navbar, Footer, etc.
+- `components/`: Contains reusable components like Navbar, Footer, and Accessibility widget.
 - `pages/`: Contains the website pages including program details, about, contact, and apply pages.
 - `public/`: Stores public assets like images and icons.
 - `styles/`: Contains global styles and CSS files.
