@@ -1,11 +1,16 @@
 import '../styles/globals.css';
 import type { AppProps } from 'next/app';
 import Accessibility from '../components/Accessibility';
+import Head from 'next/head';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      {/* Remove the external script and add the Accessibility component */}
+      {/* Add the Head component with the viewport meta tag */}
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
+      {/* Add the Accessibility component */}
       <Accessibility />
       <Component {...pageProps} />
     </>
