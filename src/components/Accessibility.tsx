@@ -116,7 +116,7 @@ const Accessibility = () => {
             className="p-3 bg-blue-600 text-white rounded-full flex items-center justify-center"
             aria-label="Toggle Accessibility Widget"
           >
-            <Image src="/images/accessibility/accessibility-icon.jpg" alt="Accessibility Icon" width={24} height={24} />
+            <Image src="/images/accessibility/accessibility-icon.webp" alt="Accessibility Icon" width={24} height={24} />
           </button>
           {open && (
             <div className="bg-white shadow-lg rounded-lg p-4 mt-2 w-72 sm:w-80 md:w-96 lg:w-104 max-h-[80vh] overflow-y-auto relative">
