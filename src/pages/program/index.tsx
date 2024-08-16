@@ -9,15 +9,19 @@ const Program: React.FC = () => {
     <>
       <Head>
         <title>Program | HIV Clinical Leadership Program</title>
-        <meta name="description" content="Explore the two-year fellowship program offered by the HIV Clinical Leadership Program." />
+        <meta name="description" content="Explore the comprehensive two-year fellowship program offered by the HIV Clinical Leadership Program." />
         <meta name="keywords" content="HIV Clinical Leadership Program, fellowship, healthcare, medicine, HIV specialists" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charSet="UTF-8" />
       </Head>
       <Navbar />
       <section className="bg-gray-900 text-white text-center py-20 px-4">
-        <h1 className="text-5xl font-bold mb-4">Program<span className="text-red-600">.</span></h1>
-        <p className="text-xl max-w-3xl mx-auto">An overview of the HIV Clinical Leadership Program’s two-year fellowship.</p>
+        <h1 className="text-5xl font-bold mb-4">
+          Program<span className="text-red-600">.</span>
+        </h1>
+        <p className="text-xl max-w-3xl mx-auto">
+          Discover the HIV Clinical Leadership Program’s immersive two-year fellowship.
+        </p>
       </section>
       <section className="container mx-auto px-4 py-24">
         <div className="grid gap-16">
@@ -35,15 +39,15 @@ const Program: React.FC = () => {
               <h2 className="text-2xl font-semibold mb-4">Year 1, Session 1</h2>
               <h3 className="text-xl font-semibold mb-2">Scholarship & Leadership Development (60%)</h3>
               <p className="text-gray-700 mb-4">
-                Fellows identify their research interests and engage in coursework at the UCLA Fielding School of Public Health/National Clinician Scholars Program. Topics include Health Policy & Financing, Research Design, and Community-Based Participatory Research. Additionally, fellows attend seminars covering pressing health issues, pathways to leadership, and journal clubs.
+                Fellows identify research interests and undertake coursework at the UCLA Fielding School of Public Health/National Clinician Scholars Program. Subjects include Health Policy, Research Design, and Community-Based Participatory Research. Fellows also attend seminars addressing key health topics, leadership pathways, and participate in journal clubs.
               </p>
               <h3 className="text-xl font-semibold mb-2">Clinical Training & Care (30%)</h3>
               <p className="text-gray-700 mb-4">
-                Fellows receive clinical training in HIV primary care settings such as Rand Schrader Clinic, LAC+USC Medical Center, Early Intervention Clinic (Skid Row), and various subspecialty clinics. They also gain experience in emergency care and jail clinic settings.
+                Fellows gain clinical experience in HIV primary care at various facilities, including Rand Schrader Clinic and LAC+USC Medical Center, with exposure to emergency care and jail clinic settings.
               </p>
               <h3 className="text-xl font-semibold mb-2">Didactics & Case Studies (10%)</h3>
               <p className="text-gray-700">
-                Fellows participate in sessions covering antiretroviral therapy, DHHS guidelines, resistance training, and challenging HIV cases.
+                Sessions focus on antiretroviral therapy, DHHS guidelines, resistance training, and challenging HIV cases.
               </p>
             </div>
           </div>
@@ -61,19 +65,19 @@ const Program: React.FC = () => {
               <h2 className="text-2xl font-semibold mb-4">Year 1, Session 2</h2>
               <h3 className="text-xl font-semibold mb-2">Clinical Training & Care (60%)</h3>
               <p className="text-gray-700 mb-4">
-                Fellows continue their clinical training in HIV care across multiple settings, including emergency and inpatient services. They also engage in specialized HIV care in maternal-child, street medicine, and positive care clinics.
+                Fellows continue their clinical training across multiple settings, including emergency and inpatient services, and gain specialized HIV care experience in maternal-child, street medicine, and positive care clinics.
               </p>
               <h3 className="text-xl font-semibold mb-2">Scholarship & Leadership Development (30%)</h3>
               <p className="text-gray-700 mb-4">
-                Fellows work on scholarly project planning, finalizing ideas, and submitting IRB applications. They continue attending seminars on health issues and leadership.
+                Fellows work on finalizing scholarly projects and submitting IRB applications while continuing to attend health and leadership seminars.
               </p>
               <h3 className="text-xl font-semibold mb-2">Didactics & Case Studies (5%)</h3>
               <p className="text-gray-700 mb-4">
-                Sessions cover antiretroviral therapy, DHHS guidelines, HIV resistance training, and challenging cases.
+                Continued education on antiretroviral therapy, DHHS guidelines, resistance training, and challenging HIV cases.
               </p>
               <h3 className="text-xl font-semibold mb-2">Journal Clubs & Teaching (5%)</h3>
               <p className="text-gray-700">
-                Fellows teach primary care residents in the USC HIV Training Program and present lectures to various healthcare professionals.
+                Fellows instruct primary care residents in the USC HIV Training Program and deliver lectures to various healthcare professionals.
               </p>
             </div>
           </div>
@@ -91,11 +95,11 @@ const Program: React.FC = () => {
               <h2 className="text-2xl font-semibold mb-4">Year 2</h2>
               <h3 className="text-xl font-semibold mb-2">Clinical Training & Care (50%)</h3>
               <p className="text-gray-700 mb-4">
-                In the second year, fellows continue their clinical training in various settings, including specialized HIV care clinics and the USC Family Medicine Street Medicine clinic. They also take on teaching responsibilities for residents and students.
+                Fellows continue clinical training across diverse settings, including specialized HIV care clinics and the USC Family Medicine Street Medicine clinic, while taking on teaching responsibilities.
               </p>
               <h3 className="text-xl font-semibold mb-2">Scholarship & Leadership Development (50%)</h3>
               <p className="text-gray-700">
-                Fellows work closely with research mentors to complete projects, prepare for conference presentations, and submit publications. They also continue attending seminars and journal clubs.
+                Fellows collaborate closely with research mentors to complete projects, prepare for conferences, and submit publications. They also continue to attend seminars and journal clubs.
               </p>
             </div>
           </div>
@@ -113,19 +117,19 @@ const Program: React.FC = () => {
               <h2 className="text-2xl font-semibold mb-4">Core Clinical Training Experiences</h2>
               <h3 className="text-xl font-semibold mb-2">HIV Primary Care</h3>
               <p className="text-gray-700 mb-4">
-                Fellows gain comprehensive experience in HIV primary care across multiple clinics, providing care for over 300 HIV-positive patients. They manage antiretroviral therapy, HIV-related primary care, and complications, all under the guidance of DHS and USC faculty.
+                Fellows acquire extensive experience in HIV primary care, managing over 300 HIV-positive patients. This includes antiretroviral therapy, HIV-related primary care, and addressing complications, all under expert guidance.
               </p>
               <h3 className="text-xl font-semibold mb-2">Emergency Department HIV Consultation Service</h3>
               <p className="text-gray-700 mb-4">
-                Fellows provide 24/7 HIV consultations in the emergency department at LAC+USC Medical Center, offering guidance on acute and chronic HIV cases.
+                Fellows provide 24/7 HIV consultations in the emergency department at LAC+USC Medical Center, handling acute and chronic HIV cases.
               </p>
               <h3 className="text-xl font-semibold mb-2">Key HIV Subspecialty Training</h3>
               <p className="text-gray-700 mb-4">
-                Fellows rotate through subspecialties such as addiction medicine, adolescent medicine, communicable diseases, dermatology, oncology, OB/Gyn, and more, gaining exposure to a wide range of HIV-related conditions.
+                Rotations through subspecialties like addiction medicine, adolescent medicine, communicable diseases, dermatology, and oncology expose fellows to a wide array of HIV-related conditions.
               </p>
               <h3 className="text-xl font-semibold mb-2">Inpatient Infectious Disease Training</h3>
               <p className="text-gray-700">
-                Fellows manage hospitalized HIV-positive patients at LAC+USC Medical Center, working alongside infectious disease fellows and participating in consult services and conferences.
+                Fellows manage hospitalized HIV-positive patients at LAC+USC Medical Center, collaborating with infectious disease fellows and participating in consult services and conferences.
               </p>
             </div>
           </div>

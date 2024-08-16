@@ -110,10 +110,10 @@ const Alumni: React.FC = () => {
               "The HIV Clinical Leadership Program has graduated many HIV Specialists since its inception in 2001. The alumni featured here represent those since the program’s collaboration with DHS in 2016."
             </blockquote>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-16">
-            <div className="aspect-w-16 aspect-h-9">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-12">
+            <div className="relative w-full overflow-hidden rounded-lg">
               <iframe
-                className="w-full h-full"
+                className="w-full h-56 sm:h-64 md:h-80 lg:h-96"
                 src="https://www.youtube.com/embed/T6238-kxM3o?si=Ii2ZN6AATs7CFBh9"
                 title="Dr. Revery Barnes"
                 frameBorder="0"
@@ -122,9 +122,9 @@ const Alumni: React.FC = () => {
                 aria-label="Video: Dr. Revery Barnes"
               ></iframe>
             </div>
-            <div className="aspect-w-16 aspect-h-9">
+            <div className="relative w-full overflow-hidden rounded-lg">
               <iframe
-                className="w-full h-full"
+                className="w-full h-56 sm:h-64 md:h-80 lg:h-96"
                 src="https://www.youtube.com/embed/ssJDOFueZDA?si=zn017rjR0D320Prb"
                 title="Dr. Becca Cohen"
                 frameBorder="0"
@@ -132,14 +132,6 @@ const Alumni: React.FC = () => {
                 allowFullScreen
                 aria-label="Video: Dr. Becca Cohen"
               ></iframe>
-            </div>
-            <div className="aspect-w-16 aspect-h-9">
-              <Image
-                src="/images/placeholder.jpg"
-                alt="Street Medicine, LA Times"
-                layout="fill"
-                className="object-cover rounded"
-              />
             </div>
           </div>
         </section>

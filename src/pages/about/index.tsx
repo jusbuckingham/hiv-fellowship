@@ -9,7 +9,7 @@ const AboutPage: React.FC = () => {
     <>
       <Head>
         <title>About | HIV Clinical Leadership Program</title>
-        <meta name="description" content="Discover the HIV Clinical Leadership Program, a two-year fellowship designed to train physicians for leadership roles in HIV healthcare." />
+        <meta name="description" content="Explore the HIV Clinical Leadership Program, a two-year fellowship designed to train physicians for leadership roles in HIV healthcare." />
         <meta name="keywords" content="HIV Clinical Leadership Program, HIV fellowship, healthcare, medicine, HIV specialists" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charSet="UTF-8" />
@@ -21,7 +21,7 @@ const AboutPage: React.FC = () => {
             About<span className="text-red-600">.</span>
           </h1>
           <p className="text-xl max-w-3xl mx-auto">
-            The HIV Clinical Leadership Program is a two-year postdoctoral fellowship that trains physicians for leadership in HIV healthcare.
+            The HIV Clinical Leadership Program is a two-year postdoctoral fellowship that prepares physicians for leadership roles in HIV healthcare.
           </p>
         </section>
         <section className="container mx-auto px-6 py-16 text-center">
@@ -46,7 +46,7 @@ const AboutPage: React.FC = () => {
                 Established in <span className="text-red-600">2001</span>
               </h3>
               <p>
-                The Los Angeles Area AIDS Education and Training Center (AETC) at USC established the HIV fellowship in 2001, later revitalized in 2016 through a partnership with the Los Angeles County Department of Health Services (DHS). The program trains physicians committed to improving primary care for underserved communities living with HIV, leveraging the strengths of DHS, USC Keck School of Medicine’s AETC, UCLA’s National Clinician Scholars Program, ViiV Healthcare, and The Lundquist Institute.
+                The Los Angeles Area AIDS Education and Training Center (AETC) at USC launched the HIV fellowship in 2001, later revitalized in 2016 through a partnership with the Los Angeles County Department of Health Services (DHS). The program trains physicians dedicated to improving primary care for underserved communities living with HIV, leveraging the strengths of DHS, USC Keck School of Medicine’s AETC, UCLA’s National Clinician Scholars Program, ViiV Healthcare, and The Lundquist Institute.
               </p>
             </div>
             <div>
@@ -54,23 +54,23 @@ const AboutPage: React.FC = () => {
                 Our <span className="text-red-600">Goal</span>
               </h3>
               <p>
-                We aim to train leaders in HIV medicine who advocate for those affected by HIV, especially vulnerable populations. Our curriculum and mentorship place fellows in leadership roles after graduation. Ideal applicants are:
+                We strive to cultivate leaders in HIV medicine who advocate for those affected by HIV, particularly vulnerable populations. Our curriculum and mentorship prepare fellows to step into leadership roles after graduation. Ideal candidates are:
               </p>
               <ul className="list-decimal list-inside space-y-2">
-                <li>Dedicated to high-quality, whole-person care for HIV patients.</li>
-                <li>Committed to research benefiting HIV-affected communities.</li>
+                <li>Committed to providing high-quality, holistic care for HIV patients.</li>
+                <li>Engaged in research that benefits HIV-affected communities.</li>
                 <li>Aspiring leaders in healthcare, education, research, and advocacy.</li>
               </ul>
             </div>
           </div>
         </section>
         <section className="container mx-auto px-6 py-20">
-          <h3 className="text-2xl font-bold mb-8">Overview</h3>
+          <h3 className="text-2xl font-bold mb-8">Program Overview</h3>
           <p className="mb-8">
-            <span className="font-bold text-red-600">Year 1</span> focuses on academic coursework with UCLA’s National Clinician Scholars program, covering health policy, research methods, community-based research, healthcare issues, and leadership skills. Fellows rotate through various HIV clinics, consult on acute care cases in the Emergency Department, and establish continuity clinics. Case-based learning and didactic sessions cover essential HIV medicine topics, including multi-drug resistance and opportunistic infections.
+            <span className="font-bold text-red-600">Year 1</span> focuses on academic coursework through UCLA’s National Clinician Scholars program, covering health policy, research methods, community-based research, healthcare issues, and leadership skills. Fellows rotate through various HIV clinics, consult on acute care cases in the Emergency Department, and establish continuity clinics. Case-based learning and didactic sessions address essential HIV medicine topics, including multi-drug resistance and opportunistic infections.
           </p>
           <p className="mb-8">
-            <span className="font-bold text-red-600">Year 2</span> emphasizes independent patient management in specialty rotations, continuity care, and mentoring first-year fellows, residents, and students. Second-year fellows implement and present their scholarly project at a conference or submit it for publication.
+            <span className="font-bold text-red-600">Year 2</span> emphasizes independent patient management in specialty rotations, continuity care, and mentoring first-year fellows, residents, and students. Second-year fellows implement and present their scholarly projects at conferences or submit them for publication.
           </p>
         </section>
         <section className="container mx-auto px-6 py-16">
@@ -81,10 +81,10 @@ const AboutPage: React.FC = () => {
               <ul className="list-disc list-inside space-y-2">
                 <li>HIV Care Continuum</li>
                 <li>HIV Screening & Testing</li>
-                <li>Medical Evaluation of the HIV Positive Patient</li>
+                <li>Medical Evaluation of the HIV-Positive Patient</li>
                 <li>HIV and AIDS Clinical Manifestations</li>
                 <li>Opportunistic Infections & Malignancies</li>
-                <li>Anti-Retroviral Therapy & Resistance</li>
+                <li>Antiretroviral Therapy & Resistance</li>
                 <li>Laboratory Testing & Health Maintenance</li>
                 <li>HIV Prevention</li>
                 <li>Co-infections: STIs, Hepatitis B/C</li>
@@ -121,7 +121,7 @@ const AboutPage: React.FC = () => {
                 <li>Trauma-Informed Care</li>
               </ul>
             </div>
-            </div>
+          </div>
         </section>
         <Footer />
       </main>

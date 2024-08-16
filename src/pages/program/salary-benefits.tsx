@@ -9,15 +9,19 @@ const SalaryBenefits: React.FC = () => {
     <>
       <Head>
         <title>Salary & Benefits | HIV Clinical Leadership Program</title>
-        <meta name="description" content="Discover the competitive salary and benefits package offered by the HIV Clinical Leadership Program, including medical, dental, housing stipend, and loan repayment options." />
+        <meta name="description" content="Explore the competitive salary and comprehensive benefits offered by the HIV Clinical Leadership Program, including medical, dental, housing stipend, and loan repayment options." />
         <meta name="keywords" content="HIV Clinical Leadership Program, salary, benefits, healthcare, medical, dental, housing stipend, loan repayment" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charSet="UTF-8" />
       </Head>
       <Navbar />
       <section className="bg-gray-900 text-white text-center py-20 px-4">
-        <h1 className="text-5xl font-bold mb-4">Salary & Benefits<span className="text-red-600">.</span></h1>
-        <p className="text-xl max-w-3xl mx-auto">Explore our competitive salary and benefits package, including medical, dental, housing stipend, and loan repayment options for qualifying fellows.</p>
+        <h1 className="text-5xl font-bold mb-4">
+          Salary & Benefits<span className="text-red-600">.</span>
+        </h1>
+        <p className="text-xl max-w-3xl mx-auto">
+          Discover our competitive salary and benefits package, including medical, dental, housing stipend, and loan repayment options for qualifying fellows.
+        </p>
       </section>
       <div className="container mx-auto px-4 py-24">
         <div className="mb-8">
@@ -30,9 +34,9 @@ const SalaryBenefits: React.FC = () => {
           />
         </div>
         <div className="prose prose-lg max-w-none">
-          <h2>Up to <span className="text-red-600">$150,000</span> in student loan repayment for qualifying graduates!</h2>
+          <h2>Up to <span className="text-red-600">$150,000</span> in Student Loan Repayment for Qualifying Graduates!</h2>
           <h3>Salary</h3>
-          <p>Salaries for postgraduate physicians are established by the County of Los Angeles Board of Supervisors, guided by County ordinance and agreements with the Joint Council of Interns and Residents (JCIR).</p>
+          <p>Salaries for postgraduate physicians are determined by the County of Los Angeles Board of Supervisors, based on County ordinance and agreements with the Joint Council of Interns and Residents (JCIR).</p>
           <ul>
             <li><strong>Annual Gross Salary:</strong></li>
             <li>PGY-4: $84,123.48</li>
@@ -41,24 +45,24 @@ const SalaryBenefits: React.FC = () => {
             <li>PGY-7: $101,851.64</li>
           </ul>
           <h3>Medical & Dental Benefits</h3>
-          <p>Fellows receive medical and dental benefits through the Lundquist Institute, covered by the program. Fellows may opt-out of coverage but will not receive reimbursement for declined benefits. Dependents are also eligible for coverage.</p>
+          <p>Fellows receive comprehensive medical and dental coverage through the Lundquist Institute. Dependents are also eligible for coverage. Opt-out options are available, though no reimbursement is provided for declined benefits.</p>
           <h3>Housing Stipend</h3>
-          <p>Fellows receive a housing stipend of <span className="text-red-600">$10,000</span> annually, disbursed each August for the academic year.</p>
+          <p>Fellows are provided a housing stipend of <span className="text-red-600">$10,000</span> annually, disbursed in August for the academic year.</p>
           <h3>Educational Stipend</h3>
-          <p>Conference fees, airfare, lodging, and per diem are reimbursed for up to two relevant continuing medical education (CME) activities per year.</p>
+          <p>Fellows receive reimbursement for conference fees, airfare, lodging, and per diem for up to two relevant continuing medical education (CME) activities per year.</p>
           <h3>Relocation</h3>
-          <p>No additional relocation benefits are provided. Fellows are responsible for moving expenses and required professional licensure costs (e.g., California medical license, board certification, CPR certification, CME coursework).</p>
+          <p>No additional relocation benefits are provided. Fellows are responsible for moving expenses and professional licensure costs (e.g., California medical license, board certification, CPR certification, CME coursework).</p>
           <h3>Licensure Fees</h3>
           <p>Fellows may apply for DEA license fee exemption for services provided at LA County DHS facilities. AAHIVM HIV Specialist exam fees and study materials are reimbursed.</p>
           <h3>Leave Time</h3>
-          <p>Fellows are allotted 25 paid leave days per year, usable for vacation, sick leave, or personal time. Leave requests should be submitted at least 90 days in advance via the Time-Off Request Form. Emergency time off will be approved based on circumstances. For more information, refer to the HIV CLP Orientation Packet.</p>
+          <p>Fellows are granted 25 paid leave days per year, which can be used for vacation, sick leave, or personal time. Leave requests should be submitted at least 90 days in advance using the Time-Off Request Form. Emergency leave will be considered on a case-by-case basis.</p>
           <h3>Educational Loan Repayment</h3>
-          <p>The Fellowship Loan Repayment Program (FLRP) offers up to <span className="text-red-600">$150,000</span> ($50,000 per year for 3 years) for eligible fellows who complete the two-year program. Fellows must work at least 50% of their time in HIV clinical care or research focused on underserved communities. Loan repayments are taxable and disbursed by The Lundquist Institute.</p>
+          <p>The Fellowship Loan Repayment Program (FLRP) offers up to <span className="text-red-600">$150,000</span> ($50,000 per year for 3 years) for eligible fellows who complete the two-year program. Fellows must dedicate at least 50% of their time to HIV clinical care or research in underserved communities. Loan repayments are taxable and administered by The Lundquist Institute.</p>
         </div>
         <div className="mt-16 mb-8">
           <h2 className="text-3xl font-bold mb-4">Life in Los Angeles<span className="text-red-600">.</span></h2>
-          <p><strong>Los Angeles County</strong>, officially the <strong>County of Los Angeles</strong>, is the most populous county in the United States, home to over ten million residents. The county is ethnically diverse, with people from more than 140 countries speaking 224 different languages. Los Angeles is a vibrant, multicultural hub offering a dynamic lifestyle.</p>
-          <p>The fellowship includes rotations across Los Angeles, from <strong>Boyle Heights</strong> (LA General Medical Center) to <strong>Westwood Village</strong> (UCLA National Scholars Program), <strong>Hollywood</strong> (Children's Hospital Los Angeles), <strong>Skid Row</strong> (Street Medicine & JWCH Clinic), <strong>South Central</strong> (South LA Health Center Group, Main Street Clinic), and <strong>Compton/Watts</strong> (CDU/MLK OPC - Oasis Clinic).</p>
+          <p><strong>Los Angeles County</strong>, the most populous county in the United States, is home to over ten million residents. This vibrant, multicultural hub offers a dynamic lifestyle, with people from more than 140 countries speaking 224 different languages.</p>
+          <p>The fellowship includes rotations throughout Los Angeles, including locations like <strong>Boyle Heights</strong> (LA General Medical Center), <strong>Westwood Village</strong> (UCLA National Scholars Program), <strong>Hollywood</strong> (Children's Hospital Los Angeles), <strong>Skid Row</strong> (Street Medicine & JWCH Clinic), <strong>South Central</strong> (South LA Health Center Group, Main Street Clinic), and <strong>Compton/Watts</strong> (CDU/MLK OPC - Oasis Clinic).</p>
           <p>Learn more about life in LA: <a href="https://www.discoverlosangeles.com" className="text-red-600 hover:underline">www.discoverlosangeles.com</a></p>
         </div>
         <div className="mb-8">
