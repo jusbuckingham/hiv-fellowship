@@ -3,14 +3,13 @@ import Image from 'next/image';
 
 const Accessibility = () => {
   const [open, setOpen] = useState(false);
-  const [hidden, setHidden] = useState(false); // Track if the widget is hidden
-  const [removed, setRemoved] = useState(false); // Track if the widget is completely removed
+  const [hidden, setHidden] = useState(false); 
+  const [removed, setRemoved] = useState(false); 
 
   const [highlightLinks, setHighlightLinks] = useState(false);
   const [colorShift, setColorShift] = useState(false);
   const [animationsEnabled, setAnimationsEnabled] = useState(true);
   const [highContrast, setHighContrast] = useState(false);
-  const [guideEnabled, setGuideEnabled] = useState(false);
   const [focusEnabled, setFocusEnabled] = useState(false);
   const [cursorEnabled, setCursorEnabled] = useState(false);
   const [textSize, setTextSize] = useState('normal');
@@ -19,10 +18,12 @@ const Accessibility = () => {
   const [imagesVisible, setImagesVisible] = useState(true);
   const [showPageStructure, setShowPageStructure] = useState(false);
 
+  const [guideEnabled, setGuideEnabled] = useState(false); 
+
   useEffect(() => {
     document.querySelectorAll('a').forEach((link) => {
       const element = link as HTMLElement;
-      element.style.backgroundColor = highlightLinks ? 'yellow' : '';
+      element.style.backgroundColor = highlightLinks ? '#FFFF00' : ''; 
     });
   }, [highlightLinks]);
 
@@ -53,7 +54,7 @@ const Accessibility = () => {
   useEffect(() => {
     document.querySelectorAll('*').forEach((element) => {
       const htmlElement = element as HTMLElement;
-      htmlElement.style.outline = focusEnabled ? '2px solid blue' : '';
+      htmlElement.style.outline = focusEnabled ? '2px solid #0000FF' : ''; 
     });
   }, [focusEnabled]);
 
@@ -77,30 +78,42 @@ const Accessibility = () => {
       <h3 className="font-semibold">Landmarks</h3>
       <ul>
         {Array.from(document.querySelectorAll('header, nav, main, footer')).map((element, index) => (
-          <li key={index}>{element.tagName.toLowerCase()}</li>
+          <li key={index}>
+            <a href={`#${element.id || element.tagName.toLowerCase()}`} className="text-blue-600 hover:underline">
+              {element.tagName.toLowerCase()}
+            </a>
+          </li>
         ))}
       </ul>
       <h3 className="font-semibold mt-4">Headings</h3>
       <ul>
         {Array.from(document.querySelectorAll('h1, h2, h3, h4, h5, h6')).map((element, index) => (
-          <li key={index}>{element.tagName.toLowerCase()}: {element.textContent}</li>
+          <li key={index}>
+            <a href={`#${element.id || element.tagName.toLowerCase()}`} className="text-blue-600 hover:underline">
+              {element.tagName.toLowerCase()}: {element.textContent}
+            </a>
+          </li>
         ))}
       </ul>
       <h3 className="font-semibold mt-4">Links</h3>
       <ul>
         {Array.from(document.querySelectorAll('a')).map((element, index) => (
-          <li key={index}>{element.href}</li>
+          <li key={index}>
+            <a href={element.href} className="text-blue-600 hover:underline">
+              {element.href}
+            </a>
+          </li>
         ))}
       </ul>
     </div>
   );
 
   if (removed) {
-    return null; // Widget completely removed
+    return null; 
   }
 
   return (
-    <div className={`fixed bottom-4 z-50 md:bottom-6 lg:bottom-8 transition-transform transform ${hidden ? 'translate-x-full right-0' : 'right-4 md:right-6 lg:right-8'}`}>
+    <div className={`fixed bottom-4 z-50 transition-transform transform ${hidden ? 'translate-x-full right-0' : 'right-4'}`}>
       {hidden ? (
         <button
           onClick={() => setHidden(false)}
@@ -119,32 +132,34 @@ const Accessibility = () => {
             <Image src="/images/accessibility/accessibility-icon.webp" alt="Accessibility Icon" width={24} height={24} />
           </button>
           {open && (
-            <div className="bg-white shadow-lg rounded-lg p-4 mt-2 w-72 sm:w-80 md:w-96 lg:w-104 max-h-[80vh] overflow-y-auto relative">
-              <div className="sticky top-0 bg-white z-10 pb-2">
-                <button
-                  onClick={() => setOpen(false)}
-                  className="text-gray-600 hover:text-gray-800"
-                  aria-label="Close Accessibility Widget"
-                >
-                  Close
-                </button>
-                <button
-                  onClick={() => setHidden(true)}
-                  className="ml-4 text-gray-600 hover:text-gray-800"
-                  aria-label="Hide Accessibility Widget"
-                >
-                  Hide
-                </button>
-                <button
-                  onClick={() => setRemoved(true)}
-                  className="ml-4 text-red-600 hover:text-red-800"
-                  aria-label="Remove Accessibility Widget"
-                >
-                  Remove
-                </button>
-                <h2 className="text-lg font-semibold mb-2">Visual Toolkit</h2>
+            <div className="bg-white shadow-lg rounded-lg p-4 mt-2 w-72 max-h-[80vh] overflow-y-auto relative">
+              <div className="flex justify-between items-center mb-4">
+                <h2 className="text-lg font-semibold text-blue-600">Visual Toolkit</h2>
+                <div>
+                  <button
+                    onClick={() => setOpen(false)}
+                    className="text-gray-600 hover:text-gray-800 ml-2"
+                    aria-label="Close Accessibility Widget"
+                  >
+                    Close
+                  </button>
+                  <button
+                    onClick={() => setHidden(true)}
+                    className="ml-4 text-gray-600 hover:text-gray-800"
+                    aria-label="Hide Accessibility Widget"
+                  >
+                    Hide
+                  </button>
+                  <button
+                    onClick={() => setRemoved(true)}
+                    className="ml-4 text-red-600 hover:text-red-800"
+                    aria-label="Remove Accessibility Widget"
+                  >
+                    Remove
+                  </button>
+                </div>
               </div>
-              <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
+              <div className="grid grid-cols-2 gap-2">
                 <button className="p-2 bg-gray-200 rounded" onClick={() => setFocusEnabled(!focusEnabled)}>
                   {focusEnabled ? 'Unfocus' : 'Focus'}
                 </button>
