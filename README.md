@@ -1,6 +1,6 @@
 # HIV Clinical Leadership Program
 
-Welcome to the official website repository for the HIV Clinical Leadership Program. This site provides comprehensive information about the program, resources for clinicians and researchers, and application details.
+Welcome to the official repository for the HIV Clinical Leadership Program website. This site serves as a comprehensive resource for information about the program, offers tools for clinicians and researchers, and provides details on how to apply.
 
 ## Tech Stack
 
@@ -11,19 +11,19 @@ Welcome to the official website repository for the HIV Clinical Leadership Progr
 
 ## Features
 
-- **Program Information:** Detailed descriptions of the HIV Clinical Leadership Program.
-- **Resources:** Access to valuable resources for clinicians and researchers.
-- **Application Details:** Instructions on how to apply, including an application form.
-- **Responsive Design:** Optimized for all devices to ensure a seamless experience across desktops, tablets, and mobile phones.
-- **Accessibility Widget:** Integrated accessibility features to enhance user experience for all visitors.
+- **Comprehensive Program Details:** In-depth information about the HIV Clinical Leadership Program and its offerings.
+- **Resource Hub:** Easy access to essential resources for clinicians and researchers.
+- **Application Process:** Step-by-step instructions and forms for applying to the program.
+- **Responsive Design:** Fully optimized for desktops, tablets, and mobile devices.
+- **Accessibility Toolkit:** An integrated widget to enhance the accessibility of the website for all users.
 
 ## Project Structure
 
-- `components/`: Contains reusable components like Navbar, Footer, and Accessibility widget.
-- `pages/`: Contains the website pages including program details, about, contact, and apply pages.
-- `public/`: Stores public assets like images and icons.
-- `styles/`: Contains global styles and CSS files.
-- `README.md`: Provides an overview of the project.
+- `components/`: Reusable UI components such as Navbar, Footer, and the Accessibility widget.
+- `pages/`: Individual pages of the website including program information, about, contact, and application forms.
+- `public/`: Public assets such as images and icons.
+- `styles/`: Global and component-specific styles.
+- `README.md`: Project overview and instructions.
 
 ## Development
 
