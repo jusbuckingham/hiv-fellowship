@@ -151,15 +151,16 @@ export default function Home() {
             Physicians interested in working in the <span className="text-red-600">South</span> and <span className="text-red-600">Mid-Atlantic States</span> are also highly encouraged to apply!
           </p>
 
-          <div className="flex justify-center items-center space-x-8">
-            <Image src="/images/about/health-services-lac.png" alt="Health Services LAC Logo" width={100} height={100} />
-            <Image src="/images/about/kecklogo.jpeg" alt="Keck Logo" width={100} height={100} />
-            <Image src="/images/about/aetc-pacific.jpg" alt="AETC Pacific Logo" width={100} height={100} />
-            <Image src="/images/about/ucla-ncsp.png" alt="UCLA NCSP Logo" width={100} height={100} />
-            <Image src="/images/about/lundquist.png" alt="Lundquist Logo" width={100} height={100} />
-            <Image src="/images/about/viivlogo.png" alt="ViiV Logo" width={100} height={100} />
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 justify-center items-center">
+            <Image src="/images/about/health-services-lac.png" alt="Health Services LAC Logo" width={100} height={100} className="mx-auto" />
+            <Image src="/images/about/kecklogo.jpeg" alt="Keck Logo" width={100} height={100} className="mx-auto" />
+            <Image src="/images/about/aetc-pacific.jpg" alt="AETC Pacific Logo" width={100} height={100} className="mx-auto" />
+            <Image src="/images/about/ucla-ncsp.png" alt="UCLA NCSP Logo" width={100} height={100} className="mx-auto" />
+            <Image src="/images/about/lundquist.png" alt="Lundquist Logo" width={100} height={100} className="mx-auto" />
+            <Image src="/images/about/viivlogo.png" alt="ViiV Logo" width={100} height={100} className="mx-auto" />
           </div>
         </section>
+
       </main>
 
       <Footer />
