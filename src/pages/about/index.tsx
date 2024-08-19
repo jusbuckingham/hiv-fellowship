@@ -28,12 +28,13 @@ const AboutPage: React.FC = () => {
           <h2 className="text-3xl font-bold mb-6">
             Celebrating 20+ Years of Excellence<span className="text-red-600">.</span>
           </h2>
-          <div className="relative w-full h-80 mb-12">
+          <div className="relative w-full h-80 sm:h-96 md:h-[500px] mb-12">
             <Image
               src="/images/about/fellowshipgrouppic.png"
               alt="Fellowship members celebrating 20+ years of excellence"
               layout="fill"
               objectFit="cover"
+              objectPosition="center"
               quality={100}
               className="rounded"
             />
