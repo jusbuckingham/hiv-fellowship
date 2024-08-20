@@ -3,8 +3,8 @@ import Image from 'next/image';
 
 const Accessibility = () => {
   const [open, setOpen] = useState(false);
-  const [hidden, setHidden] = useState(false); 
-  const [removed, setRemoved] = useState(false); 
+  const [hidden, setHidden] = useState(false);
+  const [removed, setRemoved] = useState(false);
 
   const [highlightLinks, setHighlightLinks] = useState(false);
   const [colorShift, setColorShift] = useState(false);
@@ -18,12 +18,12 @@ const Accessibility = () => {
   const [imagesVisible, setImagesVisible] = useState(true);
   const [showPageStructure, setShowPageStructure] = useState(false);
 
-  const [guideEnabled, setGuideEnabled] = useState(false); 
+  const [guideEnabled, setGuideEnabled] = useState(false);
 
   useEffect(() => {
     document.querySelectorAll('a').forEach((link) => {
       const element = link as HTMLElement;
-      element.style.backgroundColor = highlightLinks ? '#FFFF00' : ''; 
+      element.style.backgroundColor = highlightLinks ? '#FFFF00' : '';
     });
   }, [highlightLinks]);
 
@@ -54,7 +54,7 @@ const Accessibility = () => {
   useEffect(() => {
     document.querySelectorAll('*').forEach((element) => {
       const htmlElement = element as HTMLElement;
-      htmlElement.style.outline = focusEnabled ? '2px solid #0000FF' : ''; 
+      htmlElement.style.outline = focusEnabled ? '2px solid #0000FF' : '';
     });
   }, [focusEnabled]);
 
@@ -73,43 +73,55 @@ const Accessibility = () => {
     setShowPageStructure(!showPageStructure);
   };
 
-  const renderPageStructure = () => (
-    <div>
-      <h3 className="font-semibold">Landmarks</h3>
-      <ul>
-        {Array.from(document.querySelectorAll('header, nav, main, footer')).map((element, index) => (
-          <li key={index}>
-            <a href={`#${element.id || element.tagName.toLowerCase()}`} className="text-blue-600 hover:underline">
-              {element.tagName.toLowerCase()}
-            </a>
-          </li>
-        ))}
-      </ul>
-      <h3 className="font-semibold mt-4">Headings</h3>
-      <ul>
-        {Array.from(document.querySelectorAll('h1, h2, h3, h4, h5, h6')).map((element, index) => (
-          <li key={index}>
-            <a href={`#${element.id || element.tagName.toLowerCase()}`} className="text-blue-600 hover:underline">
-              {element.tagName.toLowerCase()}: {element.textContent}
-            </a>
-          </li>
-        ))}
-      </ul>
-      <h3 className="font-semibold mt-4">Links</h3>
-      <ul>
-        {Array.from(document.querySelectorAll('a')).map((element, index) => (
-          <li key={index}>
-            <a href={element.href} className="text-blue-600 hover:underline">
-              {element.href}
-            </a>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
+  const renderPageStructure = () => {
+    const landmarks = Array.from(document.querySelectorAll('header, nav, main, footer'));
+    const headings = Array.from(document.querySelectorAll('h1, h2, h3, h4, h5, h6'));
+    const links = Array.from(document.querySelectorAll('a'));
+
+    return (
+      <div>
+        {landmarks.length > 0 && (
+          <>
+            <h3 className="font-semibold">Landmarks</h3>
+            <ul>
+              {landmarks.map((element, index) => (
+                <li key={index}>
+                  {element.tagName.toLowerCase()} (id: {element.id || 'N/A'})
+                </li>
+              ))}
+            </ul>
+          </>
+        )}
+        {headings.length > 0 && (
+          <>
+            <h3 className="font-semibold mt-4">Headings</h3>
+            <ul>
+              {headings.map((element, index) => (
+                <li key={index}>
+                  {element.tagName.toLowerCase()}: {element.textContent}
+                </li>
+              ))}
+            </ul>
+          </>
+        )}
+        {links.length > 0 && (
+          <>
+            <h3 className="font-semibold mt-4">Links</h3>
+            <ul>
+              {links.map((element, index) => (
+                <li key={index}>
+                  {element.href}
+                </li>
+              ))}
+            </ul>
+          </>
+        )}
+      </div>
+    );
+  };
 
   if (removed) {
-    return null; 
+    return null;
   }
 
   return (
@@ -132,50 +144,50 @@ const Accessibility = () => {
             <Image src="/images/accessibility/accessibility-icon.webp" alt="Accessibility Icon" width={24} height={24} />
           </button>
           {open && (
-            <div className="bg-white shadow-lg rounded-lg p-4 mt-2 w-72 max-h-[80vh] overflow-y-auto relative">
+            <div className="bg-white shadow-lg rounded-lg p-4 mt-2 w-80 max-h-[80vh] overflow-y-auto relative">
               <div className="flex justify-between items-center mb-4">
-                <h2 className="text-lg font-semibold text-blue-600">Visual Toolkit</h2>
-                <div>
+                <h2 className="text-lg font-semibold text-blue-600">Accessibility Options</h2>
+                <div className="flex gap-2">
                   <button
                     onClick={() => setOpen(false)}
-                    className="text-gray-600 hover:text-gray-800 ml-2"
+                    className="text-gray-600 hover:text-gray-800"
                     aria-label="Close Accessibility Widget"
                   >
                     Close
                   </button>
                   <button
                     onClick={() => setHidden(true)}
-                    className="ml-4 text-gray-600 hover:text-gray-800"
+                    className="text-gray-600 hover:text-gray-800"
                     aria-label="Hide Accessibility Widget"
                   >
                     Hide
                   </button>
                   <button
                     onClick={() => setRemoved(true)}
-                    className="ml-4 text-red-600 hover:text-red-800"
+                    className="text-red-600 hover:text-red-800"
                     aria-label="Remove Accessibility Widget"
                   >
                     Remove
                   </button>
                 </div>
               </div>
-              <div className="grid grid-cols-2 gap-2">
-                <button className="p-2 bg-gray-200 rounded" onClick={() => setFocusEnabled(!focusEnabled)}>
+              <div className="grid grid-cols-2 gap-3">
+                <button className={`p-2 rounded ${focusEnabled ? 'bg-blue-200' : 'bg-gray-200'}`} onClick={() => setFocusEnabled(!focusEnabled)}>
                   {focusEnabled ? 'Unfocus' : 'Focus'}
                 </button>
-                <button className="p-2 bg-gray-200 rounded" onClick={() => setCursorEnabled(!cursorEnabled)}>
+                <button className={`p-2 rounded ${cursorEnabled ? 'bg-blue-200' : 'bg-gray-200'}`} onClick={() => setCursorEnabled(!cursorEnabled)}>
                   {cursorEnabled ? 'Normal Cursor' : 'Cursor'}
                 </button>
-                <button className="p-2 bg-gray-200 rounded" onClick={() => setHighlightLinks(!highlightLinks)}>
+                <button className={`p-2 rounded ${highlightLinks ? 'bg-blue-200' : 'bg-gray-200'}`} onClick={() => setHighlightLinks(!highlightLinks)}>
                   {highlightLinks ? 'Remove Highlight' : 'Highlight'}
                 </button>
-                <button className="p-2 bg-gray-200 rounded" onClick={() => setHighContrast(!highContrast)}>
+                <button className={`p-2 rounded ${highContrast ? 'bg-blue-200' : 'bg-gray-200'}`} onClick={() => setHighContrast(!highContrast)}>
                   {highContrast ? 'Normal Contrast' : 'High Contrast'}
                 </button>
-                <button className="p-2 bg-gray-200 rounded" onClick={() => setColorShift(!colorShift)}>
+                <button className={`p-2 rounded ${colorShift ? 'bg-blue-200' : 'bg-gray-200'}`} onClick={() => setColorShift(!colorShift)}>
                   {colorShift ? 'Normal Colors' : 'Color Shift'}
                 </button>
-                <button className="p-2 bg-gray-200 rounded" onClick={() => setAnimationsEnabled(!animationsEnabled)}>
+                <button className={`p-2 rounded ${animationsEnabled ? 'bg-blue-200' : 'bg-gray-200'}`} onClick={() => setAnimationsEnabled(!animationsEnabled)}>
                   {animationsEnabled ? 'Disable Animation' : 'Enable Animation'}
                 </button>
                 <button className="p-2 bg-gray-200 rounded" onClick={() => setTextSize('1em')}>Normal Text</button>
@@ -185,13 +197,13 @@ const Accessibility = () => {
                 <button className="p-2 bg-gray-200 rounded" onClick={() => setSpacing('wide')}>Wide Spacing</button>
                 <button className="p-2 bg-gray-200 rounded" onClick={() => setFont('sans-serif')}>Sans-serif Font</button>
                 <button className="p-2 bg-gray-200 rounded" onClick={() => setFont('serif')}>Serif Font</button>
-                <button className="p-2 bg-gray-200 rounded" onClick={() => setGuideEnabled(!guideEnabled)}>
+                <button className={`p-2 rounded ${guideEnabled ? 'bg-blue-200' : 'bg-gray-200'}`} onClick={() => setGuideEnabled(!guideEnabled)}>
                   {guideEnabled ? 'Disable Guide' : 'Guide'}
                 </button>
                 <button className="p-2 bg-gray-200 rounded" onClick={togglePageStructure}>
                   Page Structure
                 </button>
-                <button className="p-2 bg-gray-200 rounded" onClick={() => setImagesVisible(!imagesVisible)}>
+                <button className={`p-2 rounded ${imagesVisible ? 'bg-gray-200' : 'bg-blue-200'}`} onClick={() => setImagesVisible(!imagesVisible)}>
                   {imagesVisible ? 'Hide Images' : 'Show Images'}
                 </button>
               </div>
