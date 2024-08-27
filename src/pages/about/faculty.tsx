@@ -123,53 +123,60 @@ const Faculty: React.FC = () => {
       </Head>
       <Navbar />
       <main>
-        <section className="bg-gray-900 text-white text-center py-20 px-4">
-          <h1 className="text-5xl font-bold mb-4">
-            Faculty<span className="text-red-600">.</span>
-          </h1>
-          <p className="text-xl max-w-3xl mx-auto">
-            Meet our leadership and clinical faculty who guide the HIV Fellowship Program.
-          </p>
+        {/* Hero Section */}
+        <section className="relative bg-gray-900 text-white text-center py-20 px-6">
+          <div className="absolute inset-0 bg-black opacity-30"></div>
+          <div className="relative z-10">
+            <h1 className="text-5xl font-extrabold mb-4">
+              Faculty<span className="text-red-600">.</span>
+            </h1>
+            <p className="text-xl max-w-4xl mx-auto">
+              Meet our leadership and clinical faculty who guide the HIV Fellowship Program.
+            </p>
+          </div>
         </section>
-        <section className="container mx-auto px-6 py-16 text-center">
+
+        {/* Leadership Team Section */}
+        <section className="container mx-auto px-6 py-24 text-center">
           <h2 className="text-4xl font-bold mb-12">
             Leadership Team<span className="text-red-600">.</span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-16">
             {leadershipTeam.map((member, index) => (
-              <div key={index} className="text-center">
+              <div key={index} className="text-center transform transition duration-500 hover:scale-105">
                 <Image
                   src={member.image}
                   alt={`Portrait of ${member.name}, ${member.title}, pronouns: ${member.pronouns}`}
                   width={200}
                   height={200}
-                  className="mx-auto rounded"
+                  className="mx-auto rounded-full shadow-lg"
                 />
-                <h3 className="text-xl font-bold mt-4">{member.name}</h3>
-                <p className="italic text-gray-600">{member.title}</p>
-                {member.subtitle && <p className="text-gray-600">{member.subtitle}</p>}
-                <p className="text-gray-600">{member.pronouns}</p>
+                <h3 className="text-xl font-semibold mt-4">{member.name}</h3>
+                <p className="italic text-gray-700">{member.title}</p>
+                {member.subtitle && <p className="text-gray-700">{member.subtitle}</p>}
+                <p className="text-gray-700">{member.pronouns}</p>
               </div>
             ))}
           </div>
 
+          {/* Clinical Team Section */}
           <h2 className="text-4xl font-bold mb-12">
             Clinical Team<span className="text-red-600">.</span>
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
             {clinicalTeam.map((member, index) => (
-              <div key={index} className="text-center">
+              <div key={index} className="text-center transform transition duration-500 hover:scale-105">
                 <Image
                   src={member.image}
                   alt={`Portrait of ${member.name}, ${member.title}, pronouns: ${member.pronouns}`}
                   width={200}
                   height={200}
-                  className="mx-auto rounded"
+                  className="mx-auto rounded-full shadow-lg"
                 />
-                <h3 className="text-xl font-bold mt-4">{member.name}</h3>
-                <p className="italic text-gray-600">{member.title}</p>
-                {member.subtitle && <p className="text-gray-600">{member.subtitle}</p>}
-                <p className="text-gray-600">{member.pronouns}</p>
+                <h3 className="text-xl font-semibold mt-4">{member.name}</h3>
+                <p className="italic text-gray-700">{member.title}</p>
+                {member.subtitle && <p className="text-gray-700">{member.subtitle}</p>}
+                <p className="text-gray-700">{member.pronouns}</p>
               </div>
             ))}
           </div>

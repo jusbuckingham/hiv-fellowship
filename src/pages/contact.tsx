@@ -14,56 +14,57 @@ const Contact: React.FC = () => {
         <meta charSet="UTF-8" />
       </Head>
       <Navbar />
-      <main className="bg-gray-100 min-h-screen">
+      <main className="bg-white min-h-screen">
         <section className="bg-gray-900 text-white py-20" role="banner">
-          <div className="container mx-auto px-6 text-center">
-            <h1 className="text-5xl font-bold">Contact Us<span className="text-red-600">.</span></h1>
-            <p className="mt-4 text-xl">We look forward to hearing from you!</p>
+          <div className="container mx-auto text-center">
+            <h1 className="text-5xl font-extrabold mb-4">
+              Contact Us<span className="text-red-600">.</span>
+            </h1>
+            <p className="text-xl">We look forward to hearing from you!</p>
           </div>
         </section>
         <section className="container mx-auto px-6 py-24">
-          <h2 className="sr-only">Contact Information</h2>
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold">Contact Information:</h2>
-            <p className="mt-4 text-xl">
+            <h2 className="text-3xl font-bold text-gray-900">Contact Information<span className="text-red-600">.</span></h2>
+            <p className="mt-4 text-xl text-gray-700">
               <strong>Shanna Livermore, MPH, MCHES®, FRSPH</strong><br />
               Director of Operations, HIV Clinical Leadership Program<br />
               Co-Director, Pacific AIDS Education and Training Center at USC<br />
               Email: <a href="mailto:shanna.livermore@med.usc.edu" className="text-red-600 hover:underline">shanna.livermore@med.usc.edu</a>
             </p>
           </div>
-          <div className="bg-white shadow-md rounded-lg px-8 pt-6 pb-8 mb-12">
+          <div className="bg-white shadow-md rounded-lg px-8 py-8 mb-12">
             <form aria-label="Contact form">
-              <div className="mb-4">
+              <div className="mb-6">
                 <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="firstName">
                   First Name *
                 </label>
                 <input
-                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  className="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   id="firstName"
                   type="text"
                   placeholder="First Name"
                   required
                 />
               </div>
-              <div className="mb-4">
+              <div className="mb-6">
                 <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="lastName">
                   Last Name *
                 </label>
                 <input
-                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  className="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   id="lastName"
                   type="text"
                   placeholder="Last Name"
                   required
                 />
               </div>
-              <div className="mb-4">
+              <div className="mb-6">
                 <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
                   Email *
                 </label>
                 <input
-                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  className="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   id="email"
                   type="email"
                   placeholder="Email"
@@ -75,7 +76,7 @@ const Contact: React.FC = () => {
                   Message *
                 </label>
                 <textarea
-                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  className="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   id="message"
                   placeholder="Your message here"
                   rows={5}
@@ -84,7 +85,7 @@ const Contact: React.FC = () => {
               </div>
               <div className="flex items-center justify-center">
                 <button
-                  className="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                  className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded focus:outline-none focus:shadow-outline"
                   type="submit"
                 >
                   Submit
@@ -94,8 +95,8 @@ const Contact: React.FC = () => {
           </div>
         </section>
         <section className="bg-gray-900 text-white py-20">
-          <div className="container mx-auto px-6 text-center">
-            <h2 className="text-3xl font-bold">HIV Clinical Leadership Program</h2>
+          <div className="container mx-auto text-center">
+            <h2 className="text-3xl font-bold">HIV Clinical Leadership Program<span className="text-red-600">.</span></h2>
             <p className="mt-4 text-xl">
               1000 S. Fremont Ave. Unit 22, Building A-7, 4th Floor<br />
               Alhambra, CA 91803

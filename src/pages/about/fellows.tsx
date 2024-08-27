@@ -62,31 +62,37 @@ const Fellows: React.FC = () => {
       </Head>
       <Navbar />
       <main>
-        <section className="bg-gray-900 text-white text-center py-20 px-4">
-          <h1 className="text-5xl font-bold mb-4">
-            Fellows<span className="text-red-600">.</span>
-          </h1>
-          <p className="text-xl max-w-3xl mx-auto">
-            Meet our current HIV Fellowship cohort.
-          </p>
+        {/* Hero Section */}
+        <section className="bg-gray-900 text-white text-center py-20 px-6 relative">
+          <div className="absolute inset-0 bg-black opacity-30"></div>
+          <div className="relative z-10">
+            <h1 className="text-5xl font-extrabold mb-4">
+              Fellows<span className="text-red-600">.</span>
+            </h1>
+            <p className="text-xl max-w-4xl mx-auto">
+              Meet our current HIV Fellowship cohort.
+            </p>
+          </div>
         </section>
-        <section className="container mx-auto px-6 py-16 text-center">
+
+        {/* Fellows Section */}
+        <section className="container mx-auto px-6 py-24 text-center">
           <h2 className="text-4xl font-bold mb-12">
             Class of <span className="text-red-600">2026</span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
             {fellows2026.map((fellow, index) => (
-              <div key={index} className="text-center">
+              <div key={index} className="text-center transform transition duration-500 hover:scale-105">
                 <Image
                   src={fellow.image}
                   alt={`Portrait of ${fellow.name}, pronouns: ${fellow.pronouns}`}
                   width={200}
                   height={200}
-                  className="mx-auto rounded"
+                  className="mx-auto rounded-full shadow-lg"
                 />
-                <h3 className="text-xl font-bold mt-4">{fellow.name}</h3>
-                <p className="italic text-gray-600">{fellow.pronouns}</p>
-                <p className="whitespace-pre-line mt-4 text-left">{fellow.description}</p>
+                <h3 className="text-xl font-semibold mt-4">{fellow.name}</h3>
+                <p className="italic text-gray-700">{fellow.pronouns}</p>
+                <p className="whitespace-pre-line mt-4 text-left text-gray-800">{fellow.description}</p>
               </div>
             ))}
           </div>
@@ -94,19 +100,19 @@ const Fellows: React.FC = () => {
           <h2 className="text-4xl font-bold mb-12">
             Class of <span className="text-red-600">2025</span>
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
             {fellows2025.map((fellow, index) => (
-              <div key={index} className="text-center">
+              <div key={index} className="text-center transform transition duration-500 hover:scale-105">
                 <Image
                   src={fellow.image}
                   alt={`Portrait of ${fellow.name}, pronouns: ${fellow.pronouns}`}
                   width={200}
                   height={200}
-                  className="mx-auto rounded"
+                  className="mx-auto rounded-full shadow-lg"
                 />
-                <h3 className="text-xl font-bold mt-4">{fellow.name}</h3>
-                <p className="italic text-gray-600">{fellow.pronouns}</p>
-                <p className="whitespace-pre-line mt-4 text-left">{fellow.description}</p>
+                <h3 className="text-xl font-semibold mt-4">{fellow.name}</h3>
+                <p className="italic text-gray-700">{fellow.pronouns}</p>
+                <p className="whitespace-pre-line mt-4 text-left text-gray-800">{fellow.description}</p>
               </div>
             ))}
           </div>

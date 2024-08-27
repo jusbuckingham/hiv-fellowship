@@ -79,13 +79,13 @@ const Accessibility = () => {
     const links = Array.from(document.querySelectorAll('a'));
 
     return (
-      <div>
+      <div className="text-left">
         {landmarks.length > 0 && (
           <>
-            <h3 className="font-semibold">Landmarks</h3>
-            <ul>
+            <h3 className="font-semibold text-gray-800">Landmarks</h3>
+            <ul className="list-disc pl-5">
               {landmarks.map((element, index) => (
-                <li key={index}>
+                <li key={index} className="text-sm text-gray-700">
                   {element.tagName.toLowerCase()} (id: {element.id || 'N/A'})
                 </li>
               ))}
@@ -94,10 +94,10 @@ const Accessibility = () => {
         )}
         {headings.length > 0 && (
           <>
-            <h3 className="font-semibold mt-4">Headings</h3>
-            <ul>
+            <h3 className="font-semibold text-gray-800 mt-4">Headings</h3>
+            <ul className="list-disc pl-5">
               {headings.map((element, index) => (
-                <li key={index}>
+                <li key={index} className="text-sm text-gray-700">
                   {element.tagName.toLowerCase()}: {element.textContent}
                 </li>
               ))}
@@ -106,10 +106,10 @@ const Accessibility = () => {
         )}
         {links.length > 0 && (
           <>
-            <h3 className="font-semibold mt-4">Links</h3>
-            <ul>
+            <h3 className="font-semibold text-gray-800 mt-4">Links</h3>
+            <ul className="list-disc pl-5">
               {links.map((element, index) => (
-                <li key={index}>
+                <li key={index} className="text-sm text-gray-700">
                   {element.href}
                 </li>
               ))}
@@ -138,13 +138,13 @@ const Accessibility = () => {
         <>
           <button
             onClick={() => setOpen(!open)}
-            className="p-3 bg-blue-600 text-white rounded-full flex items-center justify-center"
+            className="p-3 bg-blue-600 text-white rounded-full flex items-center justify-center shadow-lg"
             aria-label="Toggle Accessibility Widget"
           >
-            <Image src="/images/accessibility/accessibility-icon.webp" alt="Accessibility Icon" width={24} height={24} />
+            <Image src="/images/accessibility/accessibility-icon.jpg" alt="Accessibility Icon" width={24} height={24} />
           </button>
           {open && (
-            <div className="bg-white shadow-lg rounded-lg p-4 mt-2 w-80 max-h-[80vh] overflow-y-auto relative">
+            <div className="bg-white shadow-lg rounded-lg p-6 mt-2 w-80 max-h-[80vh] overflow-y-auto">
               <div className="flex justify-between items-center mb-4">
                 <h2 className="text-lg font-semibold text-blue-600">Accessibility Options</h2>
                 <div className="flex gap-2">
@@ -215,7 +215,7 @@ const Accessibility = () => {
         <div className="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center z-50">
           <div className="bg-white rounded-lg shadow-lg p-6 w-full max-w-md">
             <div className="flex justify-between items-center mb-4">
-              <h2 className="text-xl font-semibold">Page Structure</h2>
+              <h2 className="text-xl font-semibold text-gray-800">Page Structure</h2>
               <button onClick={togglePageStructure} className="text-gray-600 hover:text-gray-800">
                 Close
               </button>
