@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import Image from 'next/image';
+import AccessibilityIcon from './AccessibilityIcon'; // Adjust the path as needed
 
 const Accessibility = () => {
   const [open, setOpen] = useState(false);
@@ -141,10 +141,10 @@ const Accessibility = () => {
             className="p-3 bg-blue-600 text-white rounded-full flex items-center justify-center shadow-lg"
             aria-label="Toggle Accessibility Widget"
           >
-            <Image src="/images/accessibility/accessibility-icon.jpg" alt="Accessibility Icon" width={24} height={24} />
+            <AccessibilityIcon />
           </button>
           {open && (
-            <div className="bg-white shadow-lg rounded-lg p-6 mt-2 w-80 max-h-[80vh] overflow-y-auto">
+            <div className="bg-white shadow-lg rounded-lg p-4 mt-2 w-80 max-h-[80vh] overflow-y-auto">
               <div className="flex justify-between items-center mb-4">
                 <h2 className="text-lg font-semibold text-blue-600">Accessibility Options</h2>
                 <div className="flex gap-2">
@@ -171,40 +171,38 @@ const Accessibility = () => {
                   </button>
                 </div>
               </div>
-              <div className="grid grid-cols-2 gap-3">
+              <div className="grid grid-cols-2 gap-4">
                 <button className={`p-2 rounded ${focusEnabled ? 'bg-blue-200' : 'bg-gray-200'}`} onClick={() => setFocusEnabled(!focusEnabled)}>
                   {focusEnabled ? 'Unfocus' : 'Focus'}
                 </button>
                 <button className={`p-2 rounded ${cursorEnabled ? 'bg-blue-200' : 'bg-gray-200'}`} onClick={() => setCursorEnabled(!cursorEnabled)}>
-                  {cursorEnabled ? 'Normal Cursor' : 'Cursor'}
+                  {cursorEnabled ? 'Normal Cursor' : 'Bigger Cursor'}
                 </button>
                 <button className={`p-2 rounded ${highlightLinks ? 'bg-blue-200' : 'bg-gray-200'}`} onClick={() => setHighlightLinks(!highlightLinks)}>
-                  {highlightLinks ? 'Remove Highlight' : 'Highlight'}
+                  {highlightLinks ? 'Remove Highlight' : 'Highlight Links'}
                 </button>
                 <button className={`p-2 rounded ${highContrast ? 'bg-blue-200' : 'bg-gray-200'}`} onClick={() => setHighContrast(!highContrast)}>
-                  {highContrast ? 'Normal Contrast' : 'High Contrast'}
+                  {highContrast ? 'Normal Contrast' : 'Contrast'}
                 </button>
                 <button className={`p-2 rounded ${colorShift ? 'bg-blue-200' : 'bg-gray-200'}`} onClick={() => setColorShift(!colorShift)}>
-                  {colorShift ? 'Normal Colors' : 'Color Shift'}
+                  {colorShift ? 'Normal Colors' : 'Invert Colors'}
                 </button>
                 <button className={`p-2 rounded ${animationsEnabled ? 'bg-blue-200' : 'bg-gray-200'}`} onClick={() => setAnimationsEnabled(!animationsEnabled)}>
                   {animationsEnabled ? 'Disable Animation' : 'Enable Animation'}
                 </button>
+                <button className="p-2 bg-gray-200 rounded" onClick={() => setTextSize('1.25em')}>Bigger Text</button>
                 <button className="p-2 bg-gray-200 rounded" onClick={() => setTextSize('1em')}>Normal Text</button>
-                <button className="p-2 bg-gray-200 rounded" onClick={() => setTextSize('1.25em')}>Large Text</button>
-                <button className="p-2 bg-gray-200 rounded" onClick={() => setTextSize('1.5em')}>Extra Large Text</button>
-                <button className="p-2 bg-gray-200 rounded" onClick={() => setSpacing('normal')}>Normal Spacing</button>
-                <button className="p-2 bg-gray-200 rounded" onClick={() => setSpacing('wide')}>Wide Spacing</button>
-                <button className="p-2 bg-gray-200 rounded" onClick={() => setFont('sans-serif')}>Sans-serif Font</button>
-                <button className="p-2 bg-gray-200 rounded" onClick={() => setFont('serif')}>Serif Font</button>
-                <button className={`p-2 rounded ${guideEnabled ? 'bg-blue-200' : 'bg-gray-200'}`} onClick={() => setGuideEnabled(!guideEnabled)}>
-                  {guideEnabled ? 'Disable Guide' : 'Guide'}
-                </button>
-                <button className="p-2 bg-gray-200 rounded" onClick={togglePageStructure}>
-                  Page Structure
+                <button className={`p-2 rounded ${font === 'sans-serif' ? 'bg-blue-200' : 'bg-gray-200'}`} onClick={() => setFont('sans-serif')}>
+                  Readable Fonts
                 </button>
                 <button className={`p-2 rounded ${imagesVisible ? 'bg-gray-200' : 'bg-blue-200'}`} onClick={() => setImagesVisible(!imagesVisible)}>
                   {imagesVisible ? 'Hide Images' : 'Show Images'}
+                </button>
+                <button className="p-2 bg-gray-200 rounded" onClick={() => setGuideEnabled(!guideEnabled)}>
+                  Reading Line
+                </button>
+                <button className="p-2 bg-gray-200 rounded" onClick={() => togglePageStructure()}>
+                  Tooltips
                 </button>
               </div>
             </div>
