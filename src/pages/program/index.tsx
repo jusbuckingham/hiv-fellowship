@@ -9,8 +9,14 @@ const Program: React.FC = () => {
     <>
       <Head>
         <title>Program | HIV Clinical Leadership Program</title>
-        <meta name="description" content="Explore the comprehensive two-year fellowship program offered by the HIV Clinical Leadership Program." />
-        <meta name="keywords" content="HIV Clinical Leadership Program, fellowship, healthcare, medicine, HIV specialists" />
+        <meta
+          name="description"
+          content="Explore the comprehensive two-year fellowship program offered by the HIV Clinical Leadership Program."
+        />
+        <meta
+          name="keywords"
+          content="HIV Clinical Leadership Program, fellowship, healthcare, medicine, HIV specialists"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charSet="UTF-8" />
       </Head>
