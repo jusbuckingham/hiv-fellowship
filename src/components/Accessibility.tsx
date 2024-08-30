@@ -12,13 +12,13 @@ const Accessibility = () => {
   const [highContrast, setHighContrast] = useState(false);
   const [focusEnabled, setFocusEnabled] = useState(false);
   const [cursorEnabled, setCursorEnabled] = useState(false);
-  const [textSize, setTextSize] = useState('normal');
+  const [textSize, setTextSize] = useState('1em');
   const [spacing, setSpacing] = useState('normal');
-  const [font, setFont] = useState('default');
+  const [font, setFont] = useState('sans-serif');
   const [imagesVisible, setImagesVisible] = useState(true);
   const [showPageStructure, setShowPageStructure] = useState(false);
-
   const [guideEnabled, setGuideEnabled] = useState(false);
+
 
   useEffect(() => {
     document.querySelectorAll('a').forEach((link) => {
@@ -40,7 +40,7 @@ const Accessibility = () => {
   }, [spacing]);
 
   useEffect(() => {
-    document.documentElement.style.fontFamily = font === 'serif' ? 'serif' : 'sans-serif';
+    document.documentElement.style.fontFamily = font;
   }, [font]);
 
   useEffect(() => {
@@ -190,10 +190,14 @@ const Accessibility = () => {
                 <button className={`p-2 rounded ${animationsEnabled ? 'bg-blue-200' : 'bg-gray-200'}`} onClick={() => setAnimationsEnabled(!animationsEnabled)}>
                   {animationsEnabled ? 'Disable Animation' : 'Enable Animation'}
                 </button>
-                <button className="p-2 bg-gray-200 rounded" onClick={() => setTextSize('1.25em')}>Bigger Text</button>
-                <button className="p-2 bg-gray-200 rounded" onClick={() => setTextSize('1em')}>Normal Text</button>
-                <button className={`p-2 rounded ${font === 'sans-serif' ? 'bg-blue-200' : 'bg-gray-200'}`} onClick={() => setFont('sans-serif')}>
-                  Readable Fonts
+                <button className={`p-2 rounded ${textSize === '1.25em' ? 'bg-blue-200' : 'bg-gray-200'}`} onClick={() => setTextSize('1.25em')}>
+                  Bigger Text
+                </button>
+                <button className={`p-2 rounded ${textSize === '1em' ? 'bg-blue-200' : 'bg-gray-200'}`} onClick={() => setTextSize('1em')}>
+                  Normal Text
+                </button>
+                <button className={`p-2 rounded ${font === 'serif' ? 'bg-blue-200' : 'bg-gray-200'}`} onClick={() => setFont('serif')}>
+                  Serif Fonts
                 </button>
                 <button className={`p-2 rounded ${imagesVisible ? 'bg-gray-200' : 'bg-blue-200'}`} onClick={() => setImagesVisible(!imagesVisible)}>
                   {imagesVisible ? 'Hide Images' : 'Show Images'}
