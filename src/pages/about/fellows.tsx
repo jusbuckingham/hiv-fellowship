@@ -11,7 +11,7 @@ const Fellows: React.FC = () => {
       pronouns: 'She/Her',
       image: '/images/about/kenya-bingham-psalms.jpg',
       description: `
-        Dr. Kenya Bingham-Psalms grew up in a military family, gaining a rich exposure to diverse cultures. She is bilingual in English and Spanish, holds a B.A. in Spanish Language & Literature from UC Berkeley, and graduated from the Latin American School of Medicine in Havana, Cuba. After supporting her family while preparing for the USMLEs, she completed her Family Medicine residency in rural Pennsylvania. Her focus is on HIV medicine, with interests in global health, medical missions, healthcare disparities, and women’s health. Her research centers on addressing healthcare disparities in HIV, with a focus on prevention, awareness, and education.
+        Dr. Bingham-Psalms, bilingual in English and Spanish, has a diverse background, including a Family Medicine residency in rural Pennsylvania. She focuses on HIV medicine and healthcare disparities, with research on HIV prevention and education.
       `,
     },
     {
@@ -19,7 +19,7 @@ const Fellows: React.FC = () => {
       pronouns: 'He/Him',
       image: '/images/about/zac-badii.png',
       description: `
-        Dr. Zac Badii, hailing from San Diego, CA, is dedicated to addressing sex disparities in HIV prevention and treatment. A fluent Spanish speaker with experience on both sides of the southern border, he brings a unique perspective to his work. He graduated from USC's Family Medicine program and focuses on holistic care and social determinants of health through public health interventions. His research interests include identifying bias in medical education, promoting inclusivity, and addressing sex disparities in HIV prevention and treatment.
+        Dr. Badii, from San Diego, CA, addresses sex disparities in HIV care. Fluent in Spanish, he completed his Family Medicine training at USC and is interested in holistic care, public health, and bias in medical education.
       `,
     },
   ];
@@ -30,7 +30,7 @@ const Fellows: React.FC = () => {
       pronouns: 'He/They',
       image: '/images/about/licho-cynthia-aguilera.jpg',
       description: `
-        Dr. Licho Aguilera, a Nawat and non-binary physician from Pico-Union, Los Angeles, graduated from the Latin American School of Medicine in Havana, Cuba, and completed an internal medicine residency at Cedars-Sinai Medical Center. They focus on decolonial medicine for Black and Indigenous communities in Los Angeles. Outside of medicine, they enjoy vintage sewing, playing musical instruments, and riding motorcycles.
+        Dr. Aguilera, a non-binary physician from Pico-Union, LA, focuses on decolonial medicine for Black and Indigenous communities. They graduated from the Latin American School of Medicine and Cedars-Sinai Medical Center.
       `,
     },
     {
@@ -38,7 +38,7 @@ const Fellows: React.FC = () => {
       pronouns: 'She/Her',
       image: '/images/about/bianca-hill.jpeg',
       description: `
-        Dr. Bianca Hill, originally from New York City, earned her B.A. in Biology from the City College of New York and an MPH in Epidemiology from SUNY Downstate Medical Center. She discovered her passion for HIV care during an internship at Rikers Island. She completed her medical education at Meharry Medical College and her Family Medicine residency at the Institute for Family Health - Harlem Residency. Dr. Hill has published research on PrEP and focuses on HIV primary care, health equity, and advocacy.
+        Dr. Hill, from NYC, holds a B.A. in Biology and an MPH in Epidemiology. Her interest in HIV care began at Rikers Island. She completed her Family Medicine residency at the Institute for Family Health and focuses on HIV care and health equity.
       `,
     },
     {
@@ -46,7 +46,7 @@ const Fellows: React.FC = () => {
       pronouns: 'He/Him',
       image: '/images/about/mark-leiber.jpeg',
       description: `
-        Dr. Mark Leiber, originally from Tampa, FL, studied Film Studies and Human Biology at Stanford. Before pursuing medicine, he worked as an Associate Producer for National Geographic Television and as a health systems coordinator in Malawi. He completed medical school at UC Irvine and residency at Johns Hopkins Bayview Medical Center. His medical focus is on HIV and LGBTQ+ primary care.
+        Dr. Leiber, from Tampa, FL, has a background in Film Studies and worked in Malawi before medical school. He completed his residency at Johns Hopkins and specializes in HIV and LGBTQ+ primary care.
       `,
     },
   ];
@@ -66,10 +66,10 @@ const Fellows: React.FC = () => {
         <section className="bg-gray-900 text-white text-center py-20 px-6 relative">
           <div className="absolute inset-0 bg-black opacity-30"></div>
           <div className="relative z-10">
-            <h1 className="text-5xl font-extrabold mb-4">
+            <h1 className="text-5xl font-extrabold mb-6 leading-tight">
               Fellows<span className="text-red-600">.</span>
             </h1>
-            <p className="text-xl max-w-4xl mx-auto">
+            <p className="text-xl max-w-3xl mx-auto leading-relaxed">
               Meet our current HIV Fellowship cohort.
             </p>
           </div>
@@ -77,7 +77,7 @@ const Fellows: React.FC = () => {
 
         {/* Fellows Section */}
         <section className="container mx-auto px-6 py-24 text-center">
-          <h2 className="text-4xl font-bold mb-12">
+          <h2 className="text-4xl font-bold mb-12 leading-tight">
             Class of <span className="text-red-600">2026</span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
@@ -90,14 +90,14 @@ const Fellows: React.FC = () => {
                   height={200}
                   className="mx-auto rounded-full shadow-lg"
                 />
-                <h3 className="text-xl font-semibold mt-4">{fellow.name}</h3>
-                <p className="italic text-gray-700">{fellow.pronouns}</p>
-                <p className="whitespace-pre-line mt-4 text-left text-gray-800">{fellow.description}</p>
+                <h3 className="text-2xl font-semibold mt-6">{fellow.name}</h3>
+                <p className="italic text-gray-500 text-lg">{fellow.pronouns}</p>
+                <p className="mt-4 text-gray-800 leading-relaxed text-lg">{fellow.description}</p>
               </div>
             ))}
           </div>
 
-          <h2 className="text-4xl font-bold mb-12">
+          <h2 className="text-4xl font-bold mb-12 leading-tight">
             Class of <span className="text-red-600">2025</span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
@@ -110,9 +110,9 @@ const Fellows: React.FC = () => {
                   height={200}
                   className="mx-auto rounded-full shadow-lg"
                 />
-                <h3 className="text-xl font-semibold mt-4">{fellow.name}</h3>
-                <p className="italic text-gray-700">{fellow.pronouns}</p>
-                <p className="whitespace-pre-line mt-4 text-left text-gray-800">{fellow.description}</p>
+                <h3 className="text-2xl font-semibold mt-6">{fellow.name}</h3>
+                <p className="italic text-gray-500 text-lg">{fellow.pronouns}</p>
+                <p className="mt-4 text-gray-800 leading-relaxed text-lg">{fellow.description}</p>
               </div>
             ))}
           </div>
