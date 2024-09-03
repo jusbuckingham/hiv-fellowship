@@ -100,7 +100,7 @@ const Fellows: React.FC = () => {
           <h2 className="text-4xl font-bold mb-12 leading-tight">
             Class of <span className="text-red-600">2025</span>
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-24"> {/* Added margin-bottom */}
             {fellows2025.map((fellow, index) => (
               <div key={index} className="text-center transform transition duration-500 hover:scale-105">
                 <Image
