@@ -1,26 +1,28 @@
+// AccessibilityIcon.tsx
 import React from 'react';
+import { FaUniversalAccess } from 'react-icons/fa';
 
-const AccessibilityIcon = () => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-    className="w-8 h-8"
-  >
-    <circle cx="12" cy="12" r="10" fill="#3b5bdb" />
-    <text
-      x="50%"
-      y="50%"
-      textAnchor="middle"
-      dy=".3em"
-      fontFamily="Arial, Helvetica, sans-serif"
-      fontSize="12"
-      fontWeight="bold"
-      fill="#fff"
-    >
-      A
-    </text>
-    <circle cx="12" cy="12" r="9.5" stroke="#fff" strokeWidth="1.5" fill="none" />
-  </svg>
+interface AccessibilityIconProps {
+  size?: number | string;
+  color?: string;
+  className?: string;
+}
+
+const AccessibilityIcon: React.FC<AccessibilityIconProps> = ({
+  size = 32, // Default size: 32px
+  color = 'currentColor', // Inherit color from parent
+  className = '',
+}) => (
+  <FaUniversalAccess
+    size={size}
+    color={color}
+    className={`transition-transform transform hover:scale-110 focus:scale-110 ${className}`}
+    aria-hidden="true"
+    focusable="false"
+    role="img"
+    aria-label="Accessibility Options"
+    tabIndex={0}
+  />
 );
 
 export default AccessibilityIcon;
