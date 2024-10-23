@@ -73,7 +73,7 @@ const Apply: React.FC = () => {
               <span className="font-bold text-red-600">Apply today! <a href="https://docs.google.com/forms/d/1GMSQXZOlZGOeIpS9x5HphmJvW1ysE100_v8grsacItw/viewform?edit_requested=true" className="underline">Click here</a> to access the application form.</span>
             </p>
             <p className="text-lg mb-8">
-              Application deadline: <span className="font-bold">November 1st</span>
+              Application deadline: <span className="font-bold">December 15th</span>
             </p>
           </div>
         </section>
