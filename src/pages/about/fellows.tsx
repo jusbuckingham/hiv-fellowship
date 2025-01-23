@@ -30,8 +30,7 @@ const Fellows: React.FC = () => {
       pronouns: 'He/They',
       image: '/images/about/licho-cynthia-aguilera.jpg',
       description: `
-        Dr. Aguilera, a non-binary physician from Pico-Union, LA, focuses on decolonial medicine for Black and Indigenous communities. They graduated from the Latin American School of Medicine and Cedars-Sinai Medical Center.
-      `,
+       Dr. Licho Aguilera is a Nawat and non-binary physician from Pico-Union, Los Angeles. They are a proud graduate of the Escuela Latinoamericana de Medicina in Havana, Cuba and completed their internal medicine residency at Cedar-Sinai medical center. They are now a certified HIV Specialist and are completing the HIV Clinical Leadership Program at Los Angeles General Medical Center. Their career focus is on decolonial medicine for Black and Indigenous communities of Los Angeles. They are also an accomplished watercolor artist and competitive chess player.      `,
     },
     {
       name: 'Bianca Hill, MD, MPH',
