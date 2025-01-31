@@ -9,8 +9,8 @@ const Alumni: React.FC = () => {
     {
       year: 2024,
       members: [
-        { name: 'Johan Clarke, MD', location: 'Los Angeles, CA', pronouns: 'They/Them', image: '/images/about/johan-clarke.png' },
-        { name: 'Jessica Farmer, MD', location: 'Los Angeles, CA', pronouns: 'She/Her', image: '/images/about/jessica-farmer.jpg' },
+        { name: 'Johan Clarke, MD', title: '' ,location: 'Los Angeles, CA', pronouns: 'They/Them', image: '/images/about/johan-clarke.png' },
+        { name: 'Jessica Farmer, MD', title: '' ,location: 'Los Angeles, CA', pronouns: 'She/Her', image: '/images/about/jessica-farmer.jpg' },
       ],
     },
     {
