@@ -76,7 +76,7 @@ const Partners: React.FC = () => {
                   className="mx-auto mb-6 rounded-lg shadow-md"
                 />
                 <p className="text-2xl font-bold mb-4">{partner.name}</p>
-                <p className="text-gray-800">{partner.description}</p>
+                <p className="text-gray-800 leading-relaxed">{partner.description}</p>
               </div>
             ))}
           </div>

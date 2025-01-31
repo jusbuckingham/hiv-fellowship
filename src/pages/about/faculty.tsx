@@ -125,7 +125,7 @@ const Faculty: React.FC = () => {
       <main>
         {/* Hero Section */}
         <section className="relative bg-gray-900 text-white text-center py-20 px-6">
-          <div className="absolute inset-0 bg-black opacity-30"></div>
+          <div className="absolute inset-0 bg-black opacity-40"></div>
           <div className="relative z-10">
             <h1 className="text-5xl font-extrabold mb-4">
               Faculty<span className="text-red-600">.</span>
@@ -143,7 +143,7 @@ const Faculty: React.FC = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-16">
             {leadershipTeam.map((member, index) => (
-              <div key={index} className="text-center transform transition duration-500 hover:scale-105">
+              <div key={index} className="text-center transform transition duration-300 hover:scale-105">
                 <Image
                   src={member.image}
                   alt={`Portrait of ${member.name}, ${member.title}, pronouns: ${member.pronouns}`}
@@ -158,14 +158,16 @@ const Faculty: React.FC = () => {
               </div>
             ))}
           </div>
+        </section>
 
-          {/* Clinical Team Section */}
+        {/* Clinical Team Section */}
+        <section className="container mx-auto px-6 py-24 text-center">
           <h2 className="text-4xl font-bold mb-12">
             Clinical Team<span className="text-red-600">.</span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
             {clinicalTeam.map((member, index) => (
-              <div key={index} className="text-center transform transition duration-500 hover:scale-105">
+              <div key={index} className="text-center transform transition duration-300 hover:scale-105">
                 <Image
                   src={member.image}
                   alt={`Portrait of ${member.name}, ${member.title}, pronouns: ${member.pronouns}`}

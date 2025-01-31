@@ -9,19 +9,15 @@ interface AccessibilityIconProps {
 }
 
 const AccessibilityIcon: React.FC<AccessibilityIconProps> = ({
-  size = 32, // Default size: 32px
-  color = 'currentColor', // Inherit color from parent
+  size = 32,
+  color = 'currentColor',
   className = '',
 }) => (
   <FaUniversalAccess
     size={size}
     color={color}
-    className={`transition-transform transform hover:scale-110 focus:scale-110 ${className}`}
+    className={`transition-transform transform hover:scale-110 ${className}`}
     aria-hidden="true"
-    focusable="false"
-    role="img"
-    aria-label="Accessibility Options"
-    tabIndex={0}
   />
 );
 
