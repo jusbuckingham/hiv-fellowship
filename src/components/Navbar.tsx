@@ -19,71 +19,118 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="fixed w-full bg-white shadow-md z-50" role="navigation" aria-label="Main Navigation">
+    <nav
+      className="fixed w-full bg-white shadow-md z-50"
+      role="navigation"
+      aria-label="Main Navigation"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Top Bar */}
         <div className="flex items-center justify-between h-16">
+          {/* Left Section: Logo / Title */}
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <Link href="/" legacyBehavior>
-                <a className="text-2xl font-bold text-gray-900 hover:text-red-600 transition" aria-label="HIV Clinical Leadership Program">
-                  HIV Clinical Leadership Program
-                </a>
+              <Link
+                href="/"
+                className="text-2xl font-bold text-gray-900 hover:text-red-600 transition"
+                aria-label="HIV Clinical Leadership Program"
+              >
+                HIV Clinical Leadership Program
               </Link>
             </div>
+            {/* Desktop Menu */}
             <div className="hidden md:flex ml-10 space-x-6">
-              <Link href="/" legacyBehavior>
-                <a className="text-gray-900 hover:text-red-600 transition px-3 py-2 rounded-md text-sm font-medium" aria-label="Home">
-                  Home
-                </a>
+              <Link
+                href="/"
+                className="text-gray-900 hover:text-red-600 transition px-3 py-2 rounded-md text-sm font-medium"
+                aria-label="Home"
+              >
+                Home
               </Link>
+              {/* About Menu (Desktop) */}
               <div className="relative group">
-                <Link href="/about" legacyBehavior>
-                  <a className="text-gray-900 hover:text-red-600 transition px-3 py-2 rounded-md text-sm font-medium" aria-label="About">
-                    About
-                  </a>
+                <Link
+                  href="/about"
+                  className="text-gray-900 hover:text-red-600 transition px-3 py-2 rounded-md text-sm font-medium"
+                  aria-label="About"
+                >
+                  About
                 </Link>
                 <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md py-2 hidden group-hover:block z-10">
-                  <Link href="/about/faculty" legacyBehavior>
-                    <a className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" aria-label="Faculty">Faculty</a>
+                  <Link
+                    href="/about/faculty"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    aria-label="Faculty"
+                  >
+                    Faculty
                   </Link>
-                  <Link href="/about/fellows" legacyBehavior>
-                    <a className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" aria-label="Fellows">Fellows</a>
+                  <Link
+                    href="/about/fellows"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    aria-label="Fellows"
+                  >
+                    Fellows
                   </Link>
-                  <Link href="/about/alumni" legacyBehavior>
-                    <a className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" aria-label="Alumni">Alumni</a>
+                  <Link
+                    href="/about/alumni"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    aria-label="Alumni"
+                  >
+                    Alumni
                   </Link>
-                  <Link href="/about/partners" legacyBehavior>
-                    <a className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" aria-label="Partners">Partners</a>
+                  <Link
+                    href="/about/partners"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    aria-label="Partners"
+                  >
+                    Partners
                   </Link>
                 </div>
               </div>
+              {/* Program Menu (Desktop) */}
               <div className="relative group">
-                <Link href="/program" legacyBehavior>
-                  <a className="text-gray-900 hover:text-red-600 transition px-3 py-2 rounded-md text-sm font-medium" aria-label="Program">
-                    Program
-                  </a>
+                <Link
+                  href="/program"
+                  className="text-gray-900 hover:text-red-600 transition px-3 py-2 rounded-md text-sm font-medium"
+                  aria-label="Program"
+                >
+                  Program
                 </Link>
                 <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md py-2 hidden group-hover:block z-10">
-                  <Link href="/program/salary-benefits" legacyBehavior>
-                    <a className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" aria-label="Salary & Benefits">Salary & Benefits</a>
+                  <Link
+                    href="/program/salary-benefits"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    aria-label="Salary & Benefits"
+                  >
+                    Salary & Benefits
                   </Link>
-                  <Link href="/program/resources" legacyBehavior>
-                    <a className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" aria-label="Resources">Resources</a>
+                  <Link
+                    href="/program/resources"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    aria-label="Resources"
+                  >
+                    Resources
                   </Link>
                 </div>
               </div>
-              <Link href="/contact" legacyBehavior>
-                <a className="text-gray-900 hover:text-red-600 transition px-3 py-2 rounded-md text-sm font-medium" aria-label="Contact">
-                  Contact
-                </a>
+              <Link
+                href="/contact"
+                className="text-gray-900 hover:text-red-600 transition px-3 py-2 rounded-md text-sm font-medium"
+                aria-label="Contact"
+              >
+                Contact
               </Link>
-              <Link href="/apply" legacyBehavior>
-                <a className="text-gray-900 hover:text-red-600 transition px-3 py-2 rounded-md text-sm font-medium" aria-label="Apply">
-                  Apply
-                </a>
+              <Link
+                href="/apply"
+                className="text-gray-900 hover:text-red-600 transition px-3 py-2 rounded-md text-sm font-medium"
+                aria-label="Apply"
+              >
+                Apply
               </Link>
             </div>
           </div>
+
+          {/* Mobile Menu Button */}
           <div className="-mr-2 flex md:hidden">
             <button
               onClick={toggleMenu}
@@ -93,11 +140,7 @@ const Navbar: React.FC = () => {
             >
               <svg className="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                 {isOpen ? (
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
+                  <path fillRule="evenodd" clipRule="evenodd" d="M6 18L18 6M6 6l12 12" />
                 ) : (
                   <path
                     strokeLinecap="round"
@@ -112,14 +155,19 @@ const Navbar: React.FC = () => {
         </div>
       </div>
 
+      {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <Link href="/" legacyBehavior>
-              <a className="text-gray-900 hover:text-red-600 block px-3 py-2 rounded-md text-base font-medium" aria-label="Home">
-                Home
-              </a>
+            <Link
+              href="/"
+              className="text-gray-900 hover:text-red-600 block px-3 py-2 rounded-md text-base font-medium"
+              aria-label="Home"
+            >
+              Home
             </Link>
+
+            {/* About Menu (Mobile) */}
             <button
               onClick={toggleAboutMenu}
               className="text-gray-900 hover:text-red-600 block px-3 py-2 rounded-md text-base font-medium w-full text-left"
@@ -130,23 +178,45 @@ const Navbar: React.FC = () => {
             </button>
             {isAboutOpen && (
               <div className="pl-4">
-                <Link href="/about" legacyBehavior>
-                  <a className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" aria-label="About">About</a>
+                <Link
+                  href="/about"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  aria-label="About"
+                >
+                  About
                 </Link>
-                <Link href="/about/faculty" legacyBehavior>
-                  <a className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" aria-label="Faculty">Faculty</a>
+                <Link
+                  href="/about/faculty"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  aria-label="Faculty"
+                >
+                  Faculty
                 </Link>
-                <Link href="/about/fellows" legacyBehavior>
-                  <a className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" aria-label="Fellows">Fellows</a>
+                <Link
+                  href="/about/fellows"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  aria-label="Fellows"
+                >
+                  Fellows
                 </Link>
-                <Link href="/about/alumni" legacyBehavior>
-                  <a className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" aria-label="Alumni">Alumni</a>
+                <Link
+                  href="/about/alumni"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  aria-label="Alumni"
+                >
+                  Alumni
                 </Link>
-                <Link href="/about/partners" legacyBehavior>
-                  <a className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" aria-label="Partners">Partners</a>
+                <Link
+                  href="/about/partners"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  aria-label="Partners"
+                >
+                  Partners
                 </Link>
               </div>
             )}
+
+            {/* Program Menu (Mobile) */}
             <button
               onClick={toggleProgramMenu}
               className="text-gray-900 hover:text-red-600 block px-3 py-2 rounded-md text-base font-medium w-full text-left"
@@ -157,26 +227,43 @@ const Navbar: React.FC = () => {
             </button>
             {isProgramOpen && (
               <div className="pl-4">
-                <Link href="/program" legacyBehavior>
-                  <a className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" aria-label="Program">Program</a>
+                <Link
+                  href="/program"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  aria-label="Program"
+                >
+                  Program
                 </Link>
-                <Link href="/program/salary-benefits" legacyBehavior>
-                  <a className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" aria-label="Salary & Benefits">Salary & Benefits</a>
+                <Link
+                  href="/program/salary-benefits"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  aria-label="Salary & Benefits"
+                >
+                  Salary & Benefits
                 </Link>
-                <Link href="/program/resources" legacyBehavior>
-                  <a className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" aria-label="Resources">Resources</a>
+                <Link
+                  href="/program/resources"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  aria-label="Resources"
+                >
+                  Resources
                 </Link>
               </div>
             )}
-            <Link href="/contact" legacyBehavior>
-              <a className="text-gray-900 hover:text-red-600 block px-3 py-2 rounded-md text-base font-medium" aria-label="Contact">
-                Contact
-              </a>
+
+            <Link
+              href="/contact"
+              className="text-gray-900 hover:text-red-600 block px-3 py-2 rounded-md text-base font-medium"
+              aria-label="Contact"
+            >
+              Contact
             </Link>
-            <Link href="/apply" legacyBehavior>
-              <a className="text-gray-900 hover:text-red-600 block px-3 py-2 rounded-md text-base font-medium" aria-label="Apply">
-                Apply
-              </a>
+            <Link
+              href="/apply"
+              className="text-gray-900 hover:text-red-600 block px-3 py-2 rounded-md text-base font-medium"
+              aria-label="Apply"
+            >
+              Apply
             </Link>
           </div>
         </div>
