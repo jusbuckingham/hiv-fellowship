@@ -83,6 +83,13 @@ const Faculty: React.FC = () => {
       image: '/images/about/hrishikesh-belani.jpeg',
     },
     {
+      name: 'Katherine Gardner, MD',
+      title: 'Family Medicine/ Gender Affirming Care',
+      subtitle: 'LA County DHS Gender Affirming Care Lead',
+      pronouns: 'She/They',
+      image: '/images/about/katherine-headshot.jpeg',
+    },
+    {
       name: 'Becca Cohen, MD, MPH, AAHIVS',
       title: 'Family Medicine',
       subtitle: 'HIV Primary Care',
