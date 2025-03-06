@@ -14,7 +14,7 @@ const Faculty: React.FC = () => {
     },
     {
       name: 'LaShonda Spencer, MD, AAHIVS',
-      title: 'Program Co-Director',
+      title: 'Program Director',
       pronouns: 'She/Her',
       image: '/images/about/lashonda-spencer.jpeg',
     },
@@ -26,7 +26,7 @@ const Faculty: React.FC = () => {
     },
     {
       name: 'Christian Takayama, MD, AAHIVS',
-      title: 'Associate Program Co-Director',
+      title: 'Associate Program Director',
       subtitle: 'Principal Investigator, AIDS Education and Training Center (AETC), USC Keck School of Medicine',
       pronouns: 'He/Him',
       image: '/images/about/christian-takayama.png',
@@ -43,6 +43,13 @@ const Faculty: React.FC = () => {
       title: 'Emeritus Professor of Family Medicine',
       pronouns: 'He/Him',
       image: '/images/about/jerry-gates.png',
+    },
+    {
+      name: 'Katherine Loomis, MD',
+      title: 'Internal Medicine / Infectious Disease',
+      subtitle: 'Clinical Instructor, USC Keck School of Medicine',
+      pronouns: 'She/Her',
+      image: '/images/about/katherine-loomis.jpeg',
     },
   ];
 
@@ -102,13 +109,6 @@ const Faculty: React.FC = () => {
       subtitle: 'Director of Positive Care, LA County ACN',
       pronouns: 'She/Her',
       image: '/images/about/katya-corado.jpeg',
-    },
-    {
-      name: 'Katherine Loomis, MD',
-      title: 'Internal Medicine / Infectious Disease',
-      subtitle: 'Clinical Instructor, USC Keck School of Medicine',
-      pronouns: 'She/Her',
-      image: '/images/about/katherine-loomis.jpeg',
     },
     {
       name: 'Johan Clarke, MD, AAHIVS',
